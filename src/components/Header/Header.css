@@ -1,6 +1,12 @@
 .header {
   display: flex;
-  min-height: 140px;
+  min-height: 100px;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1343px) {
+  .header {
+    margin: 0 5%;
+  }
 }

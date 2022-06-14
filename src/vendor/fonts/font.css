@@ -1,12 +1,18 @@
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.woff) format("woff");        
+    src: url(../fonts/Roboto-Regular.woff) format("woff");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.woff) format("woff");         
+    src: url(../fonts/Roboto-Regular.woff) format("woff");
     font-weight: 500;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url(../fonts/Philosopher-Bold.woff) format("woff");
+  font-weight: 700;
 }
 
