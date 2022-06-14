@@ -1,0 +1,15 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/font.css);
+
+#root {
+  background-color: #181A19;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
