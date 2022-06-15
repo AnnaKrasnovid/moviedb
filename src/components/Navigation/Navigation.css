@@ -1,7 +1,11 @@
 .navigation {
   max-width: 700px;
-  width: 100%;
+  /*width: 100%;*/
   margin: 0 30px;
+}
+
+.button-burger {
+  display: none;
 }
 
 .navigation__list {
@@ -14,9 +18,67 @@
 
 .navigation__box-link {}
 
+
 .navigation__link {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   line-height: 21px;
+  margin-right: 10px;
+}
+
+.navigation__link:last-of-type(6) {
+  margin-right: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+  .navigation_opened {
+    background: rgba(28, 29, 31, 1);
+    border: 1px solid #2B2B2B;
+    backdrop-filter: blur(20px);
+    border-radius: 0px 5px 5px 5px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 100px 10% 30px 10%;
+    display: none;
+  }
+
+  .button-burger {
+    display: block;
+    background-image: url(../../image/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #81BECB;
+    /*background-size: 20px 14px;*/
+    border-radius: 5px;
+    width: 28px;
+    height: 28px;
+    border: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .navigation__list_opened {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #8b8b8b;
+    border-bottom: 1px solid #8b8b8b;
+    height: 95%;
+    padding-top: 20px;
+  }
+
+  .navigation__link_opened {
+   margin-bottom: 10px;
+   margin-right: 0;
+   display: block;
+  }
+
+
+
 }

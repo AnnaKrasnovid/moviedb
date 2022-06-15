@@ -1,0 +1,72 @@
+.search {
+  padding: 30px 30px 0;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
+  box-sizing: border-box;
+  border: 1px solid #424242;
+  background-color: #1B1E1E;
+  border-radius: 50px;
+  padding: 0 30px ;
+}
+
+.search__input {
+  background-color: #1B1E1E;
+  display: block;
+  border: 0;
+  outline: none;
+  color: #FFFFFF;
+
+  width: 100%;
+  line-height: 40px;
+  border-radius: 50px;
+}
+
+.search__input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8B8B8B;
+}
+
+.search__button {
+  background-image: url(../../image/loupe.svg);
+  background-color: #1B1E1E;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.8;
+  height: 34px;
+  width: 34px;
+  padding: 0;
+  border: 0;
+}
+
+/*.search__magnifier {
+  background-image: url(../../images/icon-magnifier.svg);
+  height: 14px;
+  width: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px 0 0 8px;
+}*/
+
+.search__error {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #EE3465;
+min-height: 30px;
+  display: block;
+margin: 10px 30px;
+}
+
+.search__error_active {
+  display: block;
+}
+
+

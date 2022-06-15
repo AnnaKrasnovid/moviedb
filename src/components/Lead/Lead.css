@@ -3,12 +3,11 @@ max-width: 1343px;
 min-height: 448px;
 background-image: url(../../image/img-main.png);
   background-repeat: no-repeat;
-background-position: cover;
-
-background-size: 100%;
+  background-size: cover;
+  background-position: center;
 display: flex;
 align-items: center;
-position: relative;
+/*position: relative;*/
 
 }
 
@@ -39,9 +38,8 @@ background-position: cover;
 }
 
 @media screen and (max-width: 1343px) {
-
   .lead {
-    min-height: 350px;
+    min-height: 400px;
   }
 
   .lead__title {
@@ -51,6 +49,22 @@ background-position: cover;
 
 @media screen and (max-width: 1023px) {
   .lead {
-    min-height: 300px;
+    min-height: 350px;
+  }
+
+  .lead__title {
+    font-size:  38px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lead {
+    min-height: 210px;
+  }
+
+  .lead__title {
+    font-size:  25px;
+    max-width: 100px;
   }
 }
