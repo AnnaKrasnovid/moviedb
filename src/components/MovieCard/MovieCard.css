@@ -1,0 +1,27 @@
+.movie {
+margin-right: 30px;
+}
+
+.movie__box {
+
+}
+
+.movie__img {
+  width: 245px;
+  height: 381px;
+  object-fit: contain;
+}
+
+.movie__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.movie__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0;
+}
