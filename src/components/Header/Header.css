@@ -3,6 +3,9 @@
   min-height: 100px;
   display: flex;
   align-items: center;
+  /*background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, #181A19 0%, #24282B 68.62%);
+opacity: 0.5;
+box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);*/
 }
 
 @media screen and (max-width: 1343px) {
