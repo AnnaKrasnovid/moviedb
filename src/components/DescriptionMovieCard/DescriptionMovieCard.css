@@ -1,0 +1,76 @@
+.movies-description {
+
+}
+
+.about-movie {
+  display: grid;
+  grid-template-columns: 245px 1fr;
+}
+
+.about-movie__container {
+
+}
+
+.about-movie__img {
+
+}
+
+.about-movie__container-rating {
+
+}
+
+.about-movie__box-rating {
+
+}
+
+.about-movie__estimation {
+
+}
+
+.about-movie__owner {
+
+}
+
+.about-movie__title {
+
+}
+
+.about-movie__title-en {
+
+}
+
+.about-movie__box-data {
+
+}
+
+.about-movie__box-info {
+
+}
+
+.about-movie__heading {
+
+}
+
+.about-movie__info {
+
+}
+
+.about-movie__box-main {
+
+}
+
+.about-movie__box-info-main {
+
+}
+
+.about-movie__box-description {
+
+}
+
+.about-movie__title-description {
+
+}
+
+.about-movie__description {
+
+}

@@ -2,6 +2,7 @@ import './Main.css';
 import Lead from '../Lead/Lead';
 import SearchForm from '../SearchForm/SearchForm';
 import Compilation from '../Сompilation/Compilation';
+import DescriptionMovieCard from '../DescriptionMovieCard/DescriptionMovieCard';
 
 function Main() {
   return (
@@ -9,6 +10,8 @@ function Main() {
       <Lead />
       <SearchForm />
       <Compilation />
+      <Compilation />
+      <DescriptionMovieCard />
     </main>
   )
 }
