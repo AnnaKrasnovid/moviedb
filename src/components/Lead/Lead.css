@@ -1,8 +1,6 @@
 .lead {
   max-width: 1343px;
   min-height: 448px;
-
-
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../image/img-main.png);
@@ -17,9 +15,7 @@
 .lead__title {
   font-family: 'Philosopher';
   font-weight: 700;
-  font-size:
-    /*calc(448px * 100% / 100vh)*/
-    65px;
+  font-size: 65px;
   line-height: 102.5%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   margin: 0;

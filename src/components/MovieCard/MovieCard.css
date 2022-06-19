@@ -4,15 +4,16 @@
   list-style: none;
 }
 
-.movie__box {}
+.movie__box {
+  border: 1px solid #2B2B2B;
+  filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.14));
+  border-radius: 5px;
+}
 
 .movie__img {
   width: 245px;
   height: 381px;
-  object-fit: contain;
-  border: 1px solid #2B2B2B;
-  filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.14));
-  border-radius: 5px;
+  object-fit: cover;
 }
 
 .movie__title {

@@ -50,15 +50,15 @@ function DescriptionMovieCard() {
               <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
             </li>
             <li className='about-movie__box-info-main'>
-              <p className='about-movie__heading-main'>Жанр</p>
+              <p className='about-movie__heading-main'>Страна</p>
               <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
             </li>
             <li className='about-movie__box-info-main'>
-              <p className='about-movie__heading-main'>Жанр</p>
+              <p className='about-movie__heading-main'>В главных ролях</p>
               <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
             </li>
             <li className='about-movie__box-info-main'>
-              <p className='about-movie__heading-main'>Жанр</p>
+              <p className='about-movie__heading-main'>Участвует в подборках</p>
               <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
             </li>
           </ul>

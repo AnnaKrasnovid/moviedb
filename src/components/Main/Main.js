@@ -8,7 +8,6 @@ function Main() {
   return (
     <main className='main-page'>
       <Lead />
-
       <Compilation />
       <Compilation />
       <DescriptionMovieCard />

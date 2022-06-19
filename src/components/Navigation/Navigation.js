@@ -24,7 +24,7 @@ function Navigation() {
         </li>
         <li className='navigation__box-link'>
           <Link to='/anime' className='navigation__link'>Аниме</Link>
-  </li>
+        </li>
       </ul>
     </nav>
    </>

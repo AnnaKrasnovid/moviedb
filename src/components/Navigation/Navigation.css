@@ -31,7 +31,6 @@
   margin-right: 0;
 }
 
-
 @media screen and (max-width: 767px) {
   .navigation_opened {
     background: rgba(28, 29, 31, 1);
@@ -54,7 +53,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #81BECB;
-    /*background-size: 20px 14px;*/
     border-radius: 5px;
     width: 28px;
     height: 28px;
@@ -78,7 +76,4 @@
    margin-right: 0;
    display: block;
   }
-
-
-
 }
