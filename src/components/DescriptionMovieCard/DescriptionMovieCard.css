@@ -1,4 +1,6 @@
-.movies-description {}
+.movies-description {
+  padding: 100px 0;
+}
 
 .about-movie {
   display: grid;

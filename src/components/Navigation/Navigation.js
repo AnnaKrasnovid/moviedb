@@ -10,7 +10,7 @@ function Navigation() {
         <li className='navigation__box-link'>
           <Link to='/' className='navigation__link'>Главная</Link>
         </li>
-        {/*<li className='navigation__box-link'>
+        <li className='navigation__box-link'>
           <Link to='/genre' className='navigation__link'>По жанру</Link>
         </li>
         <li className='navigation__box-link'>
@@ -24,7 +24,7 @@ function Navigation() {
         </li>
         <li className='navigation__box-link'>
           <Link to='/anime' className='navigation__link'>Аниме</Link>
-  </li>*/}
+  </li>
       </ul>
     </nav>
    </>
