@@ -1,10 +1,13 @@
-
+import React from 'react';
 import './Logo.css';
 import LogoVector from '../../image/Logo.svg';
 
 function Logo() {
   return (
-    <img className="logo" src={LogoVector}></img>
+    <div className='logo'>
+      <img className="logo__img" src={LogoVector}></img>
+      <p className='logo__slogan'>Знаем, что вам понравиться</p>
+    </div>
   )
 }
 

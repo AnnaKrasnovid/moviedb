@@ -1,12 +1,28 @@
 .logo {
-  width: 130px;
-  height: 55px;
-  position: relative;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 165px;
+  width: 100%;
+}
+
+.logo__img {
+  width: 152px;
+  height: 72px;
+  /*position: relative;
+  z-index: 10;*/
+}
+
+.logo__slogan {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #81BECB;
+  margin: 10px 0 0;
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
+  .logo__img {
     width: 68px;
     height: 32px;
   }

@@ -2,18 +2,21 @@ import './App.css';
 import Header from '../Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
-
-    <div className="page">
+    <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-      </Routes>
-    </div>
+      <div className="page">
 
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
 
+      </div>
+      <Footer />
+    </>
   )
 }
 
