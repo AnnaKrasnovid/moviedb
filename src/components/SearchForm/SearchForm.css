@@ -2,6 +2,7 @@
   from {
     transform: scale(1, 1);
   }
+
   to {
     transform: scale(1.15, 1.15);
   }
@@ -46,6 +47,8 @@
   width: 100%;
   line-height: 40px;
   border-radius: 50px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .search__input::placeholder {
@@ -84,7 +87,7 @@
   color: #EE3465;
   min-height: 20px;
   display: block;
-  margin: 5px 30px;
+  margin: 5px 30px 10px;
 }
 
 .search__error_active {
@@ -93,7 +96,14 @@
 
 @media screen and (max-width: 1023px) {
   .search {
-  max-width: 100%;
-  padding-top: 20px;
+    max-width: 100%;
+    padding-top: 20px;
+  }
 }
+
+
+@media screen and (max-width: 424px) {
+  .search {
+    display: none;
+  }
 }

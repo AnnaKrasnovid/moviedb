@@ -4,7 +4,6 @@
   justify-content: center;
   max-width: 165px;
   width: 100%;
-
 }
 
 .logo__img {
@@ -33,10 +32,23 @@
 }
 
 @media screen and (max-width: 767px) {
+  .logo_type_footer {
+margin: auto;
+  }
+
   .logo__img {
     width: 68px;
     height: 32px;
     z-index: 22;
   }
 
+  .logo__img_type_footer {
+    width: 147px;
+    height: 65px;
+
+  }
+
+  .logo__slogan {
+    display: flex;
+  }
 }

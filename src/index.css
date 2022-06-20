@@ -15,6 +15,7 @@
   align-items: center;
   box-sizing: border-box;
   position: relative;
+  min-width: 320px;
 }
 
 
