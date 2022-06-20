@@ -25,16 +25,16 @@
   border: 1px solid #424242;
   background-color: #1B1E1E;
   border-radius: 50px;
-  padding: 0 30px;
-  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  padding: 0 25px;
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
 }
 
 .search__form_active {
   background: rgba(28, 29, 31, 0.5);
   border: 2px solid #424242;
-  box-shadow: 0px 7px 16px rgba(190, 190, 190, 0.05);
-
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(30px);
 }
 
 .search__input {
@@ -68,7 +68,6 @@
   border: 0;
 }
 
-
 .search__button_active {
   animation-name: search-magnifier;
   animation-delay: 0;
@@ -90,4 +89,11 @@
 
 .search__error_active {
   display: block;
+}
+
+@media screen and (max-width: 1023px) {
+  .search {
+  max-width: 100%;
+  padding-top: 20px;
+}
 }

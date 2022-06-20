@@ -4,11 +4,14 @@
   justify-content: center;
   max-width: 165px;
   width: 100%;
+
 }
 
 .logo__img {
   width: 152px;
   height: 72px;
+  cursor: pointer;
+  position: relative;
 }
 
 .logo__slogan {
@@ -16,12 +19,24 @@
   font-size: 11px;
   line-height: 14px;
   color: #81BECB;
-  margin: 10px 0 0;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .logo__img {
+    width: 100px;
+  }
+
+  .logo__slogan {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .logo__img {
     width: 68px;
     height: 32px;
+    z-index: 22;
   }
+
 }

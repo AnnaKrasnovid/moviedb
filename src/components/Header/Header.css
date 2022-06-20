@@ -6,13 +6,22 @@
   background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, #181A19 0%, #24282B 68.62%);
   box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
   width: 100%;
-  padding: 18px 60px 10px;
+  padding: 18px 5% 0;
   box-sizing: border-box;
   margin-bottom: 30px;
+  position: relative;
 }
 
 @media screen and (max-width: 1343px) {
   .header {
-    margin: 0 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    flex-wrap: wrap;
+
   }
 }

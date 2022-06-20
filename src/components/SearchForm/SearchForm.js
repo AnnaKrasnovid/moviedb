@@ -26,12 +26,12 @@ function SearchForm() {
   return (
     <section className='search' >
       <form
-      className={`search__form ${isActiveSearchClass || isActiveInput ? 'search__form_active' : ''}`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onFocus={handleOnFocusInput}
-      onBlur={handleOnBlurInput}
-      noValidate
+        className={`search__form ${isActiveSearchClass || isActiveInput ? 'search__form_active' : ''}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onFocus={handleOnFocusInput}
+        onBlur={handleOnBlurInput}
+        noValidate
       >
         <input
           id='search'
