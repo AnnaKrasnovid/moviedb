@@ -22,7 +22,6 @@ function App() {
   function handleClosePopup() {
     setIsOpenPopupMenu(false)
     setIsOpenPopupSearch(false)
-    console.log('ok')
   }
 
   return (
@@ -30,19 +29,15 @@ function App() {
       <Header
         onOpenMenu={handleClickMenu}
         onOpenPopupSearch={handleClickSearch}
-
         isOpenPopupMenu={isOpenPopupMenu}
         isOpenPopupSearch={isOpenPopupSearch}
       />
-      <div className="page">
-
+<div className="page">
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route exact path="/" element={<Main />} />
         </Routes>
-
       </div>
       <Footer />
-
       <PopupMenu
         onClosePopup={handleClosePopup}
         isOpenPopup={isOpenPopupMenu}

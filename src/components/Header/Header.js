@@ -9,14 +9,14 @@ function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, onClosePopup }
   return (
     <header className="header">
       <Logo
-      classNameBox='logo_type_header'
-      classNameImg='logo__img_type_header'
-      classNameSlogan='logo__slogan_type_header'
-    />
+        classNameBox='logo_type_header'
+        classNameImg='logo__img_type_header'
+        classNameSlogan='logo__slogan_type_header'
+      />
       <div className="header__box">
-        <button className='header__button-search' onClick={onOpenPopupSearch} type='button'/>
-        <button className='button-burger' onClick={onOpenMenu}/>
-        <Navigation isOpenPopupMenu={isOpenPopupMenu} classNamePopup={'navigation_type_header'}/>
+        <button className='header__button-search' onClick={onOpenPopupSearch} type='button' />
+        <button className='button-burger' onClick={onOpenMenu} />
+        <Navigation isOpenPopupMenu={isOpenPopupMenu} classNamePopup={'navigation_type_header'} />
       </div>
       <SearchForm />
     </header>

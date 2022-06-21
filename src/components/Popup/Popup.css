@@ -19,7 +19,6 @@
   transition: visibility .5s linear, opacity .5s linear;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
   padding: 18px 5% 15px;
   box-sizing: border-box;
 }
@@ -29,10 +28,10 @@
 }
 
 .popup__box-nav {
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popup__button-close {
@@ -54,5 +53,3 @@ justify-content: space-between;
 .popup__button-close:hover {
   transform: rotate(360deg);
 }
-
-

@@ -37,15 +37,14 @@
     position: relative;
     z-index: 22;
     min-width: calc(320px - 10%);
-
   }
 
   .navigation_type_header {
     display: none;
-
   }
+
   .navigation_type_popup {
-display: block;
+    display: block;
   }
 
   .navigation__box {

@@ -31,8 +31,7 @@ function SearchForm() {
         onMouseLeave={handleMouseLeave}
         onFocus={handleOnFocusInput}
         onBlur={handleOnBlurInput}
-        noValidate
-      >
+        noValidate>
         <input
           id='search'
           name='search'

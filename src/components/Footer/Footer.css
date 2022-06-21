@@ -39,8 +39,6 @@
 }
 
 .footer__box-info {
-  /*display: flex;
-  justify-content: space-between;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -97,9 +95,6 @@
   }
 
   .footer__box-info {
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;*/
     min-height: 134px;
     grid-template-columns: 1fr;
     grid-template-areas:
