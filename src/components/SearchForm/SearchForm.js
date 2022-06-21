@@ -42,7 +42,7 @@ function SearchForm() {
           minLength='1'
         /*value={values.search || ''}*/
         />
-        <button className={`search__button ${isActiveInput ? 'search__button_active' : ''}`}></button>
+        <button className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
       </form>
       <span id='search-input-error' className='search__error'></span>
     </section>

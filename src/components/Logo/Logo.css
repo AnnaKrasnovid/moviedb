@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   max-width: 165px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .logo_type_footer {}
