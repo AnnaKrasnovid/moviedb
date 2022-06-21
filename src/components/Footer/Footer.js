@@ -1,13 +1,12 @@
 import './Footer.css';
-import Logo from '../Logo/Logo';
-import SocialButtons from '../SocialButtons/SocialButtons';
-
+import LogoFooter from '../LogoFooter/LogoFooter';
+import SocialButtonsFooter from '../SocialButtonsFooter/SocialButtonsFooter';
 
 function Footer() {
   return (
     <footer className='footer'>
       <div className='footer__container'>
-        <Logo />
+        <LogoFooter />
         <div className='footer__box-about'>
           <h4 className='footer__title'>О нас</h4>
           <p className='footer__about'>
@@ -25,7 +24,7 @@ function Footer() {
       </div>
       <div className='footer__box-info'>
         <p className='footer__info'>Все права защищены MovieDB.ru 2022</p>
-        <SocialButtons />
+        <SocialButtonsFooter />
         <p className='footer__info footer__info_type_link'>Политика конфиденциальности</p>
       </div>
 

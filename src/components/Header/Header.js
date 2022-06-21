@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Header.css';
-import Logo from '../Logo/Logo';
+import LogoHeader from '../LogoHeader/LogoHeader';
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
 
 function Header() {
   return (
     <header className="header">
-      <Logo />
+      <LogoHeader />
       <Navigation />
       <SearchForm />
     </header>

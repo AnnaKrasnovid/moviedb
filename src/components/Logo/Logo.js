@@ -3,15 +3,16 @@ import './Logo.css';
 import LogoVector from '../../image/Logo.svg';
 import { Link } from 'react-router-dom';
 
-function Logo() {
+function Logo({classNameBox, classNameImg, classNameSlogan}) {
   return (
-    <div className='logo logo_type_footer'>
+    <div className={`logo ${classNameBox}`}>
       <Link to='/' >
-        <img className="logo__img logo__img_type_footer" src={LogoVector}></img>
+        <img className={`logo__img ${classNameImg}`} src={LogoVector}></img>
       </Link>
-      <p className='logo__slogan'>Знаем, что вам понравиться</p>
+      <p className={`logo__slogan ${classNameSlogan}`}>Знаем, что вам понравиться</p>
     </div>
   )
 }
 
 export default Logo;
+

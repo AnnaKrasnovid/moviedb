@@ -81,9 +81,10 @@
   }
 
   .footer__container {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-bottom: 10px;
     width: 100%;
+    justify-content: center;
   }
 
   .footer__box-about {

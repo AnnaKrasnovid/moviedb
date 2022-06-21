@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
+import SocialButtonsPopup from '../SocialButtonsPopup/SocialButtonsPopup';
+import LogoPopup from '../LogoPopup/LogoPopup';
 
 function Navigation() {
   const [isOpenMenu, setIsOpenMenu] = React.useState(false);
@@ -13,6 +15,7 @@ function Navigation() {
     <>
     <button className='button-burger' onClick={handleOpenPopup}/>
     <nav className={`navigation ${isOpenMenu ? 'navigation_opened' : ''}`}>
+      <LogoPopup />
       <ul className='navigation__list navigation__list_type_popup'>
         <li className='navigation__box-link'>
           <Link to='/genre' className='navigation__link'>По жанру</Link>
@@ -30,6 +33,7 @@ function Navigation() {
           <Link to='/anime' className='navigation__link'>Аниме</Link>
         </li>
       </ul>
+      <SocialButtonsPopup />
     </nav>
    </>
   )

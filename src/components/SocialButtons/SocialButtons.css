@@ -2,22 +2,27 @@
   max-width: 180px;
   width: 100%;
   display: flex;
-justify-content: space-between;
-margin: auto;
-grid-area: social;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.social-buttons__icon {
-
+.social-buttons_type_footer {
+  grid-area: social;
 }
+
+.social-buttons_type_popup {
+  display: none;
+}
+
+.social-buttons__icon {}
 
 .social-buttons__link {
   width: 50px;
-      height: 50px;
+  height: 50px;
   border-radius: 60px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   padding: 0;
-  background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, rgba(24, 26, 25, 0.5) 0%, rgba(36, 40, 43, 0.5) 68.62%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, rgba(24, 26, 25, 0.5) 0%, rgba(36, 40, 43, 0.5) 68.62%);
   box-shadow: 0px -7px 16px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px);
   opacity: 50%;
@@ -26,24 +31,24 @@ grid-area: social;
   align-items: center;
 }
 
-@media screen and (max-width: 1279px) {
-
-}
-
 @media screen and (max-width: 1150px) {
   .social-buttons {
-      max-width: 160px;
+    max-width: 160px;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
+  .social-buttons_type_popup {
+    display: flex;
+  }
+
   .social-buttons__link {
     width: 37px;
     height: 37px;
   }
+
+  .social-buttons__icon {
+    width: 15px;
+    height: 15px;
+  }
 }
-
-
-
