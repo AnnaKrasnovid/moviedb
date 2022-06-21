@@ -38,6 +38,7 @@
 @media screen and (max-width: 767px) {
   .social-buttons_type_popup {
     display: flex;
+    margin-top: 20px;
   }
 
   .social-buttons__link {

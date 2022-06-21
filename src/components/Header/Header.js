@@ -16,7 +16,7 @@ function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, onClosePopup }
       <div className="header__box">
         <button className='header__button-search' onClick={onOpenPopupSearch} type='button'/>
         <button className='button-burger' onClick={onOpenMenu}/>
-        <Navigation isOpenPopupMenu={isOpenPopupMenu}/>
+        <Navigation isOpenPopupMenu={isOpenPopupMenu} classNamePopup={'navigation_type_header'}/>
       </div>
       <SearchForm />
     </header>

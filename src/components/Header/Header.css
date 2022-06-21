@@ -30,9 +30,9 @@
     margin-bottom: 10px;
   }
 
-  /*.header__box {
+  .header__box {
     display: flex;
-  }*/
+  }
 
   .header__button-search {
     display: block;
