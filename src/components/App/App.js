@@ -32,9 +32,10 @@ function App() {
         isOpenPopupMenu={isOpenPopupMenu}
         isOpenPopupSearch={isOpenPopupSearch}
       />
-<div className="page">
+      <div className="page">
         <Routes>
-          <Route exact path="/" element={<Main />} />
+          <Route path="/" element={<Main />} />
+          <Route path="*" element={<Main />} />
         </Routes>
       </div>
       <Footer />
