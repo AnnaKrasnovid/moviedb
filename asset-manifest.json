@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/moviedb/static/css/main.c2880af5.css",
-    "main.js": "/moviedb/static/js/main.dff46f8b.js",
-    "static/js/787.ac04ab78.chunk.js": "/moviedb/static/js/787.ac04ab78.chunk.js",
-    "static/media/bg.png": "/moviedb/static/media/bg.e32f02599742cb73d1e9.png",
-    "static/media/img-main.png": "/moviedb/static/media/img-main.0bc3cb45fbc1cac0035d.png",
-    "static/media/movie-3.png": "/moviedb/static/media/movie-3.38b6f77cce8d7c640998.png",
-    "static/media/Roboto-Regular.woff": "/moviedb/static/media/Roboto-Regular.d535d388dc916299d083.woff",
-    "static/media/Philosopher-Bold.woff": "/moviedb/static/media/Philosopher-Bold.95cebb4fb86c66a7a7c2.woff",
-    "static/media/Logo.svg": "/moviedb/static/media/Logo.74b8088e2cbecdae244e3ee5e9e9ffcb.svg",
-    "static/media/instagram.svg": "/moviedb/static/media/instagram.8f60aa0104e7df67ceb9b78997c07655.svg",
-    "static/media/twitter.svg": "/moviedb/static/media/twitter.8d1540d56706cb6c31fbec91503d9fc2.svg",
-    "static/media/loupe.svg": "/moviedb/static/media/loupe.0ce06f83c4555eaad2c7.svg",
-    "index.html": "/moviedb/index.html",
-    "static/media/facebook.svg": "/moviedb/static/media/facebook.1881b7794a9809fbc40bc8eeaac814dd.svg",
-    "static/media/icon-close-menu.svg": "/moviedb/static/media/icon-close-menu.4828fddbd650ab863f28.svg",
-    "static/media/menu.svg": "/moviedb/static/media/menu.6b7a35b9689270eaf58a.svg",
-    "main.c2880af5.css.map": "/moviedb/static/css/main.c2880af5.css.map",
-    "main.dff46f8b.js.map": "/moviedb/static/js/main.dff46f8b.js.map",
-    "787.ac04ab78.chunk.js.map": "/moviedb/static/js/787.ac04ab78.chunk.js.map"
+    "main.css": "/static/css/main.d82b9eda.css",
+    "main.js": "/static/js/main.fbb917c4.js",
+    "static/js/787.ac04ab78.chunk.js": "/static/js/787.ac04ab78.chunk.js",
+    "static/media/bg.png": "/static/media/bg.e32f02599742cb73d1e9.png",
+    "static/media/img-main.png": "/static/media/img-main.0bc3cb45fbc1cac0035d.png",
+    "static/media/movie-3.png": "/static/media/movie-3.38b6f77cce8d7c640998.png",
+    "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.d535d388dc916299d083.woff",
+    "static/media/Philosopher-Bold.woff": "/static/media/Philosopher-Bold.95cebb4fb86c66a7a7c2.woff",
+    "static/media/Logo.svg": "/static/media/Logo.74b8088e2cbecdae244e3ee5e9e9ffcb.svg",
+    "static/media/instagram.svg": "/static/media/instagram.8f60aa0104e7df67ceb9b78997c07655.svg",
+    "static/media/twitter.svg": "/static/media/twitter.8d1540d56706cb6c31fbec91503d9fc2.svg",
+    "static/media/loupe.svg": "/static/media/loupe.0ce06f83c4555eaad2c7.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.1881b7794a9809fbc40bc8eeaac814dd.svg",
+    "static/media/icon-close-menu.svg": "/static/media/icon-close-menu.4828fddbd650ab863f28.svg",
+    "static/media/menu.svg": "/static/media/menu.6b7a35b9689270eaf58a.svg",
+    "main.d82b9eda.css.map": "/static/css/main.d82b9eda.css.map",
+    "main.fbb917c4.js.map": "/static/js/main.fbb917c4.js.map",
+    "787.ac04ab78.chunk.js.map": "/static/js/787.ac04ab78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2880af5.css",
-    "static/js/main.dff46f8b.js"
+    "static/css/main.d82b9eda.css",
+    "static/js/main.fbb917c4.js"
   ]
 }
