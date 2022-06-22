@@ -8,11 +8,12 @@
   border: 1px solid #2B2B2B;
   filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.14));
   border-radius: 5px;
+  width: 245px;
+  height: 381px;
 }
 
 .movie__img {
-  width: 245px;
-  height: 381px;
+ width: 100%;
   object-fit: cover;
 }
 
@@ -28,4 +29,29 @@
   font-size: 16px;
   line-height: 23px;
   margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .movie__box {
+    width: 200px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movie__box {
+
+    width: 138px;
+    height: 215px;
+  }
+
+  .movie__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .movie__description {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

@@ -18,3 +18,20 @@
   overflow: hidden;
   margin: 0;
 }
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  .compilation__title {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+
+  .compilation__movies {
+    padding-top: 20px;
+
+  }
+}
