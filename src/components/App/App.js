@@ -41,11 +41,11 @@ function App() {
       <Footer />
       <PopupMenu
         onClosePopup={handleClosePopup}
-        isOpenPopup={isOpenPopupMenu}
+        isOpenPopupMenu={isOpenPopupMenu}
       />
       <PopupSearch
         onClosePopup={handleClosePopup}
-        isOpenPopup={isOpenPopupSearch}
+        isOpenPopupSearch={isOpenPopupSearch}
       />
     </>
   )

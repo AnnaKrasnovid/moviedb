@@ -5,6 +5,7 @@
 
   to {
     transform: scale(1.15, 1.15);
+    opacity: 1;
   }
 }
 
@@ -33,7 +34,7 @@
 
 .search__form_active {
   background: rgba(28, 29, 31, 0.5);
-  border: 2px solid #424242;
+  border: 2px solid #7c7b7b;
   box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(30px);
 }
@@ -101,9 +102,12 @@
   }
 }
 
-
 @media screen and (max-width: 424px) {
   .search {
     display: none;
+  }
+
+  .search_type_popup {
+    display: flex;
   }
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import Popup from '../Popup/Popup';
 import SearchForm from '../SearchForm/SearchForm';
 
-function PopupSearch() {
+function PopupSearch({ isOpenPopupSearch, onClosePopup }) {
   return (
-    <Popup>
-      <SearchForm />
+    <Popup isOpenPopupSearch={isOpenPopupSearch} onClosePopup={onClosePopup}>
+      <SearchForm isOpenPopupSearch={isOpenPopupSearch} />
     </Popup>
   )
 }

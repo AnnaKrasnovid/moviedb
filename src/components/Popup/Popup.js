@@ -3,9 +3,18 @@ import { Link } from 'react-router-dom';
 import './Popup.css';
 import Logo from '../Logo/Logo';
 
-function Popup({ onClosePopup, isOpenPopup, children }) {
+function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
+  function getTypePopup() {
+    if(isOpenPopupMenu) {
+      return isOpenPopupMenu ? 'popup_opened popup_type_menu' : ''
+    } else if (isOpenPopupSearch) {
+      return isOpenPopupSearch ? 'popup_opened popup_type_search' : ''
+    }
+    return ''
+  }
+
   return (
-    <div className={`popup ${isOpenPopup ? 'popup_opened' : ''}`}>
+    <div className={`popup ${getTypePopup()}`}>
       <div className='popup__box'>
         <Logo
           classNameBox='logo_type_popup'

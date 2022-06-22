@@ -3,10 +3,10 @@ import Popup from '../Popup/Popup';
 import Navigation from '../Navigation/Navigation';
 import SocialButtons from '../SocialButtons/SocialButtons';
 
-function PopupMenu({ isOpenPopup, onClosePopup }) {
+function PopupMenu({ isOpenPopupMenu, onClosePopup }) {
   return (
-    <Popup isOpenPopup={isOpenPopup} onClosePopup={onClosePopup}>
-      <Navigation isOpenPopup={isOpenPopup} onClosePopup={onClosePopup} classNamePopup={'navigation_type_popup'}/>
+    <Popup isOpenPopupMenu={isOpenPopupMenu} onClosePopup={onClosePopup}>
+      <Navigation isOpenPopupMenu={isOpenPopupMenu} onClosePopup={onClosePopup} classNamePopup={'navigation_type_popup'}/>
       <SocialButtons classNameBlock='social-buttons_type_popup'/>
     </Popup>
   )

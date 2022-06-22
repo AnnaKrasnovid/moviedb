@@ -4,7 +4,7 @@ import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
 
-function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, onClosePopup }) {
+function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSearch, onClosePopup }) {
 
   return (
     <header className="header">
@@ -18,7 +18,7 @@ function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, onClosePopup }
         <button className='button-burger' onClick={onOpenMenu} />
         <Navigation isOpenPopupMenu={isOpenPopupMenu} classNamePopup={'navigation_type_header'} />
       </div>
-      <SearchForm />
+      <SearchForm isOpenPopupSearch={isOpenPopupSearch}/>
     </header>
   )
 }

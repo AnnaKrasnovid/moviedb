@@ -2,21 +2,30 @@
   background: #1c1d1f;
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
   visibility: hidden;
   opacity: 0;
-  transition: visibility .5s linear, opacity .5s linear;
+  transition: visibility 1.5s linear, opacity 1.5s linear;
   z-index: 20;
   min-width: 320px;
   display: none;
 }
 
+.popup_type_menu {
+  bottom: 0;
+}
+
+.popup_type_search {
+  min-height: 165px;
+}
+
+
+
 .popup_opened {
   visibility: visible;
   opacity: 1;
-  transition: visibility .5s linear, opacity .5s linear;
+  transition: visibility 1.5s linear, opacity 1.5s linear;
   display: flex;
   flex-direction: column;
   padding: 18px 5% 15px;

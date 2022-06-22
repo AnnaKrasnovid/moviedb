@@ -3,7 +3,7 @@ import './SearchForm.css';
 /*import useFormValidation from '../../hooks/useFormValidation';
 import { useLocation } from 'react-router-dom';*/
 
-function SearchForm() {
+function SearchForm({ isOpenPopupSearch }) {
   const [isActiveSearchClass, setIsActiveSearchClass] = React.useState(false);
   const [isActiveInput, setIsActiveInput] = React.useState(false);
 
@@ -24,7 +24,7 @@ function SearchForm() {
   }
 
   return (
-    <section className='search' >
+    <section className={`search ${isOpenPopupSearch ? 'search_type_popup' : ''}`} >
       <form
         className={`search__form ${isActiveSearchClass || isActiveInput ? 'search__form_active' : ''}`}
         onMouseEnter={handleMouseEnter}
