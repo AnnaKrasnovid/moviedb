@@ -95,12 +95,12 @@
   }
 
   .footer__box-info {
-    min-height: 134px;
     grid-template-columns: 1fr;
     grid-template-areas:
       'social '
       'politics'
       'info';
+    min-height: 134px;
   }
 
   .footer__info_type_link {

@@ -1,14 +1,14 @@
 .header {
-  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, #181A19 0%, #24282B 68.62%);
-  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  min-height: 100px;
   width: 100%;
   padding: 18px 5% 0;
-  box-sizing: border-box;
   margin-bottom: 30px;
+  background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, #181A19 0%, #24282B 68.62%);
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -36,16 +36,16 @@
 
   .header__button-search {
     display: block;
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    border: 0;
+    margin-right: 20px;
     background-image: url(../../image/loupe.svg);
     background-color: #1B1E1E;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     opacity: 0.8;
-    height: 34px;
-    width: 34px;
-    padding: 0;
-    border: 0;
-    margin-right: 20px;
   }
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
-function Navigation({onOpenMenu, isOpenPopupMenu, classNamePopup}) {
+function Navigation({ onOpenMenu, isOpenPopupMenu, classNamePopup }) {
 
   return (
     <nav className={`navigation ${classNamePopup}`}>
       <ul className='navigation__list navigation__list_type_popup'>
-       <li className='navigation__box-link'>
+        <li className='navigation__box-link'>
           <Link to='/genre' className='navigation__link'>По жанру</Link>
         </li>
         <li className='navigation__box-link'>
@@ -21,7 +21,7 @@ function Navigation({onOpenMenu, isOpenPopupMenu, classNamePopup}) {
         </li>
         <li className='navigation__box-link'>
           <Link to='/anime' className='navigation__link'>Аниме</Link>
-  </li>
+        </li>
       </ul>
     </nav>
   )

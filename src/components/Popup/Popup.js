@@ -4,6 +4,32 @@ import './Popup.css';
 import Logo from '../Logo/Logo';
 
 function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
+  const windowWidth = () => { return window.innerWidth };
+  const [size, setSize] = React.useState(windowWidth());
+
+  function handleClosePopup() {
+    if(size > 768) {
+      onClosePopup();
+      setSize(windowWidth());
+    }
+  }
+
+  React.useEffect(() => {
+    let timeOut;
+
+    function handleResize() {
+      clearTimeout(timeOut);
+      timeOut = setTimeout(() => { setSize(windowWidth()) }, 0);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [size]);
+
+  React.useEffect(() => {
+    handleClosePopup()
+  }, [size])
+
   function getTypePopup() {
     if(isOpenPopupMenu) {
       return isOpenPopupMenu ? 'popup_opened popup_type_menu' : ''

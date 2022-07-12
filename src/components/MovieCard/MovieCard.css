@@ -13,22 +13,22 @@
 }
 
 .movie__img {
- width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .movie__title {
+  margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
 }
 
 .movie__description {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  margin: 0;
 }
 
 @media screen and (max-width: 1023px) {

@@ -1,8 +1,8 @@
 .lead {
-  max-width: 1343px;
-  min-height: 448px;
   display: flex;
   align-items: center;
+  max-width: 1343px;
+  min-height: 448px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../image/img-main.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,14 +13,14 @@
 }
 
 .lead__title {
+  margin: 0;
+  max-width: 300px;
+  padding-left: 10%;
   font-family: 'Philosopher';
   font-weight: 700;
   font-size: 65px;
   line-height: 102.5%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-  margin: 0;
-  max-width: 300px;
-  padding-left: 10%
 }
 
 .lead__description {}

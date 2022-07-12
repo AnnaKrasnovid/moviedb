@@ -39,6 +39,7 @@ function SearchForm({ isOpenPopupSearch }) {
           type='text'
           placeholder='Фильм'
           minLength='1'
+          autoсomplete="off"
         /*value={values.search || ''}*/
         />
         <button className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
