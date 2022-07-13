@@ -10,11 +10,62 @@
   border-radius: 5px;
   width: 245px;
   height: 381px;
+  position: relative;
 }
 
 .movie__img {
   width: 100%;
   object-fit: cover;
+}
+
+.movie__container {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.movie__box-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.movie__box-rating:nth-child(2n) {
+  margin-bottom: 0;
+}
+
+.movie__rating-icon {
+  display: block;
+  background-size: 34pxpx;
+  width: 34px;
+  height: 34px;
+}
+
+.movie__rating-icon_bg_orange {
+  background-image: url(../../image//icon-kinopoisk.svg);
+}
+
+.movie__rating-icon_bg_yellow {
+  background-image: url(../../image/icon-imdb.svg);
+}
+
+.movie__rating-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 34px;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.movie__rating-mark_bg_orange {
+  background: #E16001;
+}
+
+.movie__rating-mark_bg_yellow {
+  background: #D59F31;
 }
 
 .movie__title {
@@ -35,6 +86,20 @@
   .movie__box {
     width: 200px;
     height: 310px;
+  }
+
+  .movie__rating-icon {
+    width: 21px;
+    height: 21px;
+    background-size: 21px;
+  }
+
+  .movie__rating-mark {
+    width: 22px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

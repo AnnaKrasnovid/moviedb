@@ -28,6 +28,10 @@
   line-height: 21px;
 }
 
+.navigation__link:hover {
+ color: #81BECB;
+}
+
 .navigation__link:last-of-type(5) {
   margin-right: 0;
 }

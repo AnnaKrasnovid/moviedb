@@ -18,4 +18,10 @@
   min-width: 320px;
 }
 
+@media screen and (max-width: 424px) {
+  #root {
+    background-image: linear-gradient(rgba(24, 26, 25, 0.7), rgba(24, 26, 25, 0.5)),url(./image/bg-modile.png);
+}
+}
+
 

@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.logo__img:hover {
+  opacity: 0.9;
+}
+
 .logo__img_type_popup {
   width: 68px;
   height: 32px;

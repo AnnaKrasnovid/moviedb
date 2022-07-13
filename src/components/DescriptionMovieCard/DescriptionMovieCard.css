@@ -169,6 +169,9 @@
 }
 
 .about-movie__box-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 383px;
   background: rgba(28, 29, 31, 0.5);
   border: 1px solid #2B2B2B;
@@ -177,6 +180,7 @@
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
+
 }
 
 .about-movie__title-description {
@@ -184,6 +188,20 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
+}
+
+.about-movie__more {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #81BECB;
+  border: 0;
+  background: rgba(28, 29, 31, 0.5);
+  text-align: end;
+  margin-top: 20px;
+  padding: 0;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1439px) {
@@ -283,6 +301,11 @@
   .about-movie__owner {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .about-movie__more {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
