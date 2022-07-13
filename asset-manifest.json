@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/moviedb/static/css/main.dfc55ae7.css",
-    "main.js": "/moviedb/static/js/main.0d384ba5.js",
+    "main.css": "/moviedb/static/css/main.7c918eb6.css",
+    "main.js": "/moviedb/static/js/main.e29a0afa.js",
     "static/js/787.ac04ab78.chunk.js": "/moviedb/static/js/787.ac04ab78.chunk.js",
     "static/media/bg.png": "/moviedb/static/media/bg.e32f02599742cb73d1e9.png",
+    "static/media/bg-modile.png": "/moviedb/static/media/bg-modile.8c30c3c8b23b259ad8ae.png",
     "static/media/img-main.png": "/moviedb/static/media/img-main.0bc3cb45fbc1cac0035d.png",
     "static/media/movie-3.png": "/moviedb/static/media/movie-3.38b6f77cce8d7c640998.png",
+    "static/media/icon-imdb.svg": "/moviedb/static/media/icon-imdb.2aaff5d6a024bf235cce.svg",
+    "static/media/icon-kinopoisk.svg": "/moviedb/static/media/icon-kinopoisk.449c7fe37c6938ac3462.svg",
     "static/media/Roboto-Regular.woff": "/moviedb/static/media/Roboto-Regular.d535d388dc916299d083.woff",
     "static/media/Philosopher-Bold.woff": "/moviedb/static/media/Philosopher-Bold.95cebb4fb86c66a7a7c2.woff",
     "static/media/Logo.svg": "/moviedb/static/media/Logo.74b8088e2cbecdae244e3ee5e9e9ffcb.svg",
@@ -16,12 +19,12 @@
     "static/media/facebook.svg": "/moviedb/static/media/facebook.1881b7794a9809fbc40bc8eeaac814dd.svg",
     "static/media/icon-close-menu.svg": "/moviedb/static/media/icon-close-menu.4828fddbd650ab863f28.svg",
     "static/media/menu.svg": "/moviedb/static/media/menu.6b7a35b9689270eaf58a.svg",
-    "main.dfc55ae7.css.map": "/moviedb/static/css/main.dfc55ae7.css.map",
-    "main.0d384ba5.js.map": "/moviedb/static/js/main.0d384ba5.js.map",
+    "main.7c918eb6.css.map": "/moviedb/static/css/main.7c918eb6.css.map",
+    "main.e29a0afa.js.map": "/moviedb/static/js/main.e29a0afa.js.map",
     "787.ac04ab78.chunk.js.map": "/moviedb/static/js/787.ac04ab78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfc55ae7.css",
-    "static/js/main.0d384ba5.js"
+    "static/css/main.7c918eb6.css",
+    "static/js/main.e29a0afa.js"
   ]
 }
