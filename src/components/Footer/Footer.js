@@ -31,7 +31,7 @@ function Footer() {
         <SocialButtons
           classNameBlock='social-buttons_type_footer'
         />
-        <p className='footer__info footer__info_type_link'>Политика конфиденциальности</p>
+        <a className='footer__info footer__info_type_link' href='#'>Политика конфиденциальности</a>
       </div>
 
     </footer>
