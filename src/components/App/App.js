@@ -36,7 +36,7 @@ function App() {
       <div className="main">
         <Routes>
           <Route path="/main" element={<Main />} />
-          <Route path="/genge" element={<Genges />} />
+          <Route path="/genre" element={<Genges />} />
 
         </Routes>
       </div>
