@@ -1,4 +1,12 @@
 .page {
+  width: 100%;
+  min-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
   max-width: 1343px;
   width: 100%;
 }

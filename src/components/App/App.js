@@ -6,6 +6,7 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import PopupMenu from '../PopupMenu/PopupMenu';
 import PopupSearch from '../PopupSearch/PopupSearch';
+import Genges from '../Genges/Genges';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
@@ -25,20 +26,22 @@ function App() {
   }
 
   return (
-    <>
+    <div className="page">
       <Header
         onOpenMenu={handleClickMenu}
         onOpenPopupSearch={handleClickSearch}
         isOpenPopupMenu={isOpenPopupMenu}
         isOpenPopupSearch={isOpenPopupSearch}
       />
-      <div className="page">
+      <div className="main">
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="*" element={<Main />} />
+          <Route path="/main" element={<Main />} />
+          <Route path="/genge" element={<Genges />} />
+
         </Routes>
       </div>
       <Footer />
+
       <PopupMenu
         onClosePopup={handleClosePopup}
         isOpenPopupMenu={isOpenPopupMenu}
@@ -47,7 +50,7 @@ function App() {
         onClosePopup={handleClosePopup}
         isOpenPopupSearch={isOpenPopupSearch}
       />
-    </>
+    </div>
   )
 }
 

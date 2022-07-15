@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
+  min-width: 320px;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   color: #fff;
@@ -15,7 +16,7 @@
   align-items: center;
   box-sizing: border-box;
   position: relative;
-  min-width: 320px;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 424px) {
