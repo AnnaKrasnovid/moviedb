@@ -1,0 +1,158 @@
+.genres {
+  display: flex;
+  flex-direction: column;
+}
+
+.genres__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #2B2B2B;
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.genres__box_type_two {
+
+  max-width: 657px;
+  height: 448px;
+}
+
+.genres__box_type_three {
+  max-width: 427px;
+  height: 355px;
+}
+
+.genres__container-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.genres__box_genre_fighters {
+  margin-bottom: 30px;
+  max-width: 1343px;
+  height: 446px;
+  background-image: url(../../image/genre-fighters.png);
+}
+
+.genres__box_genre_military {
+  background-image: url(../../image/genre-military.png);
+}
+
+.genres__box_genre_detectives {
+  background-image: url(../../image/genre-detectives.png);
+}
+
+.genres__box_genre_childish {
+  background-image: url(../../image/genre-childish.png);
+}
+
+.genres__box_genre_dramas {
+  background-image: url(../../image/genre-dramas.png);
+}
+
+.genres__box_genre_comedies {
+  background-image: url(../../image/genre-comedies.png);
+}
+
+.genres__box_genre_crime {
+  background-image: url(../../image/genre-crime.png);
+}
+
+.genres__box_genre_melodramas {
+  background-image: url(../../image/genre-melodramas.png);
+}
+
+.genres__box_genre_thrillers {
+  background-image: url(../../image/genre-thrillers.png);
+}
+
+.genres__box_genre_horrors {
+  background-image: url(../../image/genre-horrors.png);
+}
+
+.genres__box_genre_fantastic {
+  background-image: url(../../image/genre-fantastic.png);
+}
+
+.genres__box_genre_fantasy {
+  background-image: url(../../image/genre-fantasy.png);
+}
+
+.genres__title {
+  margin: 0;
+  font-family: 'Philosopher';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.genres__container-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 28px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  .genres__box_genre_fighters {
+    height: 350px;
+  }
+
+  .genres__box_type_two {
+    height: 350px;
+  }
+
+  .genres__box_type_three {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .genres__box_genre_fighters {
+    height: 250px;
+  }
+
+  .genres__box_type_two {
+    height: 170px;
+  }
+
+  .genres__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .genres__container-three {
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .genres {
+    align-items: center;
+  }
+
+  .genres__box {
+    width: 290px;
+    height: 155px;
+  }
+
+  .genres__container-two {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .genres__container-three {
+    grid-template-columns: 1fr;
+  }
+}

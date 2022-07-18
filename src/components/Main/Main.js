@@ -6,12 +6,12 @@ import DescriptionMovieCard from '../DescriptionMovieCard/DescriptionMovieCard';
 
 function Main() {
   return (
-    <main className='main-page'>
+    <>
       <Lead />
       <Compilation />
       <Compilation />
       <DescriptionMovieCard />
-    </main>
+    </>
   )
 }
 

@@ -2,7 +2,7 @@
 @import url(./vendor/fonts/font.css);
 
 #root {
-  background-image: linear-gradient(rgba(24, 26, 25, 0.7), rgba(24, 26, 25, 0.5)),url(./image/bg.png);
+  background-image: linear-gradient(rgba(24, 26, 25, 0.7), rgba(24, 26, 25, 0.5)), url(./image/bg.png);
   background-color: #181A19;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -21,8 +21,6 @@
 
 @media screen and (max-width: 424px) {
   #root {
-    background-image: linear-gradient(rgba(24, 26, 25, 0.7), rgba(24, 26, 25, 0.5)),url(./image/bg-modile.png);
+    background-image: linear-gradient(rgba(24, 26, 25, 0.7), rgba(24, 26, 25, 0.5)), url(./image/bg-modile.png);
+  }
 }
-}
-
-
