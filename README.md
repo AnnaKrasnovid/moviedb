@@ -11,7 +11,8 @@
 ## Используемые технологии:
 * HTML
 * CSS
-* React.js
+* React.js: 18
+* react-router-dom: 6
 * JavaScript
 * Flexbox
 * Grid Layout

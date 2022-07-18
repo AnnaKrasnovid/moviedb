@@ -8,17 +8,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
   background-size: cover;
   background-position: center;
   border: 1px solid #2B2B2B;
-  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 100%;
+  outline: solid 1px rgba(255, 255, 255, 0.2);
+  outline-offset: -20px;
+  overflow: hidden;
+}
+
+.genres__box:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s linear;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
 }
 
 .genres__box_type_two {
-
   max-width: 657px;
   height: 448px;
 }
@@ -39,6 +46,10 @@
   max-width: 1343px;
   height: 446px;
   background-image: url(../../image/genre-fighters.png);
+}
+
+.genres__box_genre_fighters:hover {
+  transform: scale(1.005);
 }
 
 .genres__box_genre_military {
@@ -116,6 +127,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .genres__box {
+    outline-offset: -10px;
+  }
+
   .genres__box_genre_fighters {
     height: 250px;
   }
@@ -144,6 +159,7 @@
   .genres__box {
     width: 290px;
     height: 155px;
+    outline-offset: -5px;
   }
 
   .genres__container-two {
