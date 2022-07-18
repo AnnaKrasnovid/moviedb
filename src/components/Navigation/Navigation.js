@@ -1,26 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
-function Navigation({ onOpenMenu, isOpenPopupMenu, classNamePopup }) {
+function Navigation({ classNamePopup, onClosePopup }) {
+  const setActive = ({isActive}) => isActive ? 'navigation__link navigation__link_active' : 'navigation__link'
 
   return (
     <nav className={`navigation ${classNamePopup}`}>
       <ul className='navigation__list navigation__list_type_popup'>
         <li className='navigation__box-link'>
-          <Link to='/genre' className='navigation__link'>По жанру</Link>
+          <NavLink to='/genre' className={setActive} onClick={onClosePopup} >По жанру</NavLink>
         </li>
         <li className='navigation__box-link'>
-          <Link to='/movies' className='navigation__link'>Фильмы</Link>
+          <NavLink to='/movies' className={setActive} onClick={onClosePopup} >Фильмы</NavLink>
         </li>
         <li className='navigation__box-link'>
-          <Link to='/serials' className='navigation__link'>Сериалы</Link>
+          <NavLink to='/serials' className={setActive} onClick={onClosePopup} >Сериалы</NavLink>
         </li>
         <li className='navigation__box-link'>
-          <Link to='/cartoons' className='navigation__link'>Мультфильмы</Link>
+          <NavLink to='/cartoons' className={setActive} onClick={onClosePopup} >Мультфильмы</NavLink>
         </li>
         <li className='navigation__box-link'>
-          <Link to='/anime' className='navigation__link'>Аниме</Link>
+          <NavLink to='/anime' className={setActive} onClick={onClosePopup} >Аниме</NavLink>
         </li>
       </ul>
     </nav>
@@ -28,4 +29,3 @@ function Navigation({ onOpenMenu, isOpenPopupMenu, classNamePopup }) {
 }
 
 export default Navigation;
- /*{`navigation ${isOpenPopupMenu ? 'navigation_type_header' : 'navigation_type_popup'}`}*/

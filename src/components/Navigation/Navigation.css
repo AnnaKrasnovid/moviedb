@@ -32,6 +32,11 @@
  color: #81BECB;
 }
 
+
+.navigation__link_active {
+  color: #81BECB;
+ }
+
 .navigation__link:last-of-type(5) {
   margin-right: 0;
 }

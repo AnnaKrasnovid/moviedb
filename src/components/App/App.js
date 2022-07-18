@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from '../Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Main from '../Main/Main';
-import Footer from '../Footer/Footer';
 import PopupMenu from '../PopupMenu/PopupMenu';
 import PopupSearch from '../PopupSearch/PopupSearch';
 import Genges from '../Genges/Genges';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
+import Layout from '../Layout/Layout';
+
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
@@ -23,24 +24,25 @@ function App() {
   function handleClosePopup() {
     setIsOpenPopupMenu(false)
     setIsOpenPopupSearch(false)
+    console.log('eee')
   }
 
   return (
-    <div className="page">
-      <Header
-        onOpenMenu={handleClickMenu}
-        onOpenPopupSearch={handleClickSearch}
-        isOpenPopupMenu={isOpenPopupMenu}
-        isOpenPopupSearch={isOpenPopupSearch}
-      />
-      <div className="main">
-        <Routes>
-          <Route path="/main" element={<Main />} />
-          <Route path="/genre" element={<Genges />} />
+    <div className='page'>
 
-        </Routes>
-      </div>
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Layout
+          onOpenMenu={handleClickMenu}
+          onOpenPopupSearch={handleClickSearch}
+          isOpenPopupMenu={isOpenPopupMenu}
+          isOpenPopupSearch={isOpenPopupSearch}
+          onClosePopup={handleClosePopup}
+        />}>
+          <Route index element={<Main />} />
+          <Route path='genre' element={<Genges />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Route>
+      </Routes>
 
       <PopupMenu
         onClosePopup={handleClosePopup}

@@ -40,12 +40,13 @@ function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
   }
 
   return (
-    <div className={`popup ${getTypePopup()}`}>
+    <div className={`popup ${getTypePopup()}`} >
       <div className='popup__box'>
         <Logo
           classNameBox='logo_type_popup'
           classNameImg='logo__img_type_popup'
           classNameSlogan='logo__slogan_type_popup'
+          onClosePopup={onClosePopup}
         />
         <button className='popup__button-close' onClick={onClosePopup} type="button" />
       </div>
