@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
 import './Header.css';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
 
-function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSearch, onClosePopup }) {
+function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupSearch, onClosePopup }) {
 
   return (
     <header className="header">

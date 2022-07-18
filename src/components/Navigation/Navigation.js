@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation({ classNamePopup, onClosePopup }) {
-  const setActive = ({isActive}) => isActive ? 'navigation__link navigation__link_active' : 'navigation__link'
+  const setActive = ({isActive}) => isActive ? 'navigation__link navigation__link_active' : 'navigation__link';
 
   return (
     <nav className={`navigation ${classNamePopup}`}>

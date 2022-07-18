@@ -17,7 +17,6 @@ function Layout({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSea
           <Outlet />
         </main>
       </div>
-
       <Footer />
     </>
   )

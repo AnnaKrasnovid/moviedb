@@ -13,17 +13,16 @@ function App() {
   const [isOpenPopupSearch, setIsOpenPopupSearch] = React.useState(false);
 
   function handleClickMenu() {
-    setIsOpenPopupMenu(true)
+    setIsOpenPopupMenu(true);
   }
 
   function handleClickSearch() {
-    setIsOpenPopupSearch(true)
+    setIsOpenPopupSearch(true);
   }
 
   function handleClosePopup() {
-    setIsOpenPopupMenu(false)
-    setIsOpenPopupSearch(false)
-    console.log('eee')
+    setIsOpenPopupMenu(false);
+    setIsOpenPopupSearch(false);
   }
 
   return (

@@ -17,11 +17,12 @@
   outline: solid 1px rgba(255, 255, 255, 0.2);
   outline-offset: -20px;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 
 .genres__box:hover {
   transform: scale(1.04);
-  transition: transform 0.4s linear;
+  transition: transform 0.5s ease-in-out;
   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
 }
 
