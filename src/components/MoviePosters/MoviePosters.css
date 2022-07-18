@@ -1,0 +1,16 @@
+.posters {}
+
+.posters__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.posters__item {
+
+}
+
+.posters__img {
+  width: 100px;
+  height: 100px;
+}

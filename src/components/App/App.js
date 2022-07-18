@@ -7,6 +7,7 @@ import PopupSearch from '../PopupSearch/PopupSearch';
 import Genres from '../Genres/Genres';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Layout from '../Layout/Layout';
+import MoviePage from '../MoviePage/MoviePage';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
@@ -38,6 +39,7 @@ function App() {
         />}>
           <Route index element={<Main />} />
           <Route path='genre' element={<Genres />} />
+          <Route path='movie' element={<MoviePage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>

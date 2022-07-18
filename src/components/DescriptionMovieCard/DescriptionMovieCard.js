@@ -4,8 +4,8 @@ import ImgMovie from '../../image/movie-3.png';
 
 function DescriptionMovieCard() {
   return (
-    <section className='movies-description'>
-      <div className='about-movie'>
+    <section className='about-movie'>
+      <div className='about-movie__description'>
 
         <div className='about-movie__container'>
           <img className='about-movie__img' src={ImgMovie} alt='Постер к фильму' />

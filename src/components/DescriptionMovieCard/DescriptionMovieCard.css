@@ -1,8 +1,8 @@
-.movies-description {
-  padding: 100px 0;
+.about-movie {
+  padding: 50px 0;
 }
 
-.about-movie {
+.about-movie__description {
   display: grid;
   grid-template-columns: minmax(290px, 428px) 1fr;
   column-gap: 50px;
@@ -221,11 +221,11 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .movies-description {
+  .about-movie {
     padding: 50px 0;
   }
 
-  .about-movie {
+  .about-movie__description {
     gap: 30px;
     grid-template-columns: 288px 1fr;
   }
@@ -314,7 +314,7 @@
     padding: 10px 10px;
   }
 
-  .about-movie {
+  .about-movie__description {
     column-gap: 30px;
     grid-template-columns: 1fr;
   }
@@ -324,4 +324,4 @@
   }
 }
 
-@media screen and (max-width: 423px) {}
+
