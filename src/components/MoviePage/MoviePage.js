@@ -7,7 +7,7 @@ import MoviePosters from '../MoviePosters/MoviePosters';
 function MoviePage() {
   return (
     <>
-    <DescriptionMovieCard />
+   <DescriptionMovieCard />
     <MoviePosters />
     <Compilation title='Фильмы в этом жанре' />
     </>

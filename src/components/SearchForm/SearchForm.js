@@ -3,7 +3,7 @@ import './SearchForm.css';
 /*import useFormValidation from '../../hooks/useFormValidation';
 import { useLocation } from 'react-router-dom';*/
 
-function SearchForm({ isOpenPopupSearch }) {
+function SearchForm({ isOpenPopupSearch, onSearch }) {
   const [isActiveSearchClass, setIsActiveSearchClass] = React.useState(false);
   const [isActiveInput, setIsActiveInput] = React.useState(false);
 
@@ -31,6 +31,7 @@ function SearchForm({ isOpenPopupSearch }) {
         onMouseLeave={handleMouseLeave}
         onFocus={handleOnFocusInput}
         onBlur={handleOnBlurInput}
+
         noValidate>
         <input
           id='search'
@@ -42,7 +43,7 @@ function SearchForm({ isOpenPopupSearch }) {
           autoсomplete="off"
         /*value={values.search || ''}*/
         />
-        <button className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
+        <button onClick={onSearch} className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
       </form>
       <span id='search-input-error' className='search__error'></span>
     </section>

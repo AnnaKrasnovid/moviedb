@@ -8,10 +8,14 @@ import Genres from '../Genres/Genres';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Layout from '../Layout/Layout';
 import MoviePage from '../MoviePage/MoviePage';
+import MoviesList from '../MoviesList/MoviesList';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
   const [isOpenPopupSearch, setIsOpenPopupSearch] = React.useState(false);
+
+  //
+  const [isSearchQuery, setIsSearchQuery] = React.useState(false);
 
   function handleClickMenu() {
     setIsOpenPopupMenu(true);
@@ -26,6 +30,12 @@ function App() {
     setIsOpenPopupSearch(false);
   }
 
+  function handleSearch(e) {
+    e.preventDefault();
+    setIsSearchQuery(true)
+    console.log('sdga')
+  }
+
   return (
     <div className='page'>
 
@@ -36,10 +46,13 @@ function App() {
           isOpenPopupMenu={isOpenPopupMenu}
           isOpenPopupSearch={isOpenPopupSearch}
           onClosePopup={handleClosePopup}
+          onSearch={handleSearch}
         />}>
-          <Route index element={<Main />} />
+          {!isSearchQuery ? <Route index element={<Main />} /> : <Route  path='movies' element={<MoviesList />} />}
           <Route path='genre' element={<Genres />} />
           <Route path='movie' element={<MoviePage />} />
+
+
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>

@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-function Layout({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSearch, onClosePopup }) {
+function Layout({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSearch, onClosePopup, onSearch }) {
   return (
     <>
       <Header
@@ -11,6 +11,7 @@ function Layout({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSea
         isOpenPopupMenu={isOpenPopupMenu}
         isOpenPopupSearch={isOpenPopupSearch}
         onClosePopup={onClosePopup}
+        onSearch={onSearch}
       />
       <div className='main'>
         <main className='main-page'>

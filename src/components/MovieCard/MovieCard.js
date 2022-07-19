@@ -1,10 +1,14 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './MovieCard.css';
 import ImgMovie from '../../image/movie-3.png';
 
 function MovieCard() {
+  const location = useLocation();
+  const locationMoviesList = location.pathname === '/movies';
+
   return (
-    <li className='movie'>
+    <li className={`movie ${locationMoviesList ? 'movie_location_movies-list' : ''}`}>
       <div className='movie__box'>
         <img className='movie__img' src={ImgMovie} alt='Фильм'></img>
         <div className='movie__container'>

@@ -1,7 +1,13 @@
 .movie {
   margin-right: 30px;
+  width: 245px;
   cursor: pointer;
   list-style: none;
+}
+
+.movie_location_movies-list {
+  margin: 0 ;
+  padding: 0 10px 20px;
 }
 
 .movie__box {
@@ -12,8 +18,6 @@
   height: 381px;
   position: relative;
   overflow: hidden;
-
-
 }
 
 .movie__img {
@@ -92,6 +96,10 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .movie {
+    width: 200px;
+  }
+
   .movie__box {
     width: 200px;
     height: 310px;
@@ -113,8 +121,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .movie__box {
+  .movie {
+    width: 138px;
+  }
 
+  .movie__box {
     width: 138px;
     height: 215px;
   }
