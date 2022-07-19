@@ -31,7 +31,7 @@ function SearchForm({ isOpenPopupSearch, onSearch }) {
         onMouseLeave={handleMouseLeave}
         onFocus={handleOnFocusInput}
         onBlur={handleOnBlurInput}
-
+        onSubmit={onSearch}
         noValidate>
         <input
           id='search'
@@ -40,10 +40,10 @@ function SearchForm({ isOpenPopupSearch, onSearch }) {
           type='text'
           placeholder='Фильм'
           minLength='1'
-          autoсomplete="off"
+          autoComplete='off'
         /*value={values.search || ''}*/
         />
-        <button onClick={onSearch} className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
+        <button className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
       </form>
       <span id='search-input-error' className='search__error'></span>
     </section>

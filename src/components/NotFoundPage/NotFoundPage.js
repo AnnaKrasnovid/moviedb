@@ -2,10 +2,10 @@ import './NotFoundPage.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 function NotFoundPage() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   function handleGoBack() {
-    history.goBack();
+    navigate(-1);
   }
 
   return (

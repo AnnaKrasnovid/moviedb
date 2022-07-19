@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Main from '../Main/Main';
 import PopupMenu from '../PopupMenu/PopupMenu';
 import PopupSearch from '../PopupSearch/PopupSearch';
@@ -14,7 +14,7 @@ function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
   const [isOpenPopupSearch, setIsOpenPopupSearch] = React.useState(false);
 
-  //
+  //onSearch={handleSearch}
   const [isSearchQuery, setIsSearchQuery] = React.useState(false);
 
   function handleClickMenu() {
@@ -33,7 +33,6 @@ function App() {
   function handleSearch(e) {
     e.preventDefault();
     setIsSearchQuery(true)
-    console.log('sdga')
   }
 
   return (
@@ -48,7 +47,8 @@ function App() {
           onClosePopup={handleClosePopup}
           onSearch={handleSearch}
         />}>
-          {!isSearchQuery ? <Route index element={<Main />} /> : <Route  path='movies' element={<MoviesList />} />}
+          <Route index element={<Main />} />
+          <Route path='movies'element={<MoviesList />}  />
           <Route path='genre' element={<Genres />} />
           <Route path='movie' element={<MoviePage />} />
 

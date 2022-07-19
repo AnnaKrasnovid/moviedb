@@ -27,14 +27,14 @@ function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
   }, [size]);
 
   React.useEffect(() => {
-    handleClosePopup()
+    handleClosePopup();
   }, [size])
 
   function getTypePopup() {
     if(isOpenPopupMenu) {
-      return isOpenPopupMenu ? 'popup_opened popup_type_menu' : ''
+      return isOpenPopupMenu ? 'popup_opened popup_type_menu' : '';
     } else if (isOpenPopupSearch) {
-      return isOpenPopupSearch ? 'popup_opened popup_type_search' : ''
+      return isOpenPopupSearch ? 'popup_opened popup_type_search' : '';
     }
     return ''
   }

@@ -8,8 +8,7 @@
   z-index: 20;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 1.5s linear, opacity 1.5s linear;
-  display: none;
+  transition: visibility .3s linear, opacity .3s linear;
 }
 
 .popup_type_menu {
@@ -26,7 +25,7 @@
   padding: 18px 5% 15px;
   visibility: visible;
   opacity: 1;
-  transition: visibility 1.5s linear, opacity 1.5s linear;
+  transition: visibility .3s linear, opacity .3s linear;
   box-sizing: border-box;
 }
 

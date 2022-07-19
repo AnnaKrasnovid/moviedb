@@ -20,7 +20,7 @@
   list-style: none;
 }
 
-.navigation__link {
+.link-menu {
   margin-right: 10px;
   text-decoration: none;
   color: #fff;
@@ -28,16 +28,16 @@
   line-height: 21px;
 }
 
-.navigation__link:hover {
+.link-menu:hover {
   color: #81BECB;
 }
 
 
-.navigation__link_active {
+.link-menu_active {
   color: #81BECB;
 }
 
-.navigation__link:last-of-type(5) {
+.link-menu:last-of-type(5) {
   margin-right: 0;
 }
 
@@ -85,7 +85,7 @@
     border-top: 1px solid #8b8b8b;
   }
 
-  .navigation__link {
+  .link-menu {
     font-weight: 400;
     font-size: 18px;
     line-height: 167.7%;
