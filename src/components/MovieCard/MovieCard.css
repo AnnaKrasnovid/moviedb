@@ -1,5 +1,5 @@
 .movie {
-  margin-right: 30px;
+  margin-right: 37px;
   width: 245px;
   cursor: pointer;
   list-style: none;
@@ -23,6 +23,7 @@
 .movie__img {
   width: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -122,21 +123,22 @@
 
 @media screen and (max-width: 767px) {
   .movie {
-    width: 138px;
+    width: 124px;
   }
 
   .movie__box {
-    width: 138px;
-    height: 215px;
+    width: 124px;
+    height: 195px;
   }
 
   .movie__title {
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 14px;
     line-height: 19px;
   }
 
   .movie__description {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
   }
 }

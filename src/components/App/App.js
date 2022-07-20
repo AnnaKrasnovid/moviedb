@@ -14,9 +14,6 @@ function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
   const [isOpenPopupSearch, setIsOpenPopupSearch] = React.useState(false);
 
-  //onSearch={handleSearch}
-  const [isSearchQuery, setIsSearchQuery] = React.useState(false);
-
   function handleClickMenu() {
     setIsOpenPopupMenu(true);
   }
@@ -28,11 +25,11 @@ function App() {
   function handleClosePopup() {
     setIsOpenPopupMenu(false);
     setIsOpenPopupSearch(false);
+    console.log('ok')
   }
 
   function handleSearch(e) {
     e.preventDefault();
-    setIsSearchQuery(true)
   }
 
   return (
@@ -44,15 +41,13 @@ function App() {
           onOpenPopupSearch={handleClickSearch}
           isOpenPopupMenu={isOpenPopupMenu}
           isOpenPopupSearch={isOpenPopupSearch}
-
+          onClosePopup={handleClosePopup}
           onSearch={handleSearch}
         />}>
           <Route index element={<Main />} />
           <Route path='movies'element={<MoviesList />}  />
           <Route path='genre' element={<Genres />} />
           <Route path='movie' element={<MoviePage />} />
-
-
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>

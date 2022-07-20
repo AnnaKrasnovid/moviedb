@@ -34,3 +34,10 @@
   line-height: 30px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 767px) {
+  .menu {
+   display: none;
+  }
+}
+

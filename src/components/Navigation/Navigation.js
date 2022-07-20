@@ -4,10 +4,9 @@ import './Navigation.css';
 import MenuPopup from '../MenuPopup/MenuPopup';
 
 function Navigation({ classNamePopup, onClosePopup }) {
-  const setActive = ({ isActive }) => isActive ? 'link-menu link-menu_active' : 'link-menu';
-
   const [isHoverGenres, setIsHoverGenres] = React.useState(false);
 
+  const setActive = ({ isActive }) => isActive ? 'link-menu link-menu_active' : 'link-menu';
 
   function handleMouseEnterGenres() {
     setIsHoverGenres(true)
@@ -23,14 +22,12 @@ function Navigation({ classNamePopup, onClosePopup }) {
           <li
             className='navigation__box-link navigation__box-link_type_genres'
             onMouseEnter={e => { e.stopPropagation() }}
-
-
           >
             <NavLink
               to='/genre'
               className={setActive}
               onMouseEnter={handleMouseEnterGenres}
-
+              onClick={onClosePopup}
             >
               По жанру
             </NavLink>
@@ -42,13 +39,13 @@ function Navigation({ classNamePopup, onClosePopup }) {
             />
           </li>
           <li className='navigation__box-link'>
-            <NavLink to='/movies' className={setActive}>Фильмы</NavLink>
+            <NavLink to='/movies' className={setActive} onClick={onClosePopup}>Фильмы</NavLink>
           </li>
           <li className='navigation__box-link'>
-            <NavLink to='/serials' className={setActive}>Сериалы</NavLink>
+            <NavLink to='/serials' className={setActive} onClick={onClosePopup}>Сериалы</NavLink>
           </li>
           <li className='navigation__box-link'>
-            <NavLink to='/cartoons' className={setActive}>Мультфильмы</NavLink>
+            <NavLink to='/cartoons' className={setActive} onClick={onClosePopup}>Мультфильмы</NavLink>
           </li>
         </ul>
       </nav>

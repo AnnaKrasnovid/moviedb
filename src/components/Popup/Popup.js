@@ -2,33 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Popup.css';
 import Logo from '../Logo/Logo';
+import useWindowWidth from '../../hooks/useWindowWidth';
 
 function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
-  const windowWidth = () => { return window.innerWidth };
-  const [size, setSize] = React.useState(windowWidth());
+  const sizeWindow = useWindowWidth()
 
-  function handleClosePopup() {
-    if(size > 768) {
+  React.useEffect(() => {
+    if(sizeWindow > 768) {
       onClosePopup();
-      setSize(windowWidth());
     }
-  }
-
-  React.useEffect(() => {
-    let timeOut;
-
-    function handleResize() {
-      clearTimeout(timeOut);
-      timeOut = setTimeout(() => { setSize(windowWidth()) }, 0);
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [size]);
-
-  React.useEffect(() => {
-    handleClosePopup();
-  }, [size])
+  }, [sizeWindow])
 
   function getTypePopup() {
     if(isOpenPopupMenu) {

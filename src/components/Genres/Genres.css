@@ -163,6 +163,10 @@
     outline-offset: -5px;
   }
 
+  .genres__box_genre_fighters:hover {
+    transform: scale(1.07 );
+  }
+
   .genres__container-two {
     grid-template-columns: 1fr;
     column-gap: 0;
