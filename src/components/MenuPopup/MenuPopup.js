@@ -3,10 +3,9 @@ import { NavLink } from 'react-router-dom';
 import './MenuPopup.css';
 
 function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActive }) {
-
   return (
     <div
-      className={`menu ${ isHoverGenres  ? 'menu_opened' : ''}`}
+      className={`menu ${isHoverGenres ? 'menu_opened' : ''}`}
       onMouseEnter={onOpenMenuGenres}
       onMouseLeave={onCloseMenuGenres}
     >

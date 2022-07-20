@@ -8,7 +8,6 @@ function Main() {
     <>
       <Lead />
       <Compilation title='Подборки лучших фильмов' />
-
       <Compilation title='Популярное' />
       <DescriptionMovieCard />
     </>

@@ -1,25 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Popup.css';
 import Logo from '../Logo/Logo';
 import useWindowWidth from '../../hooks/useWindowWidth';
 
 function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
-  const sizeWindow = useWindowWidth()
+  const sizeWindow = useWindowWidth();
 
   React.useEffect(() => {
-    if(sizeWindow > 768) {
+    if (sizeWindow > 768) {
       onClosePopup();
     }
-  }, [sizeWindow])
+  }, [onClosePopup, sizeWindow]);
 
   function getTypePopup() {
-    if(isOpenPopupMenu) {
+    if (isOpenPopupMenu) {
       return isOpenPopupMenu ? 'popup_opened popup_type_menu' : '';
     } else if (isOpenPopupSearch) {
       return isOpenPopupSearch ? 'popup_opened popup_type_search' : '';
     }
-    return ''
+    return '';
   }
 
   return (
@@ -34,7 +33,7 @@ function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
         <button className='popup__button-close' onClick={onClosePopup} type="button" />
       </div>
       <div className='popup__box-nav'>
-      {children}
+        {children}
       </div>
     </div>
   )

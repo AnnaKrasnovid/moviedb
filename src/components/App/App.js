@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Main from '../Main/Main';
 import PopupMenu from '../PopupMenu/PopupMenu';
 import PopupSearch from '../PopupSearch/PopupSearch';
@@ -25,7 +25,6 @@ function App() {
   function handleClosePopup() {
     setIsOpenPopupMenu(false);
     setIsOpenPopupSearch(false);
-    console.log('ok')
   }
 
   function handleSearch(e) {
@@ -45,7 +44,7 @@ function App() {
           onSearch={handleSearch}
         />}>
           <Route index element={<Main />} />
-          <Route path='movies'element={<MoviesList />}  />
+          <Route path='movies' element={<MoviesList />} />
           <Route path='genre' element={<Genres />} />
           <Route path='movie' element={<MoviePage />} />
           <Route path='*' element={<NotFoundPage />} />
@@ -61,7 +60,7 @@ function App() {
         isOpenPopupSearch={isOpenPopupSearch}
       />
     </div>
-  )
+  );
 }
 
 export default App;

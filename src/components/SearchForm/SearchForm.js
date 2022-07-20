@@ -8,19 +8,19 @@ function SearchForm({ isOpenPopupSearch, onSearch }) {
   const [isActiveInput, setIsActiveInput] = React.useState(false);
 
   function handleMouseEnter() {
-    setIsActiveSearchClass(true)
+    setIsActiveSearchClass(true);
   }
 
   function handleMouseLeave() {
-    setIsActiveSearchClass(false)
+    setIsActiveSearchClass(false);
   }
 
   function handleOnFocusInput() {
-    setIsActiveInput(true)
+    setIsActiveInput(true);
   }
 
   function handleOnBlurInput() {
-    setIsActiveInput(false)
+    setIsActiveInput(false);
   }
 
   return (
