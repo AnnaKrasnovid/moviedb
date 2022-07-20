@@ -19,11 +19,11 @@ function Navigation({ classNamePopup, onClosePopup }) {
 
   return (
       <nav className={`navigation ${classNamePopup}`}>
-        <ul className='navigation__list navigation__list_type_popup'>
+        <ul className='navigation__list navigation__list_type_popup' onMouseLeave={handleMouseLeaveGenres}>
           <li
             className='navigation__box-link navigation__box-link_type_genres'
             onMouseEnter={e => { e.stopPropagation() }}
-            onClick={handleMouseLeaveGenres}
+
 
           >
             <NavLink
