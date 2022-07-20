@@ -17,6 +17,9 @@
 * Flexbox
 * Grid Layout
 
+### Скриншот
+<img src="./src/image/scrinMoviesDB.jpg" title="Примерный вид приложения" alt="Примерный вид приложения"  /></a>&nbsp;
+
 ## Инструкция по установке:
 Клонируем репозиторий:
 ```
@@ -34,5 +37,3 @@ npm install
 ```
 npm run start
 ```
-
-
