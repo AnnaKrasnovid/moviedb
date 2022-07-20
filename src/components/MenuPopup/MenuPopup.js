@@ -2,48 +2,47 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './MenuPopup.css';
 
-function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, onActiveMenu }) {
-
+function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActive }) {
 
   return (
     <div
-      className={`menu ${isHoverGenres ? 'menu_opened' : ''}`}
-      onFocus={onOpenMenuGenres}
-
+      className={`menu ${ isHoverGenres  ? 'menu_opened' : ''}`}
+      onMouseEnter={onOpenMenuGenres}
+      onMouseLeave={onCloseMenuGenres}
     >
-      <ul className='menu__list'>
+      <ul className='menu__list' >
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Боевик</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Боевик</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/genre' className={onActiveMenu}>Военные</NavLink>
+          <NavLink to='/genre' className={setActive} onClick={onCloseMenuGenres}>Военные</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Детектив</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Детектив</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Детский</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Детский</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Комедия</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Комедия</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Криминал</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Криминал</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Мелодрама</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Мелодрама</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Триллер</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Триллер</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Ужасы</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Ужасы</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Фантастика</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Фантастика</NavLink>
         </li>
         <li className='menu__genre'>
-          <NavLink to='/' className={onActiveMenu}>Фэнтези</NavLink>
+          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Фэнтези</NavLink>
         </li>
       </ul>
     </div>

@@ -8,6 +8,7 @@ function Navigation({ classNamePopup, onClosePopup }) {
 
   const [isHoverGenres, setIsHoverGenres] = React.useState(false);
 
+
   function handleMouseEnterGenres() {
     setIsHoverGenres(true)
   }
@@ -17,39 +18,40 @@ function Navigation({ classNamePopup, onClosePopup }) {
   }
 
   return (
-    <>
       <nav className={`navigation ${classNamePopup}`}>
         <ul className='navigation__list navigation__list_type_popup'>
-          <li className='navigation__box-link'>
+          <li
+            className='navigation__box-link navigation__box-link_type_genres'
+            onMouseEnter={e => { e.stopPropagation() }}
+            onClick={handleMouseLeaveGenres}
+
+          >
             <NavLink
               to='/genre'
               className={setActive}
-              onClick={onClosePopup}
               onMouseEnter={handleMouseEnterGenres}
-              onMouseLeave={handleMouseLeaveGenres}
+
             >
               По жанру
             </NavLink>
+            <MenuPopup
+              isHoverGenres={isHoverGenres}
+              onOpenMenuGenres={handleMouseEnterGenres}
+              onCloseMenuGenres={handleMouseLeaveGenres}
+              setActive={setActive}
+            />
           </li>
           <li className='navigation__box-link'>
-            <NavLink to='/movies' className={setActive} onClick={onClosePopup} >Фильмы</NavLink>
+            <NavLink to='/movies' className={setActive}>Фильмы</NavLink>
           </li>
           <li className='navigation__box-link'>
-            <NavLink to='/serials' className={setActive} onClick={onClosePopup} >Сериалы</NavLink>
+            <NavLink to='/serials' className={setActive}>Сериалы</NavLink>
           </li>
           <li className='navigation__box-link'>
-            <NavLink to='/cartoons' className={setActive} onClick={onClosePopup} >Мультфильмы</NavLink>
+            <NavLink to='/cartoons' className={setActive}>Мультфильмы</NavLink>
           </li>
         </ul>
       </nav>
-
-      <MenuPopup
-        isHoverGenres={isHoverGenres}
-        onOpenMenuGenres={handleMouseEnterGenres}
-        onCloseMenuGenres={handleMouseLeaveGenres}
-        onActiveMenu={setActive}
-      />
-    </>
   )
 }
 

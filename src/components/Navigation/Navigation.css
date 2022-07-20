@@ -25,7 +25,7 @@
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 32px;
 }
 
 .link-menu:hover {
@@ -35,6 +35,10 @@
 
 .link-menu_active {
   color: #81BECB;
+}
+
+.navigation__box-link_type_genres {
+  position: relative;
 }
 
 .link-menu:last-of-type(5) {

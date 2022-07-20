@@ -8,12 +8,15 @@
   border-radius: 0px 5px 5px 5px;
   opacity: 0;
   transition: visibility .5s linear, opacity .5s linear;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 10;
 }
 
 .menu_opened {
   opacity: 1;
   transition: visibility .5s linear, opacity .5s linear;
-
 }
 
 .menu__list {

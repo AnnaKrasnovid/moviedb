@@ -44,7 +44,7 @@ function App() {
           onOpenPopupSearch={handleClickSearch}
           isOpenPopupMenu={isOpenPopupMenu}
           isOpenPopupSearch={isOpenPopupSearch}
-          onClosePopup={handleClosePopup}
+
           onSearch={handleSearch}
         />}>
           <Route index element={<Main />} />
