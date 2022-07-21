@@ -60,7 +60,7 @@ function App() {
         isOpenPopupSearch={isOpenPopupSearch}
       />
     </div>
-  );
+  )
 }
 
 export default App;

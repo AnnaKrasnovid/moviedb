@@ -20,7 +20,7 @@ function Layout({ onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSea
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
 export default Layout;

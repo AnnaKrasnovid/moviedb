@@ -19,7 +19,7 @@ function Header({ onOpenMenu, onOpenPopupSearch, isOpenPopupSearch, onClosePopup
       </div>
       <SearchForm isOpenPopupSearch={isOpenPopupSearch} onClosePopup={onClosePopup} onSearch={onSearch}/>
     </header>
-  )
+  );
 }
 
 export default Header;

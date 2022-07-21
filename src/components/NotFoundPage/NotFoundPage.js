@@ -14,7 +14,7 @@ function NotFoundPage() {
       <p className="not-found__description">Страница не найдена</p>
       <Link to="/" className="not-found__go-back" onClick={handleGoBack}>Назад</Link>
     </section>
-  )
+  );
 }
 
 export default NotFoundPage;

@@ -9,7 +9,7 @@ function PopupMenu({ isOpenPopupMenu, onClosePopup }) {
       <Navigation classNamePopup={'navigation_type_popup'} onClosePopup={onClosePopup} />
       <SocialButtons classNameBlock='social-buttons_type_popup' />
     </Popup>
-  )
+  );
 }
 
 export default PopupMenu;

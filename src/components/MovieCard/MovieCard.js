@@ -25,7 +25,7 @@ function MovieCard() {
       <h3 className='movie__title'>Лучшие фильмы подборки</h3>
       <p className='movie__description'>Год, жанр, страна</p>
     </li>
-  )
+  );
 }
 
 export default MovieCard;

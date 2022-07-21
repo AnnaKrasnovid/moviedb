@@ -33,9 +33,8 @@ function Footer() {
         />
         <a className='footer__info footer__info_type_link' href='#'>Политика конфиденциальности</a>
       </div>
-
     </footer>
-  )
+  );
 }
 
 export default Footer;

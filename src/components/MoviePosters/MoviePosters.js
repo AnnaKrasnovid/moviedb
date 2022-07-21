@@ -32,7 +32,7 @@ function MoviePosters() {
   */}
       </ul>
     </section>
-  )
+  );
 }
 
 export default MoviePosters;

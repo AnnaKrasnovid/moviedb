@@ -49,7 +49,7 @@ function Navigation({ classNamePopup, onClosePopup }) {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
 export default Navigation;

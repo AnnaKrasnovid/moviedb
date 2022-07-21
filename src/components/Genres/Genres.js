@@ -52,7 +52,7 @@ function Genres() {
       </div>
       <AboutMovieDB />
     </section>
-  )
+  );
 }
 
 export default Genres;

@@ -36,7 +36,7 @@ function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
         {children}
       </div>
     </div>
-  )
+  );
 }
 
 export default Popup;

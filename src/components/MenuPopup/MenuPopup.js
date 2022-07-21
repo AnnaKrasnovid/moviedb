@@ -45,7 +45,7 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
         </li>
       </ul>
     </div>
-  )
+  );
 }
 
 export default MenuPopup;

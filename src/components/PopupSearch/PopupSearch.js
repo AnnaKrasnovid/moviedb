@@ -7,7 +7,7 @@ function PopupSearch({ isOpenPopupSearch, onClosePopup }) {
     <Popup isOpenPopupSearch={isOpenPopupSearch} onClosePopup={onClosePopup}>
       <SearchForm isOpenPopupSearch={isOpenPopupSearch} />
     </Popup>
-  )
+  );
 }
 
 export default PopupSearch;

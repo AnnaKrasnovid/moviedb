@@ -19,7 +19,7 @@ function Compilation({ title }) {
         <MovieCard />
       </ul>
     </section>
-  )
+  );
 }
 
 export default Compilation;

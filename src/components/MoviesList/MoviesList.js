@@ -18,7 +18,7 @@ function MoviesList() {
         <MovieCard />
       </ul>
     </section>
-  )
+  );
 }
 
 export default MoviesList;

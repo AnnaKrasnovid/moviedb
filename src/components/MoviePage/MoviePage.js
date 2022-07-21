@@ -11,7 +11,7 @@ function MoviePage() {
       <MoviePosters />
       <Compilation title='Фильмы в этом жанре' />
     </>
-  )
+  );
 }
 
 export default MoviePage;

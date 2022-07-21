@@ -47,7 +47,7 @@ function SearchForm({ isOpenPopupSearch, onSearch }) {
       </form>
       <span id='search-input-error' className='search__error'></span>
     </section>
-  )
+  );
 }
 
 export default SearchForm;

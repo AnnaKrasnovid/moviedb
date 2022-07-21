@@ -11,7 +11,7 @@ function Main() {
       <Compilation title='Популярное' />
       <DescriptionMovieCard />
     </>
-  )
+  );
 }
 
 export default Main;
