@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/moviedb/static/css/main.50c9cfbb.css",
-    "main.js": "/moviedb/static/js/main.29aa9441.js",
+    "main.css": "/moviedb/static/css/main.157bc812.css",
+    "main.js": "/moviedb/static/js/main.9b79e062.js",
     "static/js/787.ac04ab78.chunk.js": "/moviedb/static/js/787.ac04ab78.chunk.js",
     "static/media/bg.png": "/moviedb/static/media/bg.6f2f4a965fb8c7100eee.png",
     "static/media/bg-modile.png": "/moviedb/static/media/bg-modile.8c30c3c8b23b259ad8ae.png",
     "static/media/genre-fighters.png": "/moviedb/static/media/genre-fighters.f8fba7ddf5872ebd7ac3.png",
-    "static/media/img-main.png": "/moviedb/static/media/img-main.0bc3cb45fbc1cac0035d.png",
     "static/media/genre-military.png": "/moviedb/static/media/genre-military.ea49c19f4c5f34359843.png",
     "static/media/genre-detectives.png": "/moviedb/static/media/genre-detectives.2f22d8f0da781a73be9d.png",
     "static/media/genre-thrillers.png": "/moviedb/static/media/genre-thrillers.86c8a219107644d8a8f3.png",
@@ -21,7 +20,12 @@
     "static/media/genre-horrors.png": "/moviedb/static/media/genre-horrors.5a2e8c12e2005a47f451.png",
     "static/media/icon-imdb.svg": "/moviedb/static/media/icon-imdb.2aaff5d6a024bf235cce.svg",
     "static/media/icon-kinopoisk.svg": "/moviedb/static/media/icon-kinopoisk.449c7fe37c6938ac3462.svg",
+    "static/media/main-interstellar.jpg": "/moviedb/static/media/main-interstellar.0404608a590872fcb3f1.jpg",
+    "static/media/main-aquaman.jpg": "/moviedb/static/media/main-aquaman.bfc993ded3de6d8a5395.jpg",
     "static/media/Roboto-Regular.woff": "/moviedb/static/media/Roboto-Regular.d535d388dc916299d083.woff",
+    "static/media/main-avengers.jpg": "/moviedb/static/media/main-avengers.b8321e120efe1f24795e.jpg",
+    "static/media/main-dune2.jpg": "/moviedb/static/media/main-dune2.1665b4527d6b255a4d5e.jpg",
+    "static/media/main-live.jpg": "/moviedb/static/media/main-live.b6be4bbe15f81936e1bb.jpg",
     "static/media/Philosopher-Bold.woff": "/moviedb/static/media/Philosopher-Bold.95cebb4fb86c66a7a7c2.woff",
     "static/media/Logo.svg": "/moviedb/static/media/Logo.74b8088e2cbecdae244e3ee5e9e9ffcb.svg",
     "static/media/instagram.svg": "/moviedb/static/media/instagram.8f60aa0104e7df67ceb9b78997c07655.svg",
@@ -31,12 +35,12 @@
     "static/media/facebook.svg": "/moviedb/static/media/facebook.1881b7794a9809fbc40bc8eeaac814dd.svg",
     "static/media/icon-close-menu.svg": "/moviedb/static/media/icon-close-menu.4828fddbd650ab863f28.svg",
     "static/media/menu.svg": "/moviedb/static/media/menu.6b7a35b9689270eaf58a.svg",
-    "main.50c9cfbb.css.map": "/moviedb/static/css/main.50c9cfbb.css.map",
-    "main.29aa9441.js.map": "/moviedb/static/js/main.29aa9441.js.map",
+    "main.157bc812.css.map": "/moviedb/static/css/main.157bc812.css.map",
+    "main.9b79e062.js.map": "/moviedb/static/js/main.9b79e062.js.map",
     "787.ac04ab78.chunk.js.map": "/moviedb/static/js/787.ac04ab78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50c9cfbb.css",
-    "static/js/main.29aa9441.js"
+    "static/css/main.157bc812.css",
+    "static/js/main.9b79e062.js"
   ]
 }
