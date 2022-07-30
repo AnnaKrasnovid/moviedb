@@ -10,6 +10,8 @@
   border: 2px solid #2B2B2B;
   box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+
+  min-width: 0;
 }
 
 .lead__title {
@@ -63,36 +65,19 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;  
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
-  border: 2px solid #2B2B2B;
-  
-  border-radius: 5px;
-  position: relative;
+
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2B2B2B;  
+  border-radius: 5px;
+  position: relative; 
 }
 
 .swiper-button-prev {
@@ -128,8 +113,8 @@
   line-height: 102.5%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   position: absolute;
-  top: 20%;
-  left: 0;
+  top: center;
+  left: center;
 }
 
 @media screen and (max-width: 1343px) {

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper';
+
 import { useLocation } from 'react-router-dom';
+
+import 'swiper/css/bundle';
 import './MovieCard.css';
+
 import ImgMovie from '../../image/movie-3.png';
+
 
 function MovieCard() {
   const location = useLocation();
   const locationMoviesList = location.pathname === '/movies';
 
   return (
+    
     <li className={`movie ${locationMoviesList ? 'movie_location_movies-list' : ''}`}>
       <div className='movie__box'>
         <img className='movie__img' src={ImgMovie} alt='Фильм'></img>

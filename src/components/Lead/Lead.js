@@ -1,22 +1,16 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide, Mousewheel } from 'swiper/react';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// import required modules
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
-// Import Swiper styles
+import Interstellar from '../../image/main-interstellar.jpg';
+import Avengers from '../../image/main-avengers.jpg';
+import Live from '../../image/main-live.jpg';
+
+import Dune from '../../image/main-dune2.jpg';
+import Aquaman from '../../image/main-aquaman.jpg';
+
 import 'swiper/css/bundle';
-
-import ImgOne from '../../image/img-main.png';
-import ImgTwo from '../../image/img-main-2.png';
-import ImgThree from '../../image/genre-fighters.png';
-
 import './Lead.css';
 
 function Lead() {
@@ -29,15 +23,18 @@ function Lead() {
   return (
 
     <Swiper
-      /*loop={true}
-      loopedSlides={3}
-      autoHeight={true} */
+      loop={true}
+      loopedSlides={3}     
+      loopAdditionalSlides={3}     
+      
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
+        
       }}
+      speed={1500}
       pagination={{
         clickable: true,
       }}
@@ -46,15 +43,24 @@ function Lead() {
       className='mySwiper'
     >
       <SwiperSlide>
-        <img src={ImgOne} alt='Постер к фильму' className='lead__img' />
-        <h1 className='lead__title'>Лучшие фильмы всех времен</h1>
+        <img src={Interstellar} alt='Постер к фильму' className='lead__img' />        
       </SwiperSlide>
+
       <SwiperSlide>
-        <img src={ImgTwo} alt='Постер к фильму' className='lead__img' />
-        <h1 className='lead__title'>фильмы</h1>
+        <img src={Live} alt='Постер к фильму' className='lead__img' />
       </SwiperSlide>
+
       <SwiperSlide>
-        <img src={ImgThree} alt='Постер к фильму' className='lead__img' />
+        <img src={Avengers} alt='Постер к фильму' className='lead__img' />       
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <img src={Aquaman} alt='Постер к фильму' className='lead__img' />
+        {/*<h1 className='lead__title'>Аватар</h1>*/}
+      </SwiperSlide>
+      
+      <SwiperSlide>
+        <img src={Dune} alt='Постер к фильму' className='lead__img' />
       </SwiperSlide>
 
     </Swiper>
