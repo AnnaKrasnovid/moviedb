@@ -2,86 +2,81 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;  
-  }
-  
-  .swiper {
-  
-  position: static;/**/
-  }
-  
-  .mySwiper {
+    object-fit: cover;
+}
+
+.swiper {
+    /*исправленоб в др блоке  position relative  родит блоку надо назначать*/
+    position: static; 
+}
+
+.mySwiper {
     width: 100%;
     height: 100%;
-    border: 2px solid #2B2B2B;  
+    border: 2px solid #2B2B2B;
     border-radius: 5px;
-    position: relative; 
-  }
-  
-  .swiper-button-prev {
+    position: relative;
+}
+
+/* стили для кнопок исправлены*/
+.swiper-button-prev {
     color: #fff;
     background: #000;
-  opacity: 0.6;
-  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  top: 55%;
-  left: -15px;
-  
-  border: 1px solid #fff;
-  transition: transform 0.4s ease-in-out;
-  
-  }
-  .swiper-button-prev::after {
-    
-  font-size: 14px;
-  }
-  
-  .swiper-button-prev:hover {
-    transform: scale(1.1, 1.1);
+    opacity: 0.6;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    top: 55%;
+    left: -15px;
+    border: 1px solid #fff;
     transition: transform 0.4s ease-in-out;
-    opacity: 0.8
-  }
-  
-  
-  .swiper-button-next {
-    color: #fff;
-    background: #000;
-  opacity: 0.6;
-  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  top: 55%;
-  right: -15px;
-  
-  border: 1px solid #fff;
-  transition: transform 0.4s ease-in-out;
-  }
-  
-  .swiper-button-next:hover {
-    transform: scale(1.1, 1.1);
-    transition: transform 0.4s ease-in-out;
-    opacity: 0.8
-  }
-  
-  .swiper-button-next::after {
-    
+}
+
+.swiper-button-prev::after {
     font-size: 14px;
-    }
-  
-  .swiper-pagination-bullet {
+}
+
+.swiper-button-prev:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.4s ease-in-out;
+    opacity: 0.8
+}
+
+.swiper-button-next {
+    color: #fff;
+    background: #000;
+    opacity: 0.6;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    top: 55%;
+    right: -15px;
+    border: 1px solid #fff;
+    transition: transform 0.4s ease-in-out;
+}
+
+.swiper-button-next:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.4s ease-in-out;
+    opacity: 0.8
+}
+
+.swiper-button-next::after {
+    font-size: 14px;
+}
+
+.swiper-pagination-bullet {
     width: 7px;
-   height: 7px;
-   border: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  
-  .swiper-pagination-bullet-active {
-   /*background-color: #81BECB;*/
-   background-color: #fff;
-   opacity: 0.5;
-   width: 8px;
-   height: 8px;
-  }
-  
+    height: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+    /*background-color: #81BECB;*/
+    background-color: #fff;
+    opacity: 0.5;
+    width: 8px;
+    height: 8px;
+}

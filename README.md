@@ -13,6 +13,7 @@
 * CSS
 * React.js: 18
 * react-router-dom: 6
+* [Swiper](https://swiperjs.com/)
 * JavaScript
 * Flexbox
 * Grid Layout
