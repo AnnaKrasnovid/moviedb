@@ -1,5 +1,6 @@
 .movie {
   margin-right: 30px;
+  
   width: 245px;
   cursor: pointer;
   list-style: none;
@@ -17,7 +18,7 @@
   width: 245px;
   height: 381px;
   position: relative;
-  overflow: hidden;
+ /* overflow: hidden;*/
 }
 
 .movie__img {

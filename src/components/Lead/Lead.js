@@ -12,27 +12,20 @@ import Aquaman from '../../image/main-aquaman.jpg';
 
 import 'swiper/css/bundle';
 import './Lead.css';
+import '../../styles/swiper.css';
 
-function Lead() {
-  /*return (
-    <section className='lead'>
-      <h1 className='lead__title'>Лучшие фильмы всех времен</h1>
-      <p className='lead__description'></p>
-    </section>
-  );*/
+function Lead() { 
   return (
 
-    <Swiper
+    <Swiper    
       loop={true}
-      loopedSlides={3}     
-      loopAdditionalSlides={3}     
-      
+      loopedSlides={3}
+      loopAdditionalSlides={3}
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,
-        
       }}
       speed={1500}
       pagination={{
@@ -43,7 +36,7 @@ function Lead() {
       className='mySwiper'
     >
       <SwiperSlide>
-        <img src={Interstellar} alt='Постер к фильму' className='lead__img' />        
+        <img src={Interstellar} alt='Постер к фильму' className='lead__img' />
       </SwiperSlide>
 
       <SwiperSlide>
@@ -51,14 +44,14 @@ function Lead() {
       </SwiperSlide>
 
       <SwiperSlide>
-        <img src={Avengers} alt='Постер к фильму' className='lead__img' />       
+        <img src={Avengers} alt='Постер к фильму' className='lead__img' />
       </SwiperSlide>
 
       <SwiperSlide>
         <img src={Aquaman} alt='Постер к фильму' className='lead__img' />
         {/*<h1 className='lead__title'>Аватар</h1>*/}
       </SwiperSlide>
-      
+
       <SwiperSlide>
         <img src={Dune} alt='Постер к фильму' className='lead__img' />
       </SwiperSlide>
