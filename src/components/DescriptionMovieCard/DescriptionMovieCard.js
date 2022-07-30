@@ -102,7 +102,7 @@ function DescriptionMovieCard() {
               <p className='about-movie__info'>{description}</p>
             </div>
             <button
-              className='about-movie__btn-more'
+              className='about-movie__btn-more hover'
               type='button'
               onClick={toggleShowMoreText}
             >

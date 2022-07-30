@@ -24,12 +24,8 @@
   color: #81BECB;
 }
 
-.not-found__go-back:hover {
+.hover:hover {
   color: #c1f1fc;
-}
-
-@media screen and (max-width: 1023px) {
-
 }
 
 @media screen and (max-width: 767px) {
