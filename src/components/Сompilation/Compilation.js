@@ -9,7 +9,6 @@ import '../../styles/swiper.css';
 import MovieCard from '../MovieCard/MovieCard';
 
 function Compilation({ title }) {
-  // !!! Для корректной работы слайдера количество фильиов должно делиться на 3
 
   return (
     <section className='compilation'>
@@ -18,10 +17,14 @@ function Compilation({ title }) {
         <Swiper
           slidesPerView={5}
           breakpoints={{
-            320: { slidesPerView: 2, spaceBetween: 20 },
+            320: { slidesPerView: 2, spaceBetween: 30 },
+            375: { slidesPerView: 2.5, spaceBetween: 20 },
+            425: { slidesPerView: 3, spaceBetween: 10 },
             480: { slidesPerView: 3, spaceBetween: 20 },
+            550: { slidesPerView: 3.5, spaceBetween: 20 },
             640: { slidesPerView: 4 },
-            768: { slidesPerView: 3 },
+            768: { slidesPerView: 3, spaceBetween: 40 },
+            900: { slidesPerView: 3.5, spaceBetween: 20 },            
             1200: { slidesPerView: 4 },
             1440: { slidesPerView: 5, spaceBetween: 30 },
           }}
