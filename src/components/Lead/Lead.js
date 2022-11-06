@@ -12,7 +12,7 @@ import Aquaman from '../../image/main-aquaman.jpg';
 
 import 'swiper/css/bundle';
 import './Lead.css';
-import '../../styles/swiper.css';
+import '../../assets/styles/swiper/swiper.css';
 
 function Lead() { 
   return (

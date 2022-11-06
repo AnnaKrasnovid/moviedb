@@ -9,7 +9,7 @@
     "no-console": "warn",
     "quotes": ["error", "single"],
     "indent":["warn", 2],
-    "max-len": ["error", {"code": 120}],
+    "max-len": ["warn", {"code": 120}],
     "comma-dangle": ["error", "always-multiline"],
     "semi": ["warn", "always"],
     "import/order": ["warn", {"groups":["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"]}],

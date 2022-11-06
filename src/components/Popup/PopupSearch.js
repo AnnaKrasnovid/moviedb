@@ -1,5 +1,5 @@
 import React from 'react';
-import Popup from '../Popup/Popup';
+import Popup from './Popup';
 import SearchForm from '../SearchForm/SearchForm';
 
 function PopupSearch({ isOpenPopupSearch, onClosePopup }) {

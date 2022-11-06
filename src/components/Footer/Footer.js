@@ -2,7 +2,10 @@ import './Footer.css';
 import Logo from '../Logo/Logo';
 import SocialButtons from '../SocialButtons/SocialButtons';
 
+import { footerText } from '../../assets/appData/footerText';
+
 function Footer() {
+
   return (
     <footer className='footer'>
       <div className='footer__container'>
@@ -14,15 +17,10 @@ function Footer() {
         <div className='footer__box-about'>
           <h4 className='footer__title'>О нас</h4>
           <p className='footer__about'>
-            Зная всё о кино, хочется поделиться этим с другими.
-            Делитесь фильмами, трейлерами, персонами и новостями в социальных сетях,
-            присваивайте рейтинги фильмам и обсуждайте их с друзьями и подписчиками!
+            {footerText.text1}
           </p>
           <p className='footer__about'>
-            Интересные фильмы, ближайшие кинотеатры и любимых актеров можно добавлять
-            в «Избранное». Система покажет все связанные с ними новости и новые трейлеры,
-            подскажет, когда можно купить билет в кино на интересующую премьеру.
-            Присоединяйтесь!
+            {footerText.text2}
           </p>
         </div>
       </div>

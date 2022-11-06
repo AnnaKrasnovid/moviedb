@@ -3,6 +3,20 @@ import { NavLink } from 'react-router-dom';
 import './MenuPopup.css';
 
 function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActive }) {
+  const menuList = [
+    { id: '1', route: '/', title: 'Боевик' },
+    { id: '2', route: '/', title: 'Военные' },
+    { id: '3', route: '/', title: 'Детектив' },
+    { id: '4', route: '/', title: 'Детский' },
+    { id: '5', route: '/', title: 'Комедия' },
+    { id: '6', route: '/', title: 'Криминал' },
+    { id: '7', route: '/', title: 'Мелодрама' },
+    { id: '8', route: '/', title: 'Триллер' },
+    { id: '9', route: '/', title: 'Ужасы' },
+    { id: '10', route: '/', title: 'Фантастика' },
+    { id: '11', route: '/', title: 'Фэнтези' },
+  ];
+
   return (
     <div
       className={`menu ${isHoverGenres ? 'menu_opened' : ''}`}
@@ -10,7 +24,14 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
       onMouseLeave={onCloseMenuGenres}
     >
       <ul className='menu__list' >
-        <li className='menu__genre'>
+        {menuList.map((i) => {
+          return (
+            <li className='menu__genre'>
+              <NavLink to={i.route} key={i.id} className={setActive} onClick={onCloseMenuGenres}>{i.title}</NavLink>
+            </li>
+          );
+        })}
+        {/* <li className='menu__genre'>
           <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Боевик</NavLink>
         </li>
         <li className='menu__genre'>
@@ -42,7 +63,7 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
         </li>
         <li className='menu__genre'>
           <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Фэнтези</NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

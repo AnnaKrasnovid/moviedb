@@ -46,7 +46,7 @@
   margin-bottom: 30px;
   max-width: 1343px;
   height: 446px;
-  background-image: url(../../image/genre-fighters.png);
+  background-image: url(../../../image/genre-fighters.png);
 }
 
 .genres__box_genre_fighters:hover {
@@ -54,47 +54,47 @@
 }
 
 .genres__box_genre_military {
-  background-image: url(../../image/genre-military.png);
+  background-image: url(../../../image/genre-military.png);
 }
 
 .genres__box_genre_detectives {
-  background-image: url(../../image/genre-detectives.png);
+  background-image: url(../../../image/genre-detectives.png);
 }
 
 .genres__box_genre_childish {
-  background-image: url(../../image/genre-childish.png);
+  background-image: url(../../../image/genre-childish.png);
 }
 
 .genres__box_genre_dramas {
-  background-image: url(../../image/genre-dramas.png);
+  background-image: url(../../../image/genre-dramas.png);
 }
 
 .genres__box_genre_comedies {
-  background-image: url(../../image/genre-comedies.png);
+  background-image: url(../../../image/genre-comedies.png);
 }
 
 .genres__box_genre_crime {
-  background-image: url(../../image/genre-crime.png);
+  background-image: url(../../../image/genre-crime.png);
 }
 
 .genres__box_genre_melodramas {
-  background-image: url(../../image/genre-melodramas.png);
+  background-image: url(../../../image/genre-melodramas.png);
 }
 
 .genres__box_genre_thrillers {
-  background-image: url(../../image/genre-thrillers.png);
+  background-image: url(../../../image/genre-thrillers.png);
 }
 
 .genres__box_genre_horrors {
-  background-image: url(../../image/genre-horrors.png);
+  background-image: url(../../../image/genre-horrors.png);
 }
 
 .genres__box_genre_fantastic {
-  background-image: url(../../image/genre-fantastic.png);
+  background-image: url(../../../image/genre-fantastic.png);
 }
 
 .genres__box_genre_fantasy {
-  background-image: url(../../image/genre-fantasy.png);
+  background-image: url(../../../image/genre-fantasy.png);
 }
 
 .genres__title {

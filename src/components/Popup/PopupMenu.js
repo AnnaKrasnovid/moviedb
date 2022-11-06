@@ -1,5 +1,5 @@
 import React from 'react';
-import Popup from '../Popup/Popup';
+import Popup from './Popup';
 import Navigation from '../Navigation/Navigation';
 import SocialButtons from '../SocialButtons/SocialButtons';
 

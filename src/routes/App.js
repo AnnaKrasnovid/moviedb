@@ -1,14 +1,13 @@
 import React from 'react';
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Main from '../Main/Main';
-import PopupMenu from '../PopupMenu/PopupMenu';
-import PopupSearch from '../PopupSearch/PopupSearch';
-import Genres from '../Genres/Genres';
-import NotFoundPage from '../NotFoundPage/NotFoundPage';
-import Layout from '../Layout/Layout';
-import MoviePage from '../MoviePage/MoviePage';
-import MoviesList from '../MoviesList/MoviesList';
+import Main from '../pages/MainPage';
+import PopupMenu from '../components/Popup/PopupMenu';
+import PopupSearch from '../components/Popup/PopupSearch';
+import Genres from '../pages/GenresPage';
+import NotFoundPage from '../pages/NotFoundPage';
+import Layout from '../components/Layout/Layout';
+import MoviePage from '../pages/MoviePage';
+import MoviesList from '../components/MoviesList/MoviesList';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);

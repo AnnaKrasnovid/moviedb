@@ -5,7 +5,7 @@ import { Pagination, Navigation } from 'swiper';
 import 'swiper/css/bundle';
 
 import './Compilation.css';
-import '../../styles/swiper.css';
+import '../../assets/styles/swiper/swiper.css';
 import MovieCard from '../MovieCard/MovieCard';
 
 function Compilation({ title }) {
@@ -24,7 +24,7 @@ function Compilation({ title }) {
             550: { slidesPerView: 3.5, spaceBetween: 20 },
             640: { slidesPerView: 4 },
             768: { slidesPerView: 3, spaceBetween: 40 },
-            900: { slidesPerView: 3.5, spaceBetween: 20 },            
+            900: { slidesPerView: 3.5, spaceBetween: 20 },
             1200: { slidesPerView: 4 },
             1440: { slidesPerView: 5, spaceBetween: 30 },
           }}
@@ -40,53 +40,18 @@ function Compilation({ title }) {
           modules={[Pagination, Navigation]}
           className='compilationSwiper'
         >
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MovieCard />
-          </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide>  <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
 
         </Swiper>
       </ul>
