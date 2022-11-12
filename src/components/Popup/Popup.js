@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import useWindowWidth from '../../hooks/useWindowWidth';
-import '../../assets/styles/components/Popup/Popup.css';
+import '../../assets/styles/components/Popup/Popup.scss';
 
 function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
   const sizeWindow = useWindowWidth();

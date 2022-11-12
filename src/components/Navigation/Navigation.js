@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navigation.css';
 import MenuPopup from '../MenuPopup/MenuPopup';
+import './Navigation.scss';
 
 function Navigation({ classNamePopup, onClosePopup }) {
   const [isHoverGenres, setIsHoverGenres] = React.useState(false);

@@ -1,0 +1,14 @@
+.posters {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__item {}
+}

@@ -1,6 +1,6 @@
 import AboutMovieDB from '../components/AboutMovieDB/AboutMovieDB';
 import { genresList } from '../assets/appData/genresList';
-import '../assets/styles/pages/Genres.css';
+import '../assets/styles/pages/Genres.scss';
 
 function Genres() {
   return (

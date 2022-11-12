@@ -1,6 +1,6 @@
 import React from 'react';
-import './DescriptionMovieCard.css';
 import ImgMovie from '../../image/movie-3.png';
+import './DescriptionMovieCard.scss';
 
 function DescriptionMovieCard() {
   // eslint-disable-next-line max-len

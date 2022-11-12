@@ -11,8 +11,9 @@ import Dune from '../../image/main-dune2.jpg';
 import Aquaman from '../../image/main-aquaman.jpg';
 
 import 'swiper/css/bundle';
-import './Lead.css';
 import '../../assets/styles/swiper/swiper.css';
+import './Lead.scss';
+
 
 function Lead() { 
   return (

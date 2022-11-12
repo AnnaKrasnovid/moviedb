@@ -1,8 +1,8 @@
-import './Footer.css';
 import Logo from '../Logo/Logo';
 import SocialButtons from '../SocialButtons/SocialButtons';
-
 import { footerText } from '../../assets/appData/footerText';
+
+import './Footer.scss';
 
 function Footer() {
 

@@ -1,7 +1,7 @@
-import './Header.css';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
+import './Header.scss';
 
 function Header(props) {
   const { onOpenMenu, onOpenPopupSearch, isOpenPopupSearch, onClosePopup, onSearch } = props;

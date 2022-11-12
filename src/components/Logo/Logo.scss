@@ -1,0 +1,74 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 165px;
+
+  &_type_popup {
+    display: none;
+  }
+
+  &__img {
+    width: 152px;
+    height: 72px;
+    cursor: pointer;
+
+    &_type_popup {
+      width: 68px;
+      height: 32px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__slogan {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: #81BECB;
+    margin: 10px 0;
+
+    &_type_footer {
+      margin-bottom: 0;
+    }
+
+    &_type_popup {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .logo {
+    &__img {
+      &_type_header {
+        width: 100px;
+        height: 52px;
+      }
+
+      &__slogan {
+        &_type_header {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    &__img {
+      width: 68px;
+      height: 32px;
+    }
+    &_type_footer {
+      width: 147px;
+      height: 65px;
+    }
+    &_type_popup {
+      display: flex;
+    }
+  }  
+}

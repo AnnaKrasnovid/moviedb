@@ -1,6 +1,6 @@
 import React from 'react';
 import GenreMovie from '../../image/genre-childish.png';
-import './MoviePosters.css';
+import './MoviePosters.scss';
 
 function MoviePosters() {
   return (

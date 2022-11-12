@@ -1,0 +1,39 @@
+.compilation {
+  padding: 80px 0 0;
+  position: relative;
+
+  &__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  &__movies {
+    border-top: 1px solid #81BECB;
+    padding: 40px 0 0;
+    display: flex;
+    width: 100%;   
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .compilation {
+    padding: 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .compilation {
+    &__title {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    &__movies {
+      padding-top: 20px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './MenuPopup.css';
+import './MenuPopup.scss';
 
 function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActive }) {
   const menuList = [
@@ -30,40 +30,7 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
               <NavLink to={i.route} key={i.id} className={setActive} onClick={onCloseMenuGenres}>{i.title}</NavLink>
             </li>
           );
-        })}
-        {/* <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Боевик</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/genre' className={setActive} onClick={onCloseMenuGenres}>Военные</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Детектив</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Детский</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Комедия</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Криминал</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Мелодрама</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Триллер</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Ужасы</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Фантастика</NavLink>
-        </li>
-        <li className='menu__genre'>
-          <NavLink to='/' className={setActive} onClick={onCloseMenuGenres}>Фэнтези</NavLink>
-        </li> */}
+        })}       
       </ul>
     </div>
   );

@@ -3,10 +3,11 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
 import 'swiper/css/bundle';
-
-import './Compilation.css';
 import '../../assets/styles/swiper/swiper.css';
+
 import MovieCard from '../MovieCard/MovieCard';
+
+import './Compilation.scss';
 
 function Compilation({ title }) {
 
@@ -47,7 +48,7 @@ function Compilation({ title }) {
           <SwiperSlide> <MovieCard /> </SwiperSlide>
           <SwiperSlide> <MovieCard /> </SwiperSlide>
           <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide>  <MovieCard /> </SwiperSlide>
+          <SwiperSlide> <MovieCard /> </SwiperSlide>
           <SwiperSlide> <MovieCard /> </SwiperSlide>
           <SwiperSlide> <MovieCard /> </SwiperSlide>
           <SwiperSlide> <MovieCard /> </SwiperSlide>

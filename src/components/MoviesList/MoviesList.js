@@ -1,6 +1,6 @@
 import React from 'react';
-import './MoviesList.css';
 import MovieCard from '../MovieCard/MovieCard';
+import './MoviesList.scss';
 
 function MoviesList() {
   return (

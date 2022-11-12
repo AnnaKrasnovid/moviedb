@@ -1,6 +1,5 @@
-import './AboutMovieDB.css';
-
 import { aboutUs } from '../../assets/appData/aboutUs';
+import './AboutMovieDB.scss';
 
 function AboutMovieDB() {
   return (

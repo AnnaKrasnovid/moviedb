@@ -1,7 +1,7 @@
 import Lead from '../components/Lead/Lead';
 import Compilation from '../components/Сompilation/Compilation';
 import DescriptionMovieCard from '../components/DescriptionMovieCard/DescriptionMovieCard';
-import '../assets/styles/pages/Main.css';
+import '../assets/styles/pages/Main.scss';
 
 function Main() {
   return (

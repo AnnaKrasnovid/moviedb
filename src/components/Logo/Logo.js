@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Logo.css';
 import LogoVector from '../../image/Logo.svg';
+import './Logo.scss';
 
 function Logo({classNameBox, classNameImg, classNameSlogan, onClosePopup }) {
   return (

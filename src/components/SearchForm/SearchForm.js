@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchForm.css';
+import './SearchForm.scss';
 /*import useFormValidation from '../../hooks/useFormValidation';
 import { useLocation } from 'react-router-dom';*/
 

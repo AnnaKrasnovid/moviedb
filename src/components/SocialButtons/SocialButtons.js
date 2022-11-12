@@ -1,7 +1,7 @@
-import './SocialButtons.css';
 import Facebook from '../../image/facebook.svg';
 import Instagram from '../../image/instagram.svg';
 import Twitter from '../../image/twitter.svg';
+import './SocialButtons.scss';
 
 function SocialButtons({ classNameBlock }) {
   return (
