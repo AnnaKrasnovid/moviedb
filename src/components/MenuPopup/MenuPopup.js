@@ -7,7 +7,7 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
     { id: '1', route: '/', title: 'Боевик' },
     { id: '2', route: '/', title: 'Военные' },
     { id: '3', route: '/', title: 'Детектив' },
-    { id: '4', route: '/', title: 'Детский' },
+    { id: '4', route: '/', title: 'Семейный' },
     { id: '5', route: '/', title: 'Комедия' },
     { id: '6', route: '/', title: 'Криминал' },
     { id: '7', route: '/', title: 'Мелодрама' },
@@ -26,8 +26,8 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
       <ul className='menu__list' >
         {menuList.map((i) => {
           return (
-            <li className='menu__genre'>
-              <NavLink to={i.route} key={i.id} className={setActive} onClick={onCloseMenuGenres}>{i.title}</NavLink>
+            <li className='menu__genre' key={i.id}>
+              <NavLink to={i.route}  className={setActive} onClick={onCloseMenuGenres}>{i.title}</NavLink>
             </li>
           );
         })}       

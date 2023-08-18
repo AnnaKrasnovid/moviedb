@@ -6,7 +6,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper';
 import Interstellar from '../../image/main-interstellar.jpg';
 import Avengers from '../../image/main-avengers.jpg';
 import Live from '../../image/main-live.jpg';
-
 import Dune from '../../image/main-dune2.jpg';
 import Aquaman from '../../image/main-aquaman.jpg';
 
@@ -15,10 +14,11 @@ import '../../assets/styles/swiper/swiper.css';
 import './Lead.scss';
 
 
-function Lead() { 
-  return (
+function Lead() {
+  const slides = [Interstellar, Avengers, Live, Dune, Aquaman];
 
-    <Swiper    
+  return (
+    <Swiper
       loop={true}
       loopedSlides={3}
       loopAdditionalSlides={3}
@@ -36,27 +36,11 @@ function Lead() {
       modules={[Autoplay, Pagination, Navigation]}
       className='mySwiper'
     >
-      <SwiperSlide>
-        <img src={Interstellar} alt='Постер к фильму' className='lead__img' />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <img src={Live} alt='Постер к фильму' className='lead__img' />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <img src={Avengers} alt='Постер к фильму' className='lead__img' />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <img src={Aquaman} alt='Постер к фильму' className='lead__img' />
-        {/*<h1 className='lead__title'>Аватар</h1>*/}
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <img src={Dune} alt='Постер к фильму' className='lead__img' />
-      </SwiperSlide>
-
+      {slides.map((item) => (
+        <SwiperSlide key={item}>
+          <img src={item} alt='Постер к фильму' className='lead__img' />
+        </SwiperSlide>
+      ))}
     </Swiper>
 
   );

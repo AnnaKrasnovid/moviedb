@@ -3,7 +3,7 @@ import './AboutMovieDB.scss';
 
 function AboutMovieDB() {
   return (
-    <div className='about-us' aria-label='О сайте MovieDB'>
+    <section className='about-us' aria-label='О сайте MovieDB'>
       <ul className='about-us__container'>
         {aboutUs.map((item, index) => {
           return (
@@ -11,7 +11,7 @@ function AboutMovieDB() {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 }
 

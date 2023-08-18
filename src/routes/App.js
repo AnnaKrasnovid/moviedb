@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Main from '../pages/MainPage';
 import PopupMenu from '../components/Popup/PopupMenu';
 import PopupSearch from '../components/Popup/PopupSearch';
-import Genres from '../pages/GenresPage';
+import GenresPage from '../pages/GenresPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import Layout from '../components/Layout/Layout';
 import MoviePage from '../pages/MoviePage';
@@ -44,7 +44,8 @@ function App() {
         />}>
           <Route index element={<Main />} />
           <Route path='movies' element={<MoviesList />} />
-          <Route path='genre' element={<Genres />} />
+          <Route path='genres' element={<GenresPage />} />
+          <Route path='genres/:genre' element={<MoviesList />} />
           <Route path='movie' element={<MoviePage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Route>

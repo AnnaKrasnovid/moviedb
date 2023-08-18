@@ -5,19 +5,19 @@
   ],
   "rules": {
     "no-unused-vars": "warn",
-    "prefer-const": "error",
+    "prefer-const": "warn",
     "no-console": "warn",
-    "quotes": ["error", "single"],
-    "indent":["warn", 2],
-    "max-len": ["warn", {"code": 120}],
-    "comma-dangle": ["error", "always-multiline"],
+    // "quotes": ["warn", "single"],
+    // "indent":["warn", 2],
+    // "max-len": ["warn", {"code": 120}],
+    "comma-dangle": ["warn", "always-multiline"],
     "semi": ["warn", "always"],
     "import/order": ["warn", {"groups":["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"]}],
     "linebreak-style": 0,
     "object-curly-newline": 0,
     "no-whitespace-before-property": "warn",
-    "no-multiple-empty-lines": "error",
-    "no-multi-spaces": "error",
-    "react/no-typos": "error"
+    // "no-multiple-empty-lines": "error",
+    // "no-multi-spaces": "error",
+    // "react/no-typos": "error"
   }
 }

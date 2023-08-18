@@ -10,7 +10,7 @@ function MoviePosters() {
           <img className='posters__img' srs={GenreMovie} alt='Постер к фильму' />
         </li>
 
-        {/*<li className='posters__item'>
+        {/* <li className='posters__item'>
           <img className='posters__img' srs={ImgMovie} alt='Постер к фильму' />
         </li>
 

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
+
 import 'swiper/css/bundle';
 import '../../assets/styles/swiper/swiper.css';
 
@@ -9,12 +10,12 @@ import MovieCard from '../MovieCard/MovieCard';
 
 import './Compilation.scss';
 
-function Compilation({ title }) {
+function Compilation({ title, moviesList }) {
 
   return (
     <section className='compilation'>
       <h2 className='compilation__title'>{title}</h2>
-      <ul className='compilation__movies'>
+      <div className='compilation__movies'>
         <Swiper
           slidesPerView={5}
           breakpoints={{
@@ -29,9 +30,9 @@ function Compilation({ title }) {
             1200: { slidesPerView: 4 },
             1440: { slidesPerView: 5, spaceBetween: 30 },
           }}
-          initialSlide={3}
+          initialSlide={5}
           spaceBetween={30}
-          slidesPerGroup={3}
+          slidesPerGroup={1}
           loop={true}
           loopFillGroupWithBlank={true}
           watchOverflow={true}
@@ -39,23 +40,15 @@ function Compilation({ title }) {
           pagination={false}
           speed={800}
           modules={[Pagination, Navigation]}
-          className='compilationSwiper'
+         className='compilation-swiper'
         >
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-          <SwiperSlide> <MovieCard /> </SwiperSlide>
-
+          {moviesList.map((item) => (
+            <SwiperSlide key={item.id}>
+              <MovieCard item={item} />
+            </SwiperSlide>
+          ))}
         </Swiper>
-      </ul>
+      </div>
     </section>
   );
 }

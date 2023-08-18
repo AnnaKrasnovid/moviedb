@@ -24,7 +24,7 @@ function Navigation({ classNamePopup, onClosePopup }) {
           onMouseEnter={e => { e.stopPropagation() }}
         >
           <NavLink
-            to='/genre'
+            to='/genres'
             className={setActive}
             onMouseEnter={handleMouseEnterGenres}
             onClick={onClosePopup}
