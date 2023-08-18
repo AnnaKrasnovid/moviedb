@@ -12,7 +12,7 @@ function Main() {
       <Lead />
       <Compilation title='Подборки лучших фильмов' moviesList={mov}/>
       <Compilation title='Популярное' moviesList={mov}/>
-      <DescriptionMovieCard />
+      <DescriptionMovieCard movie={mov[0]} />
     </>
   );
 }

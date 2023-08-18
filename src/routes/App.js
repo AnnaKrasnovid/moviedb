@@ -7,7 +7,9 @@ import GenresPage from '../pages/GenresPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import Layout from '../components/Layout/Layout';
 import MoviePage from '../pages/MoviePage';
-import MoviesList from '../components/MoviesList/MoviesList';
+import MoviesPage from '../pages/MoviesPage';
+
+import { routes } from '../settings/routes';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
@@ -43,10 +45,12 @@ function App() {
           onSearch={handleSearch}
         />}>
           <Route index element={<Main />} />
-          <Route path='movies' element={<MoviesList />} />
-          <Route path='genres' element={<GenresPage />} />
-          <Route path='genres/:genre' element={<MoviesList />} />
-          <Route path='movie' element={<MoviePage />} />
+          <Route index element={<Main />} />
+          <Route path={routes.MOVIES} element={<MoviesPage />} />
+          <Route path={routes.MOVIE} element={<MoviePage />} />
+          <Route path={routes.GENRES} element={<GenresPage />} />
+          <Route path={`${routes.GENRES}/:genre`} element={<MoviesPage />} />
+          <Route path={`${routes.GENRES}/:genre/:id`} element={<MoviePage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>

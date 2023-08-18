@@ -8,3 +8,22 @@ export const getText = (text, quantityProposal) => {
 
     return textArr.map((item) => item.join(' '));
 };
+
+export const getRoundNumber = (number) => {
+    return Math.round(number * 10) / 10
+}
+
+export function getTime(number) {
+    const minutes = number % 60;
+    const hours = (number - minutes) / 60;
+const formatMinutes = minutes<10 ? `0${minutes}` : minutes
+
+console.log(hours)
+    if (hours <= 0) {
+        return `${formatMinutes}мин.`;
+    } else {
+        return `${hours}ч. ${formatMinutes}мин.`;
+    }
+
+}
+

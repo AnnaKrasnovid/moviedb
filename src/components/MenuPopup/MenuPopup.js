@@ -1,20 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
+import { genresRoutes } from '../../settings/routes';
+
 import './MenuPopup.scss';
 
 function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActive }) {
   const menuList = [
-    { id: '1', route: '/', title: 'Боевик' },
-    { id: '2', route: '/', title: 'Военные' },
-    { id: '3', route: '/', title: 'Детектив' },
-    { id: '4', route: '/', title: 'Семейный' },
-    { id: '5', route: '/', title: 'Комедия' },
-    { id: '6', route: '/', title: 'Криминал' },
-    { id: '7', route: '/', title: 'Мелодрама' },
-    { id: '8', route: '/', title: 'Триллер' },
-    { id: '9', route: '/', title: 'Ужасы' },
-    { id: '10', route: '/', title: 'Фантастика' },
-    { id: '11', route: '/', title: 'Фэнтези' },
+    { id: '1', route: genresRoutes.ACTION_MOVIE, title: 'Боевик' },
+    { id: '2', route: genresRoutes.MILITARY, title: 'Военные' },
+    { id: '3', route: genresRoutes.DETECTIVE, title: 'Детектив' },
+    { id: '4', route: genresRoutes.FAMILY, title: 'Семейный' },
+    { id: '6', route: genresRoutes.COMEDY, title: 'Комедия' },
+    { id: '7', route: genresRoutes.CRIMINAL, title: 'Криминал' },
+    { id: '8', route: genresRoutes.MELODRAMA, title: 'Мелодрама' },
+    { id: '9', route: genresRoutes.THRILLER, title: 'Триллер' },
+    { id: '10', route: genresRoutes.HORROR, title: 'Ужасы' },
+    { id: '11', route: genresRoutes.FANTASTIC, title: 'Фантастика' },
+    { id: '12', route: genresRoutes.FANTASY, title: 'Фэнтези' },
+    { id: '5', route: genresRoutes.DRAMA, title: 'Драмы' },
   ];
 
   return (
