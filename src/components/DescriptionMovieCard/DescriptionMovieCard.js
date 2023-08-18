@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-import { getRoundNumber,getTime } from '../../assets/utils';
+import RatingRound from '../RatingRound/RatingRound';
+import Rating from '../Rating/Rating';
+
+import { getRoundNumber, getTime } from '../../assets/utils';
 
 import './DescriptionMovieCard.scss';
 
@@ -11,6 +14,12 @@ function DescriptionMovieCard({ movie }) {
     setIsShowAllText(!isShowAllText);
   }
 
+  function getInfo(arr) {
+    let infoArr = [];
+    arr.map((i) => infoArr.push(i.name));
+    return infoArr.join(', ');
+  }
+
   return (
     <section className='about-movie'>
       <div className='about-movie__description'>
@@ -18,60 +27,65 @@ function DescriptionMovieCard({ movie }) {
         <div className='about-movie__container'>
           <img className='about-movie__img' src={movie.poster.url} alt='Постер к фильму' />
           <div className='about-movie__container-rating'>
-            <div className='about-movie__box-rating'>
-              <span className='about-movie__estimation'>{getRoundNumber(movie.rating.kp)}</span>
-              <span className='about-movie__owner'>Кинопоиск</span>
-            </div>
+            {/* <RatingRound number={movie.rating.kp} title='Кинопоиск' /> */}
+            <Rating number={movie.rating.kp} type='orange'/>
             {movie.rating.imdb ? (
-              <div className='about-movie__box-rating about-movie__box-rating_type_imdb'>
-                <span className='about-movie__estimation'>{getRoundNumber(movie.rating.imdb)}</span>
-                <span className='about-movie__owner'>IMDb</span>
-              </div>
+              // <RatingRound number={movie.rating.imdb} className={'rating_type_imdb'} title='IMDb' />
+              <Rating number={movie.rating.imdb} type='yellow'/>
             ) : <></>}
           </div>
         </div>
 
         <div className='about-movie__container'>
           <h3 className='about-movie__title'>{movie.name} ({movie.year})</h3>
-          {movie.enName ? <p className='about-movie__title-en'>{movie.enName} ({movie.year})</p> : <></>}
+          {movie.alternativeName ? <p className='about-movie__title-en'>{movie.alternativeName} ({movie.year})</p> : <></>}
 
-          <ul className='about-movie__box-data'>
-            <li className='about-movie__box-info'>
+          {/* <ul className='about-movie__box-data'> */}
+          {/* <li className='about-movie__box-info'>
               <p className='about-movie__heading'>Продолжительность</p>
-              <p className='about-movie__info'>{getTime(movie.movieLength)}
+              <p className='about-movie__info'>
+                {getTime(movie.movieLength)}
               </p>
             </li>
             <li className='about-movie__box-info'>
               <p className='about-movie__heading'>Год выпуска</p>
               <p className='about-movie__info'>{movie.year}</p>
-            </li>
-            <li className='about-movie__box-info'>
+            </li> */}
+          {/* <li className='about-movie__box-info'>
               <p className='about-movie__heading'>Премьера фильма в России</p>
               <p className='about-movie__info'>22 Апреля 2021</p>
             </li>
             <li className='about-movie__box-info'>
               <p className='about-movie__heading'>Возраст</p>
               <p className='about-movie__info'>16+</p>
-            </li>
-          </ul>
+            </li> */}
+         
 
           <ul className='about-movie__box-main'>
             <li className='about-movie__box-info-main'>
+              <p className='about-movie__heading-main'>Продолжительность</p>
+              <p className='about-movie__info-main'> {getTime(movie.movieLength)}</p>
+            </li>
+            <li className='about-movie__box-info-main'>
+              <p className='about-movie__heading-main'>Год выпускa</p>
+              <p className='about-movie__info-main'>{movie.year}</p>
+            </li>
+            <li className='about-movie__box-info-main'>
               <p className='about-movie__heading-main'>Жанр</p>
-              <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
+              <p className='about-movie__info-main'>{getInfo(movie.genres)}</p>
             </li>
             <li className='about-movie__box-info-main'>
               <p className='about-movie__heading-main'>Страна</p>
-              <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
+              <p className='about-movie__info-main'>{getInfo(movie.countries)}</p>
             </li>
-            <li className='about-movie__box-info-main'>
+            {/* <li className='about-movie__box-info-main'>
               <p className='about-movie__heading-main'>В главных ролях</p>
               <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
-            </li>
+            </li>*/}
             <li className='about-movie__box-info-main'>
               <p className='about-movie__heading-main'>Участвует в подборках</p>
-              <p className='about-movie__info-main'>Боевик, Комедия, Драма</p>
-            </li>
+              <p className='about-movie__info-main'>{getInfo(movie.genres)}</p>
+            </li> 
           </ul>
 
           <div className='about-movie__box-description'>

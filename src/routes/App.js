@@ -45,13 +45,22 @@ function App() {
           onSearch={handleSearch}
         />}>
           <Route index element={<Main />} />
-          <Route index element={<Main />} />
+          <Route path='movies' element={<MoviesPage />} />
+          <Route path='movies/:id' element={<MoviePage />} />
+
+          <Route path='genres' element={<GenresPage />} />
+          <Route path='genres/:genre' element={<MoviesPage />} />
+          <Route path='genres/:genre/:id' element={<MoviePage />} />          
+          <Route path='*' element={<NotFoundPage />} />
+
+          {/* <Route index element={<Main />} />
           <Route path={routes.MOVIES} element={<MoviesPage />} />
           <Route path={routes.MOVIE} element={<MoviePage />} />
+
           <Route path={routes.GENRES} element={<GenresPage />} />
           <Route path={`${routes.GENRES}/:genre`} element={<MoviesPage />} />
           <Route path={`${routes.GENRES}/:genre/:id`} element={<MoviePage />} />
-          <Route path='*' element={<NotFoundPage />} />
+          <Route path='*' element={<NotFoundPage />} /> */}
         </Route>
       </Routes>
 

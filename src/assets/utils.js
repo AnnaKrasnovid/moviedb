@@ -16,13 +16,12 @@ export const getRoundNumber = (number) => {
 export function getTime(number) {
     const minutes = number % 60;
     const hours = (number - minutes) / 60;
-const formatMinutes = minutes<10 ? `0${minutes}` : minutes
+    const formatMinutes = minutes < 10 ? `0${minutes}` : minutes
 
-console.log(hours)
     if (hours <= 0) {
-        return `${formatMinutes}мин.`;
+        return `${formatMinutes} мин.`;
     } else {
-        return `${hours}ч. ${formatMinutes}мин.`;
+        return `${hours}ч. ${formatMinutes} мин.`;
     }
 
 }

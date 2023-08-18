@@ -1,0 +1,44 @@
+.box-rating {
+    
+        display: flex;
+        margin-bottom: 10px;
+    
+        &:nth-child(2n) {
+          margin-bottom: 0;
+        }
+      
+
+      &__rating-icon {
+        display: block;
+        background-size: 34pxpx;
+        width: 34px;
+        height: 34px;
+    
+        &_bg_orange {
+          background-image: url(../../image//icon-kinopoisk.svg);
+        }
+    
+        &_bg_yellow {
+          background-image: url(../../image/icon-imdb.svg);
+        }
+      }
+      &__rating-mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 37px;
+        height: 34px;
+        border-radius: 0px 5px 5px 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    
+        &_bg_orange {
+          background: #E16001;
+        }
+    
+        &_bg_yellow {
+          background: #D59F31;
+        }
+      }
+}

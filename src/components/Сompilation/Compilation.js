@@ -1,50 +1,64 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
 
-import 'swiper/css/bundle';
-import '../../assets/styles/swiper/swiper.css';
-
 import MovieCard from '../MovieCard/MovieCard';
 
+import { routes } from '../../settings/routes';
+import useWindowWidth from '../../hooks/useWindowWidth';
+
+import 'swiper/css/bundle';
+import '../../assets/styles/swiper/swiper.css';
 import './Compilation.scss';
 
 function Compilation({ title, moviesList }) {
+  const windowWidth= useWindowWidth();
+  const [slides, setSlides]= useState(0);
+
+  function getNumberSlides() {
+    if(windowWidth>1365) {
+      setSlides(6)
+    } else if(windowWidth>1023) {
+      setSlides(5)
+    }else if(windowWidth>767) {
+      setSlides(4)
+    }
+    else if(windowWidth>500) {
+      setSlides(3)
+    }else if(windowWidth>320) {
+      setSlides(2)
+    }
+  }
+
+  useEffect(()=> {
+    getNumberSlides()
+  },[windowWidth])
 
   return (
     <section className='compilation'>
       <h2 className='compilation__title'>{title}</h2>
       <div className='compilation__movies'>
-        <Swiper
-          slidesPerView={5}
-          breakpoints={{
-            320: { slidesPerView: 2, spaceBetween: 30 },
-            375: { slidesPerView: 2.5, spaceBetween: 20 },
-            425: { slidesPerView: 3, spaceBetween: 10 },
-            480: { slidesPerView: 3, spaceBetween: 20 },
-            550: { slidesPerView: 3.5, spaceBetween: 20 },
-            640: { slidesPerView: 4 },
-            768: { slidesPerView: 3, spaceBetween: 40 },
-            900: { slidesPerView: 3.5, spaceBetween: 20 },
-            1200: { slidesPerView: 4 },
-            1440: { slidesPerView: 5, spaceBetween: 30 },
-          }}
-          initialSlide={5}
-          spaceBetween={30}
-          slidesPerGroup={1}
+        <Swiper         
+          slidesPerView={slides}
+          spaceBetween={20}
+          // centeredSlides={true}
+          slidesPerGroup={2}
           loop={true}
-          loopFillGroupWithBlank={true}
           watchOverflow={true}
-          navigation={true}
-          pagination={false}
-          speed={800}
-          modules={[Pagination, Navigation]}
-         className='compilation-swiper'
+          navigation={{
+              nextEl: '.next-slide-conditions',
+              prevEl: '.prev-slide-conditions',
+          }}
+          modules={[ Navigation]}
+					className="compilation-swiper"
         >
           {moviesList.map((item) => (
             <SwiperSlide key={item.id}>
-              <MovieCard item={item} />
+              <Link to={`${routes.MOVIES}/${item.id}`} state={{movie: item}} className='link'>
+                <MovieCard item={item} />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -1,0 +1,48 @@
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 121px;
+    box-sizing: border-box;
+    border: 4px solid #FF8E00;
+    border-radius: 50%;
+    filter: drop-shadow(-6px -6px 12px #535353) drop-shadow(6px 6px 12px #000000);
+
+    &_type_imdb {
+        border: 4px solid #E3AC3C;
+    }
+
+    &__estimation {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    &__owner {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .rating {
+        width: 79px;
+        height: 79px; 
+     
+  
+  
+      &__estimation {
+        font-size: 18px;
+        line-height: 21px;
+      }
+  
+      &__owner {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+  

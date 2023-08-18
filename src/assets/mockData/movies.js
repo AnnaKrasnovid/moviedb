@@ -196,6 +196,128 @@ export const mov = [
       },
     },
     {
+      'id': 7752734,
+      'type': 'cartoon',
+      'externalId': {
+        'kpHD': '4c842cbb3f1bc0d7815766097aa88366',
+        'imdb': 'tt2948372',
+        'tmdb': 508442,
+      },
+      'name': 'Душа',
+      'rating': {
+        'kp': 8.368,
+        'imdb': 8,
+        'filmCritics': 8.3,
+        'russianFilmCritics': 77.2727,
+        'await': null,
+      },
+      'description': 'Уже немолодой школьный учитель музыки Джо Гарднер всю жизнь мечтал выступать на сцене в составе джазового ансамбля. Однажды он успешно проходит прослушивание у легендарной саксофонистки и, возвращаясь домой вне себя от счастья, падает в люк и умирает. Теперь у Джо одна дорога — в Великое После, но он сбегает с идущего в вечность эскалатора и случайно попадает в Великое До. Тут новенькие души обретают себя, и у будущих людей зарождаются увлечения, мечты и интересы. Джо становится наставником упрямой души 22, которая уже много веков не может найти свою искру и отправиться на Землю.',
+      'votes': {
+        'kp': 8.15,
+        'imdb': 352413,
+        'filmCritics': 355,
+        'russianFilmCritics': 22,
+        'await': 10942,
+      },
+      'year': 2020,
+      'poster': {
+        'url': 'https://st.kp.yandex.net/images/film_big/775273.jpg',
+        'previewUrl': 'https://st.kp.yandex.net/images/film_iphone/iphone360_775273.jpg',
+      },
+      'genres': [
+        {
+          'name': 'мультфильм',
+        },
+        {
+          'name': 'фэнтези',
+        },
+        {
+          'name': 'комедия',
+        },
+        {
+          'name': 'приключения',
+        },
+        {
+          'name': 'семейный',
+        },
+        {
+          'name': 'музыка',
+        },
+      ],
+      'countries': [
+        {
+          'name': 'США',
+        },
+        {
+          'name': 'Япония',
+        },
+      ],
+      'alternativeName': 'Soul',
+      'enName': 'Disney and Pixars Soul',
+      'names': [
+        {
+          'name': 'Душа',
+        },
+        {
+          'name': 'Soul',
+        },
+        {
+          'name': 'Själen',
+          'language': 'SE',
+          'type': null,
+        },
+        {
+          'name': 'Sjæl',
+          'language': 'DK',
+          'type': null,
+        },
+        {
+          'name': 'Soul: Uma Aventura com Alma',
+          'language': 'BR',
+          'type': null,
+        },
+        {
+          'name': 'Jiwa',
+          'language': 'ID',
+          'type': null,
+        },
+        {
+          'name': 'روح',
+          'language': 'IR',
+          'type': null,
+        },
+        {
+          'name': '靈魂奇遇記',
+          'language': 'HK',
+          'type': null,
+        },
+        {
+          'name': 'سول مغامرة ذاتية',
+          'language': 'SA',
+          'type': null,
+        },
+        {
+          'name': 'Disney and Pixars Soul',
+          'language': 'US',
+          'type': 'promotional title',
+        },
+        {
+          'name': 'Жан',
+          'language': 'KZ',
+          'type': null,
+        },
+      ],
+      'color': '#101010',
+      'movieLength': 106,
+      'shortDescription': 'Джазмен хочет сбежать с того света на концерт. Фантазия о призвании и важных мелочах жизни от автора «Вверх»',
+      'logo': {
+        'url': 'https://avatars.mds.yandex.net/get-ott/223007/2a00000179e695b1277b8740b5bfcf77a6bf/orig',
+      },
+      'watchability': {
+        'items': [],
+      },
+    },
+    {
       'id': 1445170,
       'countries': [
         {

@@ -14,7 +14,7 @@ function MoviesList({list}) {
       <ul className='movies__list'>
         {list.map((item) => (
           <li key={item.id}>
-            <Link  to={`${item.id}`} state={{ movie: item }}>
+            <Link  to={`${item.id}`} state={{ movie: item }} className='link'>
               <MovieCard item={item} />
             </Link>
           </li>
