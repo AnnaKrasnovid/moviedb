@@ -1,9 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// @ts-ignore
 import LogoVector from '../../image/Logo.svg';
 import './Logo.scss';
 
-function Logo({classNameBox, classNameImg, classNameSlogan, onClosePopup }) {
+interface LogoInt {
+  classNameBox: string,
+  classNameImg: string,
+  classNameSlogan: string,
+  onClosePopup: () => void,
+}
+
+function Logo({ classNameBox, classNameImg, classNameSlogan, onClosePopup }: LogoInt) {
   return (
     <div className={`logo ${classNameBox}`}>
       <Link to='/' onClick={onClosePopup}>

@@ -1,0 +1,42 @@
+.description-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    background: rgba(28, 29, 31, 0.5);
+    border: 1px solid #2B2B2B;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: fit-content;
+
+    &__title {
+        margin: 0 0 20px 0;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    &__info {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .description-movie {
+        &__title {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .description-movie {
+        padding: 10px;
+    }
+}

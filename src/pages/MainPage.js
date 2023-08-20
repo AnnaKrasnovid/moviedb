@@ -10,8 +10,11 @@ function Main() {
   return (
     <>
       <Lead />
-      <Compilation title='Подборки лучших фильмов' moviesList={mov}/>
-      <Compilation title='Популярное' moviesList={mov}/>
+      <Compilation title='Сериалы' moviesList={mov}/>
+      <Compilation title='Фильмы с высоким рейтингом' moviesList={mov}/>
+      <Compilation title='Драмы' moviesList={mov}/>
+      <Compilation title='Комедии' moviesList={mov}/>
+      <Compilation title='Детективы' moviesList={mov}/>
       <DescriptionMovieCard movie={mov[3]} />
     </>
   );

@@ -36,9 +36,9 @@
     // box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
     // backdrop-filter: blur(20px);
     // border-radius: 5px;
-position: absolute;
-top: 5%;
-left: 0;
+    position: absolute;
+    top: 5%;
+    left: 0;
   }
 
   &__title {
@@ -53,45 +53,6 @@ left: 0;
     font-weight: 400;
     font-size: 30px;
     line-height: 35px;
-  }
-
-  &__box-data {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-around;
-    // align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #212121;
-    border: 1px solid #2B2B2B;
-    border-radius: 5px;
-    min-height: 84px;
-    box-sizing: border-box;
-  }
-
-  &__box-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    margin-right: 10px;
-    height: 100%;
-  }
-
-  &__box-info:last-child {
-    margin-right: 0;
-  }
-
-  &__heading {
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    // margin-top: 15px;
   }
 
   &__info {
@@ -117,87 +78,27 @@ left: 0;
     box-sizing: border-box;
   }
 
-  &__box-info-main {
-    display: grid;
-    grid-template-columns: 270px 1fr;
-    list-style: none;
-    border-bottom: 1px solid #2B2B2B;
-    min-height: 51px;
-  }
+  // &__box-description {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   // min-height: 383px;
+  //   background: rgba(28, 29, 31, 0.5);
+  //   border: 1px solid #2B2B2B;
+  //   box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  //   backdrop-filter: blur(20px);
+  //   border-radius: 5px;
+  //   padding: 20px;
+  //   box-sizing: border-box;
+  //   height: fit-content;
+  // }
 
-  &__heading-main {
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 20px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  &__info-main {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-
-  &__box-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    // min-height: 383px;
-    background: rgba(28, 29, 31, 0.5);
-    border: 1px solid #2B2B2B;
-    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(20px);
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box;
-    height: fit-content;
-  }
-
-  &__title-description {
-    margin: 0 0 20px 0;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  &__btn-more {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #81BECB;
-    border: 0;
-    background: rgba(28, 29, 31, 0.5);
-    text-align: end;
-    margin-top: 20px;
-    padding: 0;
-    text-decoration-line: underline;
-    cursor: pointer;
-  }
-
-}
-
-@media screen and (max-width: 1439px) {
-  .about-movie__box-data {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: inherit;
-    box-sizing: border-box;
-    padding: 10px 20px;
-  }
-
-  .about-movie__box-info {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 0;
-  }
+  // &__title-description {
+  //   margin: 0 0 20px 0;
+  //   font-weight: 500;
+  //   font-size: 22px;
+  //   line-height: 26px;
+  // }
 }
 
 @media screen and (max-width: 1023px) {
@@ -219,33 +120,16 @@ left: 0;
       line-height: 19px;
     }
 
-    &__heading {
-      font-size: 14px;
-      line-height: 22px;
-    }
-
     &__info {
       font-size: 14px;
       line-height: 16px;
-      
+
     }
 
-    &__heading-main {
-      font-size: 14px;
-      line-height: 16px;
-      margin: 0;
-    }
-
-    &__info-main {
-      font-size: 14px;
-      line-height: 16px;
-      margin: 0;
-    }
-
-    &__title-description {
-      font-size: 16px;
-      line-height: 19px;
-    }
+    // &__title-description {
+    //   font-size: 16px;
+    //   line-height: 19px;
+    // }
 
     &__box-main {
       padding: 10px;
@@ -264,10 +148,6 @@ left: 0;
       height: 98px;
     }
 
-    &__btn-more {
-      font-size: 14px;
-      line-height: 16px;
-    }
   }
 }
 
@@ -287,8 +167,8 @@ left: 0;
       grid-template-columns: 1fr;
     }
 
-    &__box-description {
-      padding: 10px;
-    }
+    // &__box-description {
+    //   padding: 10px;
+    // }
   }
 }

@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 import Logo from '../Logo/Logo';
 import SocialButtons from '../SocialButtons/SocialButtons';
 import { footerText } from '../../assets/appData/footerText';
@@ -5,7 +7,6 @@ import { footerText } from '../../assets/appData/footerText';
 import './Footer.scss';
 
 function Footer() {
-
   return (
     <footer className='footer'>
       <div className='footer__container'>
@@ -13,6 +14,7 @@ function Footer() {
           classNameBox='logo_type_footer'
           classNameImg='logo__img_type_footer'
           classNameSlogan='logo__slogan_type_footer'
+          onClosePopup={()=> console.log('close')}
         />
         <div className='footer__box-about'>
           <h4 className='footer__title'>О нас</h4>
@@ -29,7 +31,7 @@ function Footer() {
         <SocialButtons
           classNameBlock='social-buttons_type_footer'
         />
-        <a className='footer__info footer__info_type_link' href='#'>Политика конфиденциальности</a>
+        <Link className='footer__info footer__info_type_link' to='#' target='_blank'>Политика конфиденциальности</Link>
       </div>
     </footer>
   );
