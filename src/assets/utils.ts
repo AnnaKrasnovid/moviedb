@@ -14,7 +14,7 @@ export function getTime(number: number): string {
     }
 }
 
-export function getInfo(arr: Array<T>) {
+export function getInfo(arr: Array<any>) {
     const infoArr: Array<string> = [];
     arr.map((i) => infoArr.push(i.name));
     return infoArr.join(', ');

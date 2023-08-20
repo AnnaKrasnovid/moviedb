@@ -5,7 +5,8 @@ import PopupMenu from '../components/Popup/PopupMenu';
 import PopupSearch from '../components/Popup/PopupSearch';
 import GenresPage from '../pages/GenresPage';
 import NotFoundPage from '../pages/NotFoundPage';
-import Layout from '../components/Layout/Layout';
+// import Layout from '../components/Layout/Layout';
+import Layout from '../layout/Layout/Layout';
 import MoviePage from '../pages/MoviePage';
 import MoviesPage from '../pages/MoviesPage';
 

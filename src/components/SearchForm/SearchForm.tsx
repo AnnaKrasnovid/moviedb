@@ -1,11 +1,14 @@
-import React from 'react';
+import {useState} from 'react';
 import './SearchForm.scss';
-/*import useFormValidation from '../../hooks/useFormValidation';
-import { useLocation } from 'react-router-dom';*/
 
-function SearchForm({ isOpenPopupSearch, onSearch }) {
-  const [isActiveSearchClass, setIsActiveSearchClass] = React.useState(false);
-  const [isActiveInput, setIsActiveInput] = React.useState(false);
+interface  SearchFormInt {
+  isOpenPopupSearch: Boolean,
+  onSearch: ()=> void
+}
+
+function SearchForm({ isOpenPopupSearch, onSearch }: SearchFormInt) {
+  const [isActiveSearchClass, setIsActiveSearchClass] = useState(false);
+  const [isActiveInput, setIsActiveInput] = useState(false);
 
   function handleMouseEnter() {
     setIsActiveSearchClass(true);
@@ -39,11 +42,11 @@ function SearchForm({ isOpenPopupSearch, onSearch }) {
           className='search__input'
           type='text'
           placeholder='Фильм'
-          minLength='1'
+          minLength={1}
           autoComplete='off'
         /*value={values.search || ''}*/
         />
-        <button className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} type='submit' />
+        <span className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} ></span>
       </form>
       <span id='search-input-error' className='search__error'></span>
     </section>

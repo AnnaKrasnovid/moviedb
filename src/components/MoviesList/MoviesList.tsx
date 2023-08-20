@@ -6,15 +6,15 @@ import { mov } from '../../assets/mockData/movies';
 
 import './MoviesList.scss';
 
-function MoviesList({list}) {
+function MoviesList({ list }: any) {
   const [movies, setMovies] = useState([]);
 
   return (
     <section className='movies'>
       <ul className='movies__list'>
-        {list.map((item) => (
+        {list.map((item: any) => (
           <li key={item.id}>
-            <Link  to={`${item.id}`} state={{ movie: item }} className='link'>
+            <Link to={`${item.id}`} state={{ movie: item }} className='link'>
               <MovieCard item={item} />
             </Link>
           </li>

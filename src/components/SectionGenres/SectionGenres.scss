@@ -18,7 +18,7 @@
       overflow: hidden;
       transition: transform 0.4s ease-in-out;
       color: #fff;
-  
+  height: 100%;
       &:hover {
         transform: scale(1.07);
         transition: transform 0.4s ease-in-out;
@@ -37,8 +37,8 @@
         }
       }
   
-      &_genre {
-        &_fighters {
+      &_bg {
+        &_0 {
           margin-bottom: 30px;
           max-width: 1343px;
           height: 446px;
@@ -49,47 +49,47 @@
           }
         }
   
-        &_military {
+        &_1 {
           background-image: url(../../image/genre-military.png);
         }
   
-        &_detectives {
+        &_2 {
           background-image: url(../../image/genre-detectives.png);
         }
   
-        &_childish {
+        &_3 {
           background-image: url(../../image/genre-childish.png);
         }
   
-        &_dramas {
+        &_4 {
           background-image: url(../../image/genre-dramas.png);
         }
   
-        &_comedies {
+        &_5 {
           background-image: url(../../image/genre-comedies.png);
         }
   
-        &_crime {
+        &_6 {
           background-image: url(../../image/genre-crime.png);
         }
   
-        &_melodramas {
+        &_7 {
           background-image: url(../../image/genre-melodramas.png);
         }
   
-        &_thrillers {
+        &_8 {
           background-image: url(../../image/genre-thrillers.png);
         }
   
-        &_horrors {
+        &_9 {
           background-image: url(../../image/genre-horrors.png);
         }
   
-        &_fantastic {
+        &_10 {
           background-image: url(../../image/genre-fantastic.png);
         }
   
-        &_fantasy {
+        &_11 {
           background-image: url(../../image/genre-fantasy.png);
         }
       }
@@ -117,6 +117,7 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 28px;
       margin-bottom: 30px;
+      height: 100%;
     }
   
   }

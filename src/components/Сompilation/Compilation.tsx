@@ -13,50 +13,53 @@ import 'swiper/css/bundle';
 import '../../assets/styles/swiper/swiper.css';
 import './Compilation.scss';
 
-function Compilation({ title, moviesList }) {
-  const windowWidth= useWindowWidth();
-  const [slides, setSlides]= useState(0);
+interface CompilationInt {
+  title: string,
+  moviesList: Array<any>
+}
+
+function Compilation({ title, moviesList }: CompilationInt) {
+  const windowWidth = useWindowWidth();
+  const [slides, setSlides] = useState(0);
 
   function getNumberSlides() {
-    if(windowWidth>1365) {
-      setSlides(6)
-    } else if(windowWidth>1023) {
-      setSlides(5)
-    }else if(windowWidth>767) {
-      setSlides(4)
-    }
-    else if(windowWidth>500) {
-      setSlides(3)
-    }else if(windowWidth>320) {
-      setSlides(2)
+    if (windowWidth > 1365) {
+      setSlides(6);
+    } else if (windowWidth > 1023) {
+      setSlides(5);
+    } else if (windowWidth > 767) {
+      setSlides(4);
+    } else if (windowWidth > 500) {
+      setSlides(3);
+    } else if (windowWidth > 320) {
+      setSlides(2);
     }
   }
 
-  useEffect(()=> {
-    getNumberSlides()
-  },[windowWidth])
+  useEffect(() => {
+    getNumberSlides();
+  }, [windowWidth]);
 
   return (
     <section className='compilation'>
       <h2 className='compilation__title'>{title}</h2>
       <div className='compilation__movies'>
-        <Swiper         
+        <Swiper
           slidesPerView={slides}
           spaceBetween={20}
-          // centeredSlides={true}
           slidesPerGroup={2}
           loop={true}
           watchOverflow={true}
           navigation={{
-              nextEl: '.next-slide-conditions',
-              prevEl: '.prev-slide-conditions',
+            nextEl: '.next-slide-compilation',
+            prevEl: '.prev-slide-compilation',
           }}
-          modules={[ Navigation]}
-					className="compilation-swiper"
+          modules={[Navigation]}
+          className="compilation-swiper"
         >
           {moviesList.map((item) => (
             <SwiperSlide key={item.id}>
-              <Link to={`${routes.MOVIES}/${item.id}`} state={{movie: item}} className='link'>
+              <Link to={`${routes.MOVIES}/${item.id}`} state={{ movie: item }} className='link'>
                 <MovieCard item={item} />
               </Link>
             </SwiperSlide>

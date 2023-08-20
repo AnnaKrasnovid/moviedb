@@ -1,8 +1,14 @@
 import Rating from '../Rating/Rating';
 
+import { MovieInt } from '../../settings/interfaces';
+
 import './MovieCard.scss';
 
-function MovieCard({ item }) {
+interface MovieCardInt {
+  item: MovieInt
+}
+
+function MovieCard({ item }:any) {
 
   return (
     <div className='movie' >
