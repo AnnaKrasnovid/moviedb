@@ -27,29 +27,33 @@ function SearchForm({ isOpenPopupSearch, onSearch }: SearchFormInt) {
   }
 
   return (
-    <section className={`search ${isOpenPopupSearch ? 'search_type_popup' : ''}`} >
+    // <section className={`search ${isOpenPopupSearch ? 'search_type_popup' : ''}`} >
       <form
-        className={`search__form ${isActiveSearchClass || isActiveInput ? 'search__form_active' : ''}`}
+className='search'
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onFocus={handleOnFocusInput}
         onBlur={handleOnBlurInput}
         onSubmit={onSearch}
         noValidate>
-        <input
+          <div className={`search__box ${isActiveSearchClass || isActiveInput ? 'search__box_active' : ''}`}>
+          <input
           id='search'
           name='search'
           className='search__input'
           type='text'
-          placeholder='Фильм'
+          placeholder='Поиск'
           minLength={1}
           autoComplete='off'
         /*value={values.search || ''}*/
         />
-        <span className={`search__button ${isActiveInput ? 'search__button_active' : ''}`} ></span>
+        <span className={`search__icon ${isActiveInput ? 'search__icon_active' : ''}`} ></span>
+          </div>
+        
+        <span id='search-input-error' className='search__error'> </span>
       </form>
-      <span id='search-input-error' className='search__error'></span>
-    </section>
+      
+    // </section>
   );
 }
 

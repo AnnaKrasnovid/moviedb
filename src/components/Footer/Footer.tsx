@@ -13,8 +13,6 @@ function Footer() {
         <Logo
           classNameBox='logo_type_footer'
           classNameImg='logo__img_type_footer'
-          classNameSlogan='logo__slogan_type_footer'
-          onClosePopup={()=> console.log('close')}
         />
         <div className='footer__box-about'>
           <h4 className='footer__title'>О нас</h4>

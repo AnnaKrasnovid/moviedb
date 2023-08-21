@@ -1,8 +1,8 @@
 .navigation {
-  min-width: 500px;
+  // min-width: 500px;
   margin: 0 0;
   box-sizing: border-box;
-
+  
   &__box {
     display: none;
   }
@@ -11,8 +11,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0 10px;
+    margin: 0 auto;
     list-style: none;
+    
+max-width: 600px;
   }
 
   &__box-link {
@@ -32,7 +34,7 @@
   color: #fff;
   font-size: 16px;
   line-height: 32px;
-
+white-space: nowrap;
   &:hover {
     color: #81BECB;
   }
@@ -45,6 +47,23 @@
     color: #81BECB;
   }
 }
+@media screen and (max-width: 1023px) {
+  .navigation {
+    // max-width: 80%;
+    // display: flex;
+    // justify-content: end;
+    // margin: 0;
+    display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+&__list {
+  // justify-content: flex-end;
+  margin: 0;
+  // max-width: 80%;
+  width: 100%;
+}
+  }}
 
 @media screen and (max-width: 767px) {
   .navigation {

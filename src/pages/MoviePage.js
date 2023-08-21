@@ -9,8 +9,7 @@ import '../assets/styles/pages/MoviePage.scss';
 
 function MoviePage() {
   let { state } = useLocation();
-  // const {movie} = useParams()
-  console.log(state.movie)
+  
   return (
     <>
       <DescriptionMovieCard movie={state.movie}/>

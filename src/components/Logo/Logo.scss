@@ -23,21 +23,21 @@
     }
   }
 
-  &__slogan {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
-    color: #81BECB;
-    margin: 10px 0;
+  // &__slogan {
+  //   font-weight: 400;
+  //   font-size: 11px;
+  //   line-height: 14px;
+  //   color: #81BECB;
+  //   margin: 10px 0;
 
-    &_type_footer {
-      margin-bottom: 0;
-    }
+  //   &_type_footer {
+  //     margin-bottom: 0;
+  //   }
 
-    &_type_popup {
-      display: none;
-    }
-  }
+  //   &_type_popup {
+  //     display: none;
+  //   }
+  // }
 }
 
 @media screen and (max-width: 1023px) {
@@ -48,11 +48,11 @@
         height: 52px;
       }
 
-      &__slogan {
-        &_type_header {
-          display: none;
-        }
-      }
+      // &__slogan {
+      //   &_type_header {
+      //     display: none;
+      //   }
+      // }
     }
   }
 }
@@ -66,6 +66,9 @@
     &_type_footer {
       width: 147px;
       height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &_type_popup {
       display: flex;

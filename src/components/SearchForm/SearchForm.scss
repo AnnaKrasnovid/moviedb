@@ -16,22 +16,24 @@
   padding: 0;
   max-width: 600px;
   width: 100%;
+ justify-self: end;
 
-  &__form {
-    display: flex;
+  &__box {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr max-content;
     align-items: center;
-    justify-content: space-between;
-    min-height: 34px;
+    gap: 16px;
+    max-width: 600px;
     box-sizing: border-box;
     border: 1px solid #424242;
     background-color: #1B1E1E;
     border-radius: 50px;
-    padding: 0 25px;
+    padding: 0 16px;
     box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
-  }
-
-  &__form {
     &_active {
       background: rgba(28, 29, 31, 0.5);
       border: 1px solid #7c7b7b;
@@ -47,20 +49,21 @@
     outline: none;
     color: #FFFFFF;
     width: 100%;
+    height: 36px;
     line-height: 40px;
     border-radius: 50px;
     font-weight: 400;
     font-size: 14px;
-
+padding: 12px 0 10px;
     &::placeholder {
       font-weight: 400;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 21px;
       color: #8B8B8B;
     }
   }
 
-  &__button {
+  &__icon {
     background-image: url(../../image/loupe.svg);
     background-color: #1B1E1E;
     background-repeat: no-repeat;
@@ -89,7 +92,8 @@
     color: #EE3465;
     min-height: 20px;
     display: block;
-    margin: 5px 30px 10px;
+    // margin: 5px 30px 10px;
+    margin-left: 16px;
 
     &_active {
       display: block;
@@ -100,14 +104,15 @@
 @media screen and (max-width: 1023px) {
   .search {
     max-width: 100%;
-    padding-top: 20px;
+    // padding-top: 20px;
+    &__box {
+      max-width: 100%;
+    }
   }
 }
 
 @media screen and (max-width: 424px) {
   .search {
-    display: none;
-
     &_type_popup {
       display: flex;
     }
