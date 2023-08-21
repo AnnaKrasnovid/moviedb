@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MovieCard from '../MovieCard/MovieCard';
-import { routes } from '../../settings/routes';
-import { mov } from '../../assets/mockData/movies';
 
 import './MoviesList.scss';
 

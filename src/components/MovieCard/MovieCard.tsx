@@ -4,9 +4,9 @@ import { MovieInt } from '../../settings/interfaces';
 
 import './MovieCard.scss';
 
-interface MovieCardInt {
-  item: MovieInt
-}
+// interface MovieCardInt {
+//   item: MovieInt
+// }
 
 function MovieCard({ item }:any) {
 

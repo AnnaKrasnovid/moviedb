@@ -11,7 +11,8 @@ function Main() {
     <>
       <Lead />
       <Compilation title='Сериалы' moviesList={mov}/>
-      <Compilation title='Фильмы с высоким рейтингом' moviesList={mov}/>
+      <Compilation title='Фильмы с высоким рейтингом' moviesList={mov}/>      
+      <Compilation title='Мультфильмы' moviesList={mov}/>
       <Compilation title='Драмы' moviesList={mov}/>
       <Compilation title='Комедии' moviesList={mov}/>
       <Compilation title='Детективы' moviesList={mov}/>

@@ -1,14 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { genresRoutes } from '../../settings/routes';
 import { menuList } from '../../settings/menuList';
+import { routes } from '../../settings/routes';
 
 import './MenuPopup.scss';
 
-function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActive }) {
+function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres,setActive }) {
  
-
   return (
     <div
       className={`menu ${isHoverGenres ? 'menu_opened' : ''}`}
@@ -19,10 +18,12 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres, setActi
         {menuList.map((i) => {
           return (
             <li className='menu__genre' key={i.id}>
-              <NavLink to={i.link}  className={setActive} onClick={onCloseMenuGenres}>{i.title}</NavLink>
+              <NavLink to={`${routes.GENRES}/${i.link}`} className={setActive} onClick={onCloseMenuGenres}>
+                {i.title}
+              </NavLink>
             </li>
           );
-        })}       
+        })}
       </ul>
     </div>
   );

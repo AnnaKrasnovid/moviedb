@@ -10,8 +10,6 @@ import Layout from '../layout/Layout/Layout';
 import MoviePage from '../pages/MoviePage';
 import MoviesPage from '../pages/MoviesPage';
 
-import { routes } from '../settings/routes';
-
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
   const [isOpenPopupSearch, setIsOpenPopupSearch] = React.useState(false);

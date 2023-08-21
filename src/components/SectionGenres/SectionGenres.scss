@@ -1,193 +1,147 @@
 .genres {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
     display: flex;
     flex-direction: column;
-  
-    &__box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
-      background-size: cover;
-      background-position: center;
-      border: 1px solid #2B2B2B;
-      border-radius: 5px;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+
+    li {
       width: 100%;
-      outline: solid 1px rgba(255, 255, 255, 0.2);
-      outline-offset: -20px;
-      overflow: hidden;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+    color: #fff;
+    height: 100%;
+    height: 355px;
+    border-radius: 6px;
+    &:hover {
+      transform: scale(1.05);
       transition: transform 0.4s ease-in-out;
-      color: #fff;
-  height: 100%;
-      &:hover {
-        transform: scale(1.07);
-        transition: transform 0.4s ease-in-out;
-        box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
-      }
-  
-      &_type {
-        &_two {
-          max-width: 657px;
-          height: 448px;
-        }
-  
-        &_three {
-          max-width: 427px;
-          height: 355px;
+      box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    &_type {
+      &_one {
+        max-width: 1343px;
+        height: 446px;
+
+        &:hover {
+          transform: scale(1.01);
+          transition: transform 0.4s ease-in-out;
         }
       }
-  
-      &_bg {
-        &_0 {
-          margin-bottom: 30px;
-          max-width: 1343px;
-          height: 446px;
-          background-image: url(../../image/genre-fighters.png);
-  
-          &:hover {
-            transform: scale(1.01);
-          }
-        }
-  
-        &_1 {
-          background-image: url(../../image/genre-military.png);
-        }
-  
-        &_2 {
-          background-image: url(../../image/genre-detectives.png);
-        }
-  
-        &_3 {
-          background-image: url(../../image/genre-childish.png);
-        }
-  
-        &_4 {
-          background-image: url(../../image/genre-dramas.png);
-        }
-  
-        &_5 {
-          background-image: url(../../image/genre-comedies.png);
-        }
-  
-        &_6 {
-          background-image: url(../../image/genre-crime.png);
-        }
-  
-        &_7 {
-          background-image: url(../../image/genre-melodramas.png);
-        }
-  
-        &_8 {
-          background-image: url(../../image/genre-thrillers.png);
-        }
-  
-        &_9 {
-          background-image: url(../../image/genre-horrors.png);
-        }
-  
-        &_10 {
-          background-image: url(../../image/genre-fantastic.png);
-        }
-  
-        &_11 {
-          background-image: url(../../image/genre-fantasy.png);
-        }
+
+      &_two {
+        max-width: 657px;
+        height: 448px;
       }
-  
-  
+
+      &_three {
+        max-width: 427px;
+        height: 355px;
+      }
     }
-  
-    &__container-three {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+  }  
+
+  &__container-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }  
+
+  &__container-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .genres {
+    &__box {
+      height: 250px;
+
+      &_type_one {
+        height: 300px;
+      }
+
+      &_type_two {
+        height: 300px;
+      }
+
+      &_type_three {
+        height: 200px;
+      }    
     }
-  
-    &__title {
-      margin: 0;
-      font-family: 'Philosopher';
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 45px;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .genres {
+    &__list {
+      gap: 20px;
     }
-  
+
+    &__box {
+      outline-offset: -10px;
+      height: 200px;
+
+      &_type_one {
+        height: 250px;
+      }
+
+      &_type_two {
+        height: 200px;
+      }
+    }
+
     &__container-two {
-      display: grid;
+      gap: 20px;
+    }
+
+    &__container-three {
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 28px;
-      margin-bottom: 30px;
-      height: 100%;
-    }
-  
-  }
-  
-  @media screen and (max-width: 1023px) {
-    .genres {
-      &__box {
-        &_genre_fighters {
-          height: 350px;
-        }
-  
-        &_type_two {
-          height: 350px;
-        }
-  
-        &_type_three {
-          height: 200px;
-        }
-      }
+      gap: 20px;
     }
   }
-  
-  @media screen and (max-width: 767px) {
-    .genres {
-      &__box {
-        outline-offset: -10px;
-  
-        &_genre_fighters {
-          height: 250px;
-        }
-  
-        &_type_two {
-          height: 170px;
-        }
-      }
-  
-      &__title {
-        font-size: 18px;
-        line-height: 20px;
-      }
-  
-      &__container-three {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+}
+
+@media screen and (max-width: 424px) {
+  .genres {
+    align-items: center;
+
+    &__box {
+      width: 290px;
+      height: 155px;
+      outline-offset: -5px;
+
+      &_type_one:hover {
+        transform: scale(1.05);
       }
     }
-  }
-  
-  @media screen and (max-width: 424px) {
-    .genres {
-      align-items: center;
-  
-      &__box {
-        width: 290px;
-        height: 155px;
-        outline-offset: -5px;
-  
-        &_genre_fighters:hover {
-          transform: scale(1.07);
-        }
-      }
-  
-      &__container-two {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        row-gap: 20px;
-      }
-  
-      &__container-three {
-        grid-template-columns: 1fr;
-      }
+
+    &__container-two {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 20px;
+    }
+
+    &__container-three {
+      grid-template-columns: 1fr;
     }
   }
+}
