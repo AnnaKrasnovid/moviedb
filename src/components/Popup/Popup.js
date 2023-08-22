@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo';
 import useWindowWidth from '../../hooks/useWindowWidth';
 import '../../assets/styles/components/Popup/Popup.scss';
 
-function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
+function Popup({ onClosePopup, isOpenPopupMenu, children }) {
   const sizeWindow = useWindowWidth();
 
   React.useEffect(() => {
@@ -12,17 +12,10 @@ function Popup({ onClosePopup, isOpenPopupMenu, isOpenPopupSearch, children }) {
     }
   }, [onClosePopup, sizeWindow]);
 
-  function getTypePopup() {
-    if (isOpenPopupMenu) {
-      return isOpenPopupMenu ? 'popup_opened popup_type_menu' : '';
-    } else if (isOpenPopupSearch) {
-      return isOpenPopupSearch ? 'popup_opened popup_type_search' : '';
-    }
-    return '';
-  }
+
 
   return (
-    <div className={`popup ${getTypePopup()}`} >
+    <div className={`popup  popup_opened ${isOpenPopupMenu ? 'popup_opened' : ''}`} >
       <div className='popup__box'>
         <Logo
           classNameBox='logo_type_popup'

@@ -28,7 +28,7 @@ function Navigation() {
           </NavLink>
           <Submenu item={item} isActiveSubmenu={isActiveSubmenu} />
         </li>
-      )
+      );
     } else {
       return (
         <li className='navigation__box-link' key={item.id} >

@@ -83,12 +83,15 @@
 
 @media screen and (max-width: 767px) {
   .navigation {
-    position: relative;
+    // position: relative;
     z-index: 22;
-    min-width: calc(320px - 10%);
+    // min-width: calc(320px - 10%);
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
 
     &_type_header {
-      display: none;
+      // display: none;
     }
 
     &_type_popup {
