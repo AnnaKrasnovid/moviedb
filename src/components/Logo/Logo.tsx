@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import LogoVector from '../../image/Logo.svg';
 import './Logo.scss';
 
+type LogoTypes = 'header' | 'footer' | 'menu';
 interface LogoInt {
-  classNameBox: string,
-  classNameImg: string,
+  type: LogoTypes,
 }
 
-function Logo({ classNameBox, classNameImg }: LogoInt) {
+function Logo({ type}: LogoInt) {
   return (
-    <Link to='/' className={`logo ${classNameBox}`}>
-      <img className={`logo__img ${classNameImg}`} src={LogoVector} alt='Логотип'></img>
+    <Link to='/' className={`logo logo_type_${type}`}>
+      <img className={`logo__img logo__img_type_${type}`} src={LogoVector} alt='Логотип'></img>
     </Link>
   );
 }

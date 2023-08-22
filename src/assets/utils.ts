@@ -20,4 +20,12 @@ export function getInfo(arr: Array<any>) {
     return infoArr.join(', ');
 };
 
+export const hideScroll = (state: boolean): void => {
+    if (state === true) {
+        document.body.classList.add('hide-scroll');
+    } else {
+        document.body.classList.remove('hide-scroll')
+    }
+};
+
 

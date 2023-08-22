@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Main from '../pages/MainPage';
-import PopupMenu from '../components/Popup/PopupMenu';
+import MenuMobile from '../components/MenuMobile/MenuMobile';
 import GenresPage from '../pages/GenresPage';
 import NotFoundPage from '../pages/NotFoundPage';
-// import Layout from '../components/Layout/Layout';
 import Layout from '../layout/Layout/Layout';
 import MoviePage from '../pages/MoviePage';
 import MoviesPage from '../pages/MoviesPage';
+
+import '../assets/styles/pages/Main.scss';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
@@ -15,8 +16,6 @@ function App() {
   function handleClickMenu() {
     setIsOpenPopupMenu(true);
   }
-
-
 
   function handleClosePopup() {
     setIsOpenPopupMenu(false);
@@ -32,9 +31,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout
           onOpenMenu={handleClickMenu}
-          isOpenPopupMenu={isOpenPopupMenu}
           onClosePopup={handleClosePopup}
-          onSearch={handleSearch}
         />}>
           <Route index element={<Main />} />
           <Route path='movies' element={<MoviesPage />} />
@@ -56,7 +53,7 @@ function App() {
         </Route>
       </Routes>
 
-      <PopupMenu
+      <MenuMobile
         onClosePopup={handleClosePopup}
         isOpenPopupMenu={isOpenPopupMenu}
       />      

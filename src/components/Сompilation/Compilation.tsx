@@ -2,15 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
+import { Navigation } from 'swiper';
 
 import MovieCard from '../MovieCard/MovieCard';
 
 import { routes } from '../../settings/routes';
 import useWindowWidth from '../../hooks/useWindowWidth';
 
-import 'swiper/css/bundle';
-import '../../assets/styles/swiper/swiper.css';
 import './Compilation.scss';
 
 interface CompilationInt {

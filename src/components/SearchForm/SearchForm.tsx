@@ -1,10 +1,5 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import './SearchForm.scss';
-
-interface  SearchFormInt {
-  isOpenPopupSearch: Boolean,
-  onSearch: ()=> void
-}
 
 function SearchForm() {
   const [isActiveSearchClass, setIsActiveSearchClass] = useState(false);
@@ -27,16 +22,15 @@ function SearchForm() {
   }
 
   return (
-    // <section className={`search ${isOpenPopupSearch ? 'search_type_popup' : ''}`} >
-      <form
-className='search'
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        onFocus={handleOnFocusInput}
-        onBlur={handleOnBlurInput}
-        noValidate>
-          <div className={`search__box ${isActiveSearchClass || isActiveInput ? 'search__box_active' : ''}`}>
-          <input
+    <form
+      className='search'
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onFocus={handleOnFocusInput}
+      onBlur={handleOnBlurInput}
+      noValidate>
+      <div className={`search__box ${isActiveSearchClass || isActiveInput ? 'search__box_active' : ''}`}>
+        <input
           id='search'
           name='search'
           className='search__input'
@@ -47,12 +41,10 @@ className='search'
         /*value={values.search || ''}*/
         />
         <span className={`search__icon ${isActiveInput ? 'search__icon_active' : ''}`} ></span>
-          </div>
-        
-        <span id='search-input-error' className='search__error'> </span>
-      </form>
-      
-    // </section>
+      </div>
+
+      <span id='search-input-error' className='search__error'> </span>
+    </form>
   );
 }
 

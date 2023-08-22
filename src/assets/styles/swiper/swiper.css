@@ -7,7 +7,7 @@
 
 .swiper {
     /*исправлено, в др блоке  position relative  родит блоку надо назначать*/
-    position: static; 
+    /* position: static;  */
 }
 
 /* .mySwiper {

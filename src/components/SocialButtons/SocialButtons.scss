@@ -9,7 +9,7 @@
     grid-area: social;
   }
 
-  &_type_popup {
+  &_type_menu {
     display: none;
   }
 
@@ -44,7 +44,7 @@
   .social-buttons {
     &_type_popup {
       display: flex;
-      margin-top: 20px;
+      // margin-top: 20px;
     }
 
     &__link {

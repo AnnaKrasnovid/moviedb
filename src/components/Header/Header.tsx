@@ -4,23 +4,24 @@ import SearchForm from '../SearchForm/SearchForm';
 import ButtonBurger from '../../UI/ButtonBurger/ButtonBurger';
 import './Header.scss';
 
-function Header(props) {
-  const { onOpenMenu, onClosePopup } = props;
+interface HeaderInt {
+  onOpenMenu: () => void,
+  onClosePopup: () => void
+}
+
+function Header({ onOpenMenu, onClosePopup }: HeaderInt) {
+  // const { onOpenMenu, onClosePopup } = props;
 
   return (
     <header className="header">
       <div className="header__wrapper">
-        <Logo
-          classNameBox='logo_type_header'
-          classNameImg='logo__img_type_header'
-        />
+        <Logo type='header' />
         <div className="header__box">
           <ButtonBurger callback={onOpenMenu} />
-          <Navigation  />
+          <Navigation type='header' onClosePopup={onClosePopup} />
         </div>
       </div>
-
-      <SearchForm onClosePopup={onClosePopup} />
+      <SearchForm />
     </header>
   );
 }

@@ -4,7 +4,7 @@
   justify-content: center;
   max-width: 165px;
 
-  &_type_popup {
+  &_type_menu {
     display: none;
   }
 
@@ -13,7 +13,7 @@
     height: 72px;
     cursor: pointer;
 
-    &_type_popup {
+    &_type_menu {
       width: 68px;
       height: 32px;
     }
@@ -22,22 +22,6 @@
       opacity: 0.9;
     }
   }
-
-  // &__slogan {
-  //   font-weight: 400;
-  //   font-size: 11px;
-  //   line-height: 14px;
-  //   color: #81BECB;
-  //   margin: 10px 0;
-
-  //   &_type_footer {
-  //     margin-bottom: 0;
-  //   }
-
-  //   &_type_popup {
-  //     display: none;
-  //   }
-  // }
 }
 
 @media screen and (max-width: 1023px) {
@@ -47,12 +31,6 @@
         width: 100px;
         height: 52px;
       }
-
-      // &__slogan {
-      //   &_type_header {
-      //     display: none;
-      //   }
-      // }
     }
   }
 }
@@ -70,7 +48,7 @@
       align-items: center;
       justify-content: center;
     }
-    &_type_popup {
+    &_type_menu {
       display: flex;
     }
   }  

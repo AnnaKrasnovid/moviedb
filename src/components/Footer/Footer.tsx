@@ -10,10 +10,7 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className='footer__container'>
-        <Logo
-          classNameBox='logo_type_footer'
-          classNameImg='logo__img_type_footer'
-        />
+        <Logo type='footer'/>
         <div className='footer__box-about'>
           <h4 className='footer__title'>О нас</h4>
           <p className='footer__about'>
@@ -26,9 +23,7 @@ function Footer() {
       </div>
       <div className='footer__box-info'>
         <p className='footer__info'>Все права защищены MovieDB.ru 2022</p>
-        <SocialButtons
-          classNameBlock='social-buttons_type_footer'
-        />
+        <SocialButtons type='footer'    />
         <Link className='footer__info footer__info_type_link' to='#' target='_blank'>Политика конфиденциальности</Link>
       </div>
     </footer>
