@@ -1,14 +1,8 @@
-import './ButtonText.scss'
+import { ButtonInt } from '../../settings/interfaces';
 
-type ButtonTextTypes = 'button';
+import './ButtonText.scss';
 
-interface ButtonTextInt {
-    type?: ButtonTextTypes,
-    text: string,
-    callback: () => void
-}
-
-function ButtonText({ type = 'button', text = 'Text', callback }: ButtonTextInt) {
+function ButtonText({ type = 'button', text = '', callback }: ButtonInt) {
     return (
         <button type={type} onClick={callback} className='button-text hover'>{text}</button>
     );

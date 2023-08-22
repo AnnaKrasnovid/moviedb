@@ -1,10 +1,11 @@
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
+import ButtonBurger from '../../UI/ButtonBurger/ButtonBurger';
 import './Header.scss';
 
 function Header(props) {
-  const { onOpenMenu, onOpenPopupSearch, isOpenPopupSearch, onClosePopup, onSearch } = props;
+  const { onOpenMenu, onClosePopup } = props;
 
   return (
     <header className="header">
@@ -14,13 +15,12 @@ function Header(props) {
           classNameImg='logo__img_type_header'
         />
         <div className="header__box">
-          {/* <button className='header__button-search' onClick={onOpenPopupSearch} type='button' /> */}
-          <button className='button-burger' onClick={onOpenMenu} />
-          <Navigation onClosePopup={onClosePopup} classNamePopup={'navigation_type_header'} />
+          <ButtonBurger callback={onOpenMenu} />
+          <Navigation  />
         </div>
       </div>
 
-      <SearchForm isOpenPopupSearch={isOpenPopupSearch} onClosePopup={onClosePopup} onSearch={onSearch} />
+      <SearchForm onClosePopup={onClosePopup} />
     </header>
   );
 }

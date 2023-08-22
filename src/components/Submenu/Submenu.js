@@ -4,21 +4,20 @@ import { NavLink } from 'react-router-dom';
 import { menuList } from '../../settings/menuList';
 import { routes } from '../../settings/routes';
 
-import './MenuPopup.scss';
+import './Submenu.scss';
 
-function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres,setActive }) {
+function Submenu({ item }) {
  
   return (
     <div
-      className={`menu ${isHoverGenres ? 'menu_opened' : ''}`}
-      onMouseEnter={onOpenMenuGenres}
-      onMouseLeave={onCloseMenuGenres}
+      className={`menu ${ 'menu_opened'}`}
+    
     >
       <ul className='menu__list' >
-        {menuList.map((i) => {
+        {item.submenu.map((i) => {
           return (
             <li className='menu__genre' key={i.id}>
-              <NavLink to={`${routes.GENRES}/${i.link}`} className={setActive} onClick={onCloseMenuGenres}>
+              <NavLink to={`${item.path}/${i.link}`}>
                 {i.title}
               </NavLink>
             </li>
@@ -29,4 +28,4 @@ function MenuPopup({ isHoverGenres, onOpenMenuGenres, onCloseMenuGenres,setActiv
   );
 }
 
-export default MenuPopup;
+export default Submenu;

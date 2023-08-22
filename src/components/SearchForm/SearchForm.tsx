@@ -6,7 +6,7 @@ interface  SearchFormInt {
   onSearch: ()=> void
 }
 
-function SearchForm({ isOpenPopupSearch, onSearch }: SearchFormInt) {
+function SearchForm() {
   const [isActiveSearchClass, setIsActiveSearchClass] = useState(false);
   const [isActiveInput, setIsActiveInput] = useState(false);
 
@@ -34,7 +34,6 @@ className='search'
         onMouseLeave={handleMouseLeave}
         onFocus={handleOnFocusInput}
         onBlur={handleOnBlurInput}
-        onSubmit={onSearch}
         noValidate>
           <div className={`search__box ${isActiveSearchClass || isActiveInput ? 'search__box_active' : ''}`}>
           <input

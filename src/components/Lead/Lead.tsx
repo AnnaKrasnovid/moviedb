@@ -9,10 +9,7 @@ import Live from '../../image/main-live.jpg';
 import Dune from '../../image/main-dune2.jpg';
 import Aquaman from '../../image/main-aquaman.jpg';
 
-import 'swiper/css/bundle';
-import '../../assets/styles/swiper/swiper.css';
 import './Lead.scss';
-
 
 function Lead() {
   const slides = [Interstellar, Avengers, Live, Dune, Aquaman];
@@ -34,7 +31,7 @@ function Lead() {
       }}
       //navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
-      className='mySwiper'
+      className='section-lead'
     >
       {slides.map((item) => (
         <SwiperSlide key={item}>

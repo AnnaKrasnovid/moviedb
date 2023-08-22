@@ -1,8 +1,7 @@
 .navigation {
-  // min-width: 500px;
   margin: 0 0;
   box-sizing: border-box;
-  
+
   &__box {
     display: none;
   }
@@ -10,31 +9,47 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
     padding: 0;
     margin: 0 auto;
     list-style: none;
-    
-max-width: 600px;
+    max-width: 600px;
   }
 
   &__box-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &_type_genres {
       position: relative;
     }
   }
-}
 
-.button-burger {
-  display: none;
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    &_type {
+      &_submenu {
+        grid-template-columns: 1fr 22px;
+        gap: 6px;
+      }
+    }
+  }
 }
 
 .link-menu {
-  margin-right: 10px;
+  // margin-right: 10px;
   text-decoration: none;
   color: #fff;
   font-size: 16px;
   line-height: 32px;
-white-space: nowrap;
+  white-space: nowrap;
+display: flex;
+align-items: center;
+gap: 6px;
   &:hover {
     color: #81BECB;
   }
@@ -45,25 +60,26 @@ white-space: nowrap;
 
   &_active {
     color: #81BECB;
+   
+    path {
+      stroke: #81BECB;
+    }
   }
 }
+
 @media screen and (max-width: 1023px) {
   .navigation {
-    // max-width: 80%;
-    // display: flex;
-    // justify-content: end;
-    // margin: 0;
     display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-&__list {
-  // justify-content: flex-end;
-  margin: 0;
-  // max-width: 80%;
-  width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+    &__list {
+      margin: 0;
+      width: 100%;
+    }
+  }
 }
-  }}
 
 @media screen and (max-width: 767px) {
   .navigation {
@@ -99,19 +115,6 @@ white-space: nowrap;
         border-top: 1px solid #8b8b8b;
       }
     }
-  }
-
-  .button-burger {
-    display: block;
-    background-image: url(../../image/menu.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #81BECB;
-    border-radius: 5px;
-    width: 28px;
-    height: 28px;
-    border: 0;
-    padding: 0;
   }
 
   .link-menu {

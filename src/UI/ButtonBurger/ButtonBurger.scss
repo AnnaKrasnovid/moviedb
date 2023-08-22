@@ -1,0 +1,18 @@
+.button-burger {
+    display: none;
+    background-image: url(../../image/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #81BECB;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .button-burger {
+        display: block;
+    }
+}

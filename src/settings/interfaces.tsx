@@ -19,3 +19,10 @@ export interface MovieInt {
     },
     [propName: string]: string | number | {},
 }
+
+type ButtonTypes = 'button' | 'submit';
+export interface ButtonInt {
+    type?: ButtonTypes,
+    text?: string,
+    callback: () => void
+}

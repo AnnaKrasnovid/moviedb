@@ -2,9 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // display: grid;
-  // grid-template-columns: max-content 1fr 1fr;
-  // align-items: center;
   gap: 32px;
   min-height: 100px;
   width: 100%;
@@ -15,35 +12,27 @@
   box-sizing: border-box;
   position: relative;
 
-  // &__button-search {
-  //   display: none;
-  // }
   &__wrapper {
-display: grid;
-grid-template-columns: max-content 1fr;
-align-items: center;
-gap: 32px;
-width: 100%;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .header {
-     flex-direction: column;
-     gap: 16px;
-     &__wrapper {
-//       display: flex;
-// justify-content: space-between;
-    }
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .header {
-     
-     &__wrapper {
+    &__wrapper {
       display: flex;
-justify-content: space-between;
+      justify-content: space-between;
     }
   }
 }
@@ -57,21 +46,5 @@ justify-content: space-between;
     &__box {
       display: flex;
     }
-    
-
-    // &__button-search {
-    //   display: block;
-    //   height: 34px;
-    //   width: 34px;
-    //   padding: 0;
-    //   border: 0;
-    //   margin-right: 20px;
-    //   background-image: url(../../image/loupe.svg);
-    //   background-color: #1B1E1E;
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   cursor: pointer;
-    //   opacity: 0.8;
-    // }
   }
 }

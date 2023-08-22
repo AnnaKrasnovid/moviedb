@@ -3,14 +3,12 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
 function Layout(props) {
-  const { onOpenMenu, onOpenPopupSearch, isOpenPopupMenu, isOpenPopupSearch, onClosePopup, onSearch } = props;
+  const { onOpenMenu, isOpenPopupMenu, onClosePopup, onSearch } = props;
   return (
     <>
       <Header
         onOpenMenu={onOpenMenu}
-        onOpenPopupSearch={onOpenPopupSearch}
         isOpenPopupMenu={isOpenPopupMenu}
-        isOpenPopupSearch={isOpenPopupSearch}
         onClosePopup={onClosePopup}
         onSearch={onSearch}
       />
