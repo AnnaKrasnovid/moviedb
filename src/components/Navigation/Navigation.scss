@@ -20,38 +20,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &_type_genres {
-      position: relative;
-    }
+    position: relative;
+    
   }
 
-  &__item {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
+  &__arrow {
+    transition: transform 0.5s ease;
 
-    &_type {
-      &_submenu {
-        grid-template-columns: 1fr 22px;
-        gap: 6px;
-      }
+    &_active {
+      transform: rotate(180deg);
+      transition: transform 0.5s ease;
     }
   }
 }
 
 .link-menu {
-  // margin-right: 10px;
   text-decoration: none;
   color: #fff;
   font-size: 16px;
   line-height: 32px;
   white-space: nowrap;
-display: flex;
-align-items: center;
-gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
   &:hover {
     color: #81BECB;
+
+    path {
+      stroke: #81BECB;
+    }
   }
 
   &:last-of-type(5) {
@@ -60,11 +58,13 @@ gap: 6px;
 
   &_active {
     color: #81BECB;
-   
+
     path {
       stroke: #81BECB;
     }
   }
+
+  
 }
 
 @media screen and (max-width: 1023px) {

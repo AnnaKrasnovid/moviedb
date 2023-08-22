@@ -26,3 +26,17 @@ export interface ButtonInt {
     text?: string,
     callback: () => void
 }
+
+export interface SubmenuItemInt {
+    id: string, 
+    path: string, 
+    title: string, 
+    request: string, 
+}
+
+export interface MenuItemInt {
+    id: string,
+    path: string,
+    title: string,
+    submenu?: Array<SubmenuItemInt>
+}

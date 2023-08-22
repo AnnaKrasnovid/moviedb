@@ -7,7 +7,7 @@
   backdrop-filter: blur(20px);
   border-radius: 0px 5px 5px 5px;
   opacity: 0;
-  transition: visibility .5s linear, opacity .5s linear;
+  transition: visibility .2s linear, opacity .2s linear;
   position: absolute;
   top: 30px;
   left: 0;
@@ -16,10 +16,10 @@
 
   &_opened {
     opacity: 1;
-    transition: visibility .5s linear, opacity .5s linear;
+    transition: visibility .2s linear, opacity .2s linear;
     pointer-events: auto;
   }
-
+ 
   &__list {
     margin: 0;
     padding: 0;
@@ -32,6 +32,12 @@
     font-size: 16px;
     line-height: 30px;
     color: #ffffff;
+    &:hover {
+      color: #81BECB;
+    }
+    &_active {
+      color: #81BECB;
+    }
   }
 }
 
