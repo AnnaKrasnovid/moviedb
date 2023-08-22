@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import Submenu from '../Submenu/Submenu';
 
-import { menu } from '../../settings/routes';
+import { menu } from '../../settings/menuList';
 import { MenuItemInt } from '../../settings/interfaces';
 
 import './Navigation.scss';

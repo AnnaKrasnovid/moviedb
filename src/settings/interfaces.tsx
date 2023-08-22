@@ -1,13 +1,6 @@
 export interface GenreItemInt {
     name: string,
 }
-
-export interface GenreInt {
-    id: number | string,
-    title: string,
-    link: string,
-}
-
 export interface MovieInt {
     id: number
     type: string,

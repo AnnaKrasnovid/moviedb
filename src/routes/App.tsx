@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Main from '../pages/MainPage';
 import MenuMobile from '../components/MenuMobile/MenuMobile';
@@ -11,7 +11,7 @@ import MoviesPage from '../pages/MoviesPage';
 import '../assets/styles/pages/Main.scss';
 
 function App() {
-  const [isOpenPopupMenu, setIsOpenPopupMenu] = React.useState(false);
+  const [isOpenPopupMenu, setIsOpenPopupMenu] = useState(false);
 
   function handleClickMenu() {
     setIsOpenPopupMenu(true);
@@ -19,10 +19,6 @@ function App() {
 
   function handleClosePopup() {
     setIsOpenPopupMenu(false);
-  }
-
-  function handleSearch(e) {
-    e.preventDefault();
   }
 
   return (
