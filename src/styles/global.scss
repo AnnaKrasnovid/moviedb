@@ -48,7 +48,7 @@ a {
 }
 
 .main {
-  max-width: 1343px;
+  max-width:$container-max-width;
   width: 100%;
   min-height: 650px;
   padding-bottom: 100px;
