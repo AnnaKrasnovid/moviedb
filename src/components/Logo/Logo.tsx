@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // @ts-ignore
-import LogoVector from '../../image/Logo.svg';
+import LogoVector from '../../images/Logo.svg';
 import './Logo.scss';
 
 type LogoTypes = 'header' | 'footer' | 'menu';

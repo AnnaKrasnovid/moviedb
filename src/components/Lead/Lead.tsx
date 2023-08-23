@@ -3,11 +3,11 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
-import Interstellar from '../../image/main-interstellar.jpg';
-import Avengers from '../../image/main-avengers.jpg';
-import Live from '../../image/main-live.jpg';
-import Dune from '../../image/main-dune2.jpg';
-import Aquaman from '../../image/main-aquaman.jpg';
+import Interstellar from '../../images/main-interstellar.jpg';
+import Avengers from '../../images/main-avengers.jpg';
+import Live from '../../images/main-live.jpg';
+import Dune from '../../images/main-dune2.jpg';
+import Aquaman from '../../images/main-aquaman.jpg';
 
 import './Lead.scss';
 

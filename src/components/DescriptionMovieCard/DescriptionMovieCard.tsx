@@ -4,7 +4,7 @@ import Rating from '../Rating/Rating';
 import DescriptionMovieItem from '../DescriptionMovieItem/DescriptionMovieItem';
 import DescriptionMovie from '../DescriptionMovie/DescriptionMovie';
 
-import { getTime, getInfo } from '../../assets/utils';
+import { getTime, getInfo } from '../../tools/utils';
 
 import './DescriptionMovieCard.scss';
 

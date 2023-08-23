@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Route, Routes } from 'react-router-dom';
+
 import Main from '../pages/MainPage';
 import MenuMobile from '../components/MenuMobile/MenuMobile';
 import GenresPage from '../pages/GenresPage';
@@ -7,8 +8,6 @@ import NotFoundPage from '../pages/NotFoundPage';
 import Layout from '../layout/Layout/Layout';
 import MoviePage from '../pages/MoviePage';
 import MoviesPage from '../pages/MoviesPage';
-
-import '../assets/styles/pages/Main.scss';
 
 function App() {
   const [isOpenPopupMenu, setIsOpenPopupMenu] = useState(false);
@@ -23,7 +22,6 @@ function App() {
 
   return (
     <div className='page'>
-
       <Routes>
         <Route path='/' element={<Layout
           onOpenMenu={handleClickMenu}

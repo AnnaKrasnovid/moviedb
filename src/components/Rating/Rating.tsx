@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { getRoundNumber } from '../../assets/utils';
+import { getRoundNumber } from '../../tools/utils';
 
 import './Rating.scss';
 

@@ -6,7 +6,7 @@ import ScrollBar from '../../UI/ScrollBar/ScrollBar';
 import Logo from '../Logo/Logo';
 
 import useWindowWidth from '../../hooks/useWindowWidth';
-import { hideScroll } from '../../assets/utils';
+import { hideScroll } from '../../tools/utils';
 
 import './MenuMobile.scss';
 

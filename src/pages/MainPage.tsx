@@ -4,8 +4,6 @@ import DescriptionMovieCard from '../components/DescriptionMovieCard/Description
 
 import { mov } from '../assets/mockData/movies';
 
-import '../assets/styles/pages/Main.scss';
-
 function Main() {
   return (
     <>
