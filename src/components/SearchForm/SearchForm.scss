@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 @keyframes search-magnifier {
   from {
     transform: scale(1, 1);
@@ -10,18 +12,19 @@
 }
 
 .search {
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  padding: 0;
+  justify-self: end;
   max-width: 600px;
   width: 100%;
- justify-self: end;
 
   &__box {
     // display: flex;
     // align-items: center;
     // justify-content: space-between;
+    padding: 0 16px;
     display: grid;
     grid-template-columns: 1fr max-content;
     align-items: center;
@@ -31,9 +34,9 @@
     border: 1px solid #424242;
     background-color: #1B1E1E;
     border-radius: 50px;
-    padding: 0 16px;
     box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
+
     &_active {
       background: rgba(28, 29, 31, 0.5);
       border: 1px solid #7c7b7b;
@@ -43,18 +46,19 @@
   }
 
   &__input {
+    padding: 12px 0 10px;
     background-color: #1B1E1E;
     display: block;
     border: 0;
     outline: none;
-    color: #FFFFFF;
     width: 100%;
     height: 36px;
-    line-height: 40px;
     border-radius: 50px;
     font-weight: 400;
     font-size: 14px;
-padding: 12px 0 10px;
+    line-height: 40px;
+    color: #FFFFFF;
+
     &::placeholder {
       font-weight: 400;
       font-size: 14px;
@@ -64,6 +68,7 @@ padding: 12px 0 10px;
   }
 
   &__icon {
+    padding: 0;
     background-image: url(../../images/loupe.svg);
     background-color: #1B1E1E;
     background-repeat: no-repeat;
@@ -71,8 +76,7 @@ padding: 12px 0 10px;
     cursor: pointer;
     opacity: 0.5;
     height: 24px;
-    width: 24px;
-    padding: 0;
+    width: 24px;    
     border: 0;
 
     &_active {
@@ -86,14 +90,13 @@ padding: 12px 0 10px;
   }
 
   &__error {
+    margin-left: 16px;
     font-weight: 400;
     font-size: 13px;
     line-height: 1.38;
-    color: #EE3465;
+    color: $color-error;
     min-height: 20px;
     display: block;
-    // margin: 5px 30px 10px;
-    margin-left: 16px;
 
     &_active {
       display: block;
@@ -101,17 +104,17 @@ padding: 12px 0 10px;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .search {
     max-width: 100%;
-    // padding-top: 20px;
+
     &__box {
       max-width: 100%;
     }
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: $breakpoint-sm) {
   .search {
     &_type_popup {
       display: flex;

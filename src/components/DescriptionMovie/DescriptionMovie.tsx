@@ -1,12 +1,11 @@
 import ButtonText from '../../UI/ButtonText/ButtonText';
 
 import './DescriptionMovie.scss';
-
 interface DescriptionMovieInt {
     title: string,
     info: string | number,
     buttonText: string,
-    callback: () => void
+    callback: () => void,
 }
 
 function DescriptionMovie({ title, info, buttonText, callback }: DescriptionMovieInt) {

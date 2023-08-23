@@ -1,6 +1,8 @@
+@import '../../styles/variables.scss';
+
 .menu-mobile {
   min-width: 320px;
-  background: #1c1d1f;
+  background: $background-main;
   position: fixed;
   inset: 0;
   z-index: 20;
@@ -19,7 +21,6 @@
     visibility: visible;
     opacity: 1;
     transition: visibility .3s linear, opacity .3s linear;
-    box-sizing: border-box;
   }
 
   &__box {
@@ -41,7 +42,7 @@
     background-image: url(../../images/icon-close-menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #1c1d1f;
+    background-color: $background-main;
     height: 30px;
     width: 30px;
     padding: 0;

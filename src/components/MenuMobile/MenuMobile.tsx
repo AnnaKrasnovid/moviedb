@@ -10,19 +10,19 @@ import { hideScroll } from '../../tools/utils';
 
 import './MenuMobile.scss';
 
-interface MenuMobile {
+interface MenuMobileInt {
   onClosePopup: () => void,
   isOpenPopupMenu: boolean,
 }
 
-function MenuMobile({ onClosePopup, isOpenPopupMenu }:MenuMobile) {
+function MenuMobile({ onClosePopup, isOpenPopupMenu }: MenuMobileInt) {
   const sizeWindow = useWindowWidth();
 
   useEffect(() => {
     if (sizeWindow > 768) {
       onClosePopup();
     }
-  }, [onClosePopup, sizeWindow]);
+  }, [isOpenPopupMenu, sizeWindow]);
 
   useEffect(() => {
     hideScroll(isOpenPopupMenu);
@@ -31,7 +31,7 @@ function MenuMobile({ onClosePopup, isOpenPopupMenu }:MenuMobile) {
   return (
     <div className={`menu-mobile  ${isOpenPopupMenu ? 'menu-mobile_opened' : ''}`} >
       <div className='menu-mobile__box'>
-        <Logo type='menu'/>
+        <Logo type='menu' />
         <button className='menu-mobile__button-close' onClick={onClosePopup} type="button" />
       </div>
       <div className='menu-mobile__box-nav'>

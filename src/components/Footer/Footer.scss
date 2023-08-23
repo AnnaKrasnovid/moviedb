@@ -1,27 +1,28 @@
+@import '../../styles/variables.scss';
+
 .footer {
+  width: 100%;
+  padding: 32px 5% 0;
   display: flex;
   flex-direction: column;
   background: radial-gradient(696.2% 730.65% at 47.6% 26.27%, rgba(24, 26, 25, 0.5) 0%, rgba(36, 40, 43, 0.5) 68.62%);
   box-shadow: 0px -7px 16px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px);
-  width: 100%;
-  padding: 32px 5% 0;
-  box-sizing: border-box;
 
   &__container {
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #323232;
-    padding-bottom: 30px;
+    border-bottom: 1px solid $border-color;    
   }
 
   &__box-about {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    border-left: 1px solid #323232;
     padding-left: 5%;
     margin-left: 5%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;   
+    border-left: 1px solid $border-color;   
   }
 
   &__title {
@@ -30,11 +31,10 @@
 
   &__about {
     margin: 15px 0 0;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    color: #A8A8A8;
+    color: $colot-light-text;
   }
 
   &__box-info {
@@ -47,12 +47,12 @@
   }
 
   &__info {
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-    color: #A8A8A8;
-    margin: 0;
+    color: $colot-light-text;    
     text-align: start;
 
     &_type_link {
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .footer {
     &__about {
       font-size: 12px;
@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .footer {
     align-items: center;
 

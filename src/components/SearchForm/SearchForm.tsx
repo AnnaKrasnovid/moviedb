@@ -29,24 +29,25 @@ function SearchForm() {
       onFocus={handleOnFocusInput}
       onBlur={handleOnBlurInput}
       noValidate>
-      <div className={`search__box ${isActiveSearchClass || isActiveInput ? 'search__box_active' : ''}`}>
-        <input
-          id='search'
-          name='search'
-          className='search__input'
-          type='text'
-          placeholder='Поиск'
-          minLength={1}
-          autoComplete='off'
-        /*value={values.search || ''}*/
-        />
-        <span className={`search__icon ${isActiveInput ? 'search__icon_active' : ''}`} ></span>
-      </div>
+      <div>
+        <div className={`search__box ${isActiveSearchClass || isActiveInput ? 'search__box_active' : ''}`}>
+          <input
+            id='search'
+            name='search'
+            className='search__input'
+            type='text'
+            placeholder='Поиск'
+            minLength={1}
+            autoComplete='off'
+          /*value={values.search || ''}*/
+          />
+          <span className={`search__icon ${isActiveInput ? 'search__icon_active' : ''}`} ></span>
+        </div>
 
-      <span id='search-input-error' className='search__error'> </span>
+        <span id='search-input-error' className='search__error'> </span>
+      </div>
     </form>
   );
 }
 
 export default SearchForm;
-//

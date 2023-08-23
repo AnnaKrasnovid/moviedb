@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .button-burger {
     display: none;
     background-image: url(../../images/menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #81BECB;
+    background-color: $color-primary;
     border-radius: 5px;
     width: 32px;
     height: 32px;
@@ -11,7 +13,7 @@
     padding: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
     .button-burger {
         display: block;
     }

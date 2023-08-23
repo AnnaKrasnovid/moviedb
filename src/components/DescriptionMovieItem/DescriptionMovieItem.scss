@@ -1,14 +1,16 @@
+@import '../../styles/variables.scss';
+
 .description-item {
     display: grid;
     grid-template-columns: 270px 1fr;
     list-style: none;
-    border-bottom: 1px solid #2B2B2B;
+    border-bottom: 1px solid $color-dark;
     min-height: 51px;
 
     &__heading {
+        margin: 0 0 0 20px;
         display: flex;
         align-items: center;
-        margin: 0 0 0 20px;
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
@@ -22,23 +24,25 @@
         line-height: 21px;
 
         &:last-child {
-            border-bottom: none;          
+            border-bottom: none;
         }
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
     .description-item {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
+
         &__heading {
             font-size: 14px;
             line-height: 16px;
             margin: 0;
-          }
-          &__info {
+        }
+
+        &__info {
             font-size: 14px;
             line-height: 16px;
             margin: 0;
-          }
-    } 
+        }
+    }
 }

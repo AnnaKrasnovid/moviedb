@@ -29,7 +29,6 @@ function Lead() {
       pagination={{
         clickable: true,
       }}
-      //navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       className='section-lead'
     >

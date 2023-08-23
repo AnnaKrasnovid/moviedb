@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .genres {
   display: flex;
   flex-direction: column;
@@ -19,14 +21,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+    box-shadow: $box-shadow;
     width: 100%;
     overflow: hidden;
     transition: transform 0.4s ease-in-out;
-    color: #fff;
-    height: 100%;
+    color: $color-white;
     height: 355px;
     border-radius: 6px;
+
     &:hover {
       transform: scale(1.05);
       transition: transform 0.4s ease-in-out;
@@ -54,13 +56,13 @@
         height: 355px;
       }
     }
-  }  
+  }
 
   &__container-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-  }  
+  }
 
   &__container-two {
     display: grid;
@@ -70,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .genres {
     &__box {
       height: 250px;
@@ -85,12 +87,12 @@
 
       &_type_three {
         height: 200px;
-      }    
+      }
     }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .genres {
     &__list {
       gap: 20px;
@@ -120,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: $breakpoint-sm) {
   .genres {
     align-items: center;
 

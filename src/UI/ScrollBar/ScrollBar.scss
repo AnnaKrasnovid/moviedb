@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .scroll {  
     overflow: auto;     
    // padding-right: 10px; //отступ скролла от содержимого слева
    //два свойства ниже для браузера firefox
     scrollbar-width: thin;
-    scrollbar-color: #000 #fff;
+    scrollbar-color: $color-primary #fff;
 }
 
 .scroll::-webkit-scrollbar {
@@ -12,7 +14,7 @@
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background: #000; //цвет  скролла     
+    background: $color-primary; //цвет  скролла     
     border-radius: 10px;    
 }
 

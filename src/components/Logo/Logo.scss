@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -24,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .logo {
     &__img {
       &_type_header {
@@ -35,12 +37,13 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .logo {
     &__img {
       width: 68px;
       height: 32px;
     }
+
     &_type_footer {
       width: 147px;
       height: 65px;
@@ -48,8 +51,9 @@
       align-items: center;
       justify-content: center;
     }
+
     &_type_menu {
       display: flex;
     }
-  }  
+  }
 }

@@ -10,8 +10,6 @@ interface HeaderInt {
 }
 
 function Header({ onOpenMenu, onClosePopup }: HeaderInt) {
-  // const { onOpenMenu, onClosePopup } = props;
-
   return (
     <header className="header">
       <div className="header__wrapper">

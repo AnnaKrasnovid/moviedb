@@ -1,14 +1,16 @@
+@import '../../styles/variables.scss';
+
 .about-us {
   padding: 60px 0 120px;
 
   &__container {
     padding: 20px;
-    background: rgba(28, 29, 31, 0.5);
+    margin: 0;
+    background: $background;
     border: 1px solid #2B2B2B;
-    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+    box-shadow: $box-shadow;
     backdrop-filter: blur(20px);
     border-radius: 5px;
-    margin: 0;
   }
 
   &__text {
@@ -16,14 +18,14 @@
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-  }
 
-  &__text:first-child {
-    margin-top: 0;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .about-us {
     padding: 30px 0 60px;
 

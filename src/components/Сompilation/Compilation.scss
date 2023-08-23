@@ -1,31 +1,33 @@
+@import '../../styles/variables.scss';
+
 .compilation {
   padding: 30px 0 0;
   position: relative;
 
   &__title {
+    padding: 0;
     font-weight: 400;
     font-size: 28px;
     line-height: 47px;
     margin: 0 0 5px;
-    padding: 0;
   }
 
   &__movies {
-    border-top: 1px solid #81BECB;
-    padding: 40px 0 0;
-    display: flex;
-    width: 100%;   
     margin: 0;
+    padding: 40px 0 0;
+    border-top: 1px solid $color-primary;    
+    display: flex;
+    width: 100%;       
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .compilation {
     padding: 15px 0 15px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .compilation {
     &__title {
       font-size: 18px;

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -20,8 +22,8 @@
 
 /* стили для кнопок исправлены*/
 .swiper-button-prev {
-    color: #fff;
-    background: #000;
+    color: $color-white;
+    background: $color-black;
     opacity: 0.6;
     box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
     border-radius: 50%;
@@ -29,7 +31,7 @@
     width: 35px;
     top: 55%;
     left: -15px;
-    border: 1px solid #fff;
+    border: 1px solid $color-white;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -44,8 +46,8 @@
 }
 
 .swiper-button-next {
-    color: #fff;
-    background: #000;
+    color: $color-white;
+    background: $color-black;
     opacity: 0.6;
     box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14);
     border-radius: 50%;
@@ -53,7 +55,7 @@
     width: 35px;
     top: 55%;
     right: -15px;
-    border: 1px solid #fff;
+    border: 1px solid $color-white;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -75,7 +77,7 @@
 
 .swiper-pagination-bullet-active {
     /*background-color: #81BECB;*/
-    background-color: #fff;
+    background-color: $color-white;
     opacity: 0.5;
     width: 8px;
     height: 8px;

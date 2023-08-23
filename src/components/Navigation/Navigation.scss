@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .navigation {
   margin: 0 0;
   box-sizing: border-box;
@@ -7,11 +9,11 @@
   }
 
   &__list {
+    padding: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    padding: 0;
-    margin: 0 auto;
     list-style: none;
     max-width: 600px;
   }
@@ -21,7 +23,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
   }
 
   &__arrow {
@@ -35,20 +36,20 @@
 }
 
 .link-menu {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  line-height: 32px;
-  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
+  color: $color-white;
+  font-size: 16px;
+  line-height: 32px;
+  white-space: nowrap;
 
   &:hover {
-    color: #81BECB;
+    color: $color-primary;
 
     path {
-      stroke: #81BECB;
+      stroke: $color-primary;
     }
   }
 
@@ -57,17 +58,15 @@
   }
 
   &_active {
-    color: #81BECB;
+    color: $color-primary;
 
     path {
-      stroke: #81BECB;
+      stroke: $color-primary;
     }
   }
-
-
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   .navigation {
     display: flex;
     align-items: center;
@@ -81,7 +80,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $breakpoint-md) {
   .navigation {
     position: relative;
     z-index: 22;
@@ -103,10 +102,6 @@
       justify-content: space-between;
     }
 
-    &__box-link {
-      // margin-top: 15px;
-    }
-
     &__list {
       margin-left: 0;
       margin-right: 0;
@@ -117,7 +112,6 @@
         justify-content: start;
         border-top: 1px solid #8b8b8b;
         padding: 16px 0;
-        // margin: 0 auto;
         max-width: 100%;
       }
     }
